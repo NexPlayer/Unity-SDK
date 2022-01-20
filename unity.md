@@ -486,7 +486,7 @@ In order to make the playback start automatically the initial Volume Property mu
 | Edge | ✔   | ✔   | ✔   |
 | Safari | ✔    |     | ✔   |
 
-### 5.3.4. Build with Custom Template
+### 5.6.4. Build with Custom Template
 
 If you want to create your own custom template, keep in mind that you need to include nexplayer.js and nexplayerUnity.js inside your index.html file as follows:
 
@@ -680,7 +680,7 @@ Playback control methods inherited from NexPlayerBehaviour:
 
 	This method ends all the work on the content currently open and terminates the SDK work. The content must be stopped before calling this method. The correct way to finish playing content is to either wait for the end of content or to call stop and wait for the stop operation to complete, then call close.
 
-## 9. Events
+# 9. Events
 
 The NexPlayer™ SDK provides a list of virtual methods which begin with “Event”. These allow you to provide custom behaviour to answer any NexPlayerEvent.
 
@@ -1340,7 +1340,7 @@ NexPlayer has support for 360º video. This feature doesn’t require any specif
 To configure a scene for 360º video, use the simple player configured for Material Override rendering. Then, place the camera inside of a sphere, where the video will be rendered.  
 Next, add the script Assets/NexPlayer/Scripts/SampleCode/FullFeat/UI/StereoMode.cs to the sphere gameobject, and set the projection mode to match the content. Finally, to handle the camera rotation, add the script NexPlayer360Controller.cs to the video player GameObject and set the camera reference.
 
-## 17. Logs
+# 17. Logs
 
 NexPlayer has support to enable or disable displaying descriptive debugging logs. When enabled, the procedure to see this logs is different per platform, you can see more information at the following link: [https://docs.unity3d.com/Manual/LogFiles.html](https://www.google.com/url?q=https://docs.unity3d.com/Manual/LogFiles.html&sa=D&source=editors&ust=1642678466573631&usg=AOvVaw0Hs9rr4LY-TNDbmEsuJ4-F)
 
