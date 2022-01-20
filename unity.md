@@ -953,7 +953,7 @@ Widevine variables inherited from NexPlayerBehaviour:
 
 Widevine methods inherited from NexPlayerBehaviour:
 
-- **public void SetWidevineHeaders(string\[\] keys, string\[\] values)**
+- **public void SetWidevineHeaders(string[] keys, string[] values)**
 
 	Optionally, NexPlayer allows sending headers within the license server request, in case they are needed to get the license key(s). It takes two string arrays, the first one contains the keys and the second the values. Both arrays must have the same size and key in position (i) must pair with the value in the same (i) position.
 
@@ -1010,7 +1010,7 @@ Audio track variables inherited from NexPlayerBehaviour:
 
 Audio track methods inherited from NexPlayerBehaviour:
 
-- **public NexPlayerAudioStream\[\] GetAudioStreamList()**
+- **public NexPlayerAudioStream[] GetAudioStreamList()**
 
 	Returns an array of all the possible audio tracks or null if the platform doesn't support it.
 
@@ -1088,7 +1088,7 @@ Closed captions methods inherited from NexPlayerBehaviour:
 
 	Returns the current subtitle information.
 
-- **public virtual NexPlayerCaptionStream\[\] GetCaptionStreamList()**
+- **public virtual NexPlayerCaptionStream[] GetCaptionStreamList()**
 
 	Returns an array of all the possible closed caption tracks or null if the platform doesn't support it.
 
@@ -1102,7 +1102,7 @@ Similar to the audio tracks, in order to control which closed caption track will
 ```csharp  
 
 // variable for storing the information about the closed captions tracks present inside the manifest  
-NexPlayerCaptionStream\[\] captionStreams;  
+NexPlayerCaptionStream[] captionStreams;  
 
 protected override void EventPlaybackStarted()  
 {  
