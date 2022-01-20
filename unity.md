@@ -141,7 +141,7 @@ In order to start using the NexPlayer™ Plugin for Unity SDK, it is good to hav
 
 The NexPlayer™ Plugin for Unity is compatible with all Long Term Support (LTS) Unity versions: 2020,2019, and 2018. It is also compatible with Unity Versions 2021.2.Xand 2021.1.X.
 
-NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows andmacOS and WebGL.
+NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS and WebGL.
 
 ## 3.1. System Requirements
 
@@ -186,7 +186,7 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 
 | Platform | Supported Graphics APIs | HLS | DASH | PD  | Local | Streaming Assets |
 | --- | --- | --- | --- | --- | --- | --- |
-| Android<br><br>(arm64-v8a, armeabi-v7a and x86) | OpenGL ES 3, OpenGL ES2 | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Android<br>(arm64-v8a, armeabi-v7a and x86) | OpenGL ES 3<br> OpenGL ES 2 | ✔   | ✔   | ✔   | ✔   | ✔   |
 | iOS | Metal | ✔   | ✔   | ✔   | ✔   | ✔   |
 | macOS | Metal | ✔   |     | ✔   | ✔   | ✔   |
 | Windows | DirectX 11 | ✔   | ✔   | ✔   | ✔   | ✔   |
@@ -213,7 +213,7 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 
 ## 3.5. Summary of Features
 
-| Feature | Android | iOS | Windows standalone<br>and Editor | MacOS<br>standalone<br>and Editor | WebGL |
+| Feature | Android | iOS | Windows standalone<br>and Editor | MacOS standalone<br>and Editor | WebGL |
 | --- | --- | --- | --- | --- | --- |
 | Basic Functionality* | ✔   | ✔   | ✔   | ✔   | ✔   |
 | WebVTT Subtitles | ✔   | ✔   | ✔   | ✔   |     |
@@ -225,9 +225,9 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Widevine DRM & Optional Headers | ✔   | ✔   |     |     |     |
 | Advanced Features** | ✔   | ✔   | ✔   | ✔   |     |
 
-(*) Basic functionality includes: start, pause/resume, subtitles on/off, seek, scale, audio on/off, audio volume adjustment, loop playback, stop, portrait/landscape screen, and buffering.
+\* Basic functionality includes: start, pause/resume, subtitles on/off, seek, scale, audio on/off, audio volume adjustment, loop playback, stop, portrait/landscape screen, and buffering.
 
-(**) Advanced features include: set video output position, adjust audio output volume, video rotation, and screen scaling.
+\** Advanced features include: set video output position, adjust audio output volume, video rotation, and screen scaling.
 
 For a more in-depth look at our player's features, please refer to section 10. Detailed Feature List of this guide.
 
@@ -238,7 +238,6 @@ For a more in-depth look at our player's features, please refer to section 10. D
 The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Package and can be imported into your Unity project.  
 
 ![](images/image68.png)
-*SDK package content*
 
 The NexPlayer™ package supports multiple Unity versions (2021.2.X, 2021.1.X, 2020, 2019, 2018).
 
@@ -485,7 +484,7 @@ In order to make the playback start automatically the initial Volume Property mu
 | Firefox | ✔   | ✔   | ✔   |
 | Opera | ✔   | ✔   | ✔   |
 | Edge | ✔   | ✔   | ✔   |
-| Safari |     |     | ✔   |
+| Safari | ✔    |     | ✔   |
 
 ### 5.3.4. Build with Custom Template
 
@@ -495,13 +494,13 @@ If you want to create your own custom template, keep in mind that you need to in
 <head>
 ...
 <script src="https://nexplayer.nexplayersdk.com/latest/nexplayer.js" >  
-<script> src="https://d1s68t328djb4k.cloudfront.net/webgl/v1.0/NexPlayerUnity.js" ></script>
+<script src="https://d1s68t328djb4k.cloudfront.net/webgl/v1.0/NexPlayerUnity.js" ></script>
 <link rel="stylesheet" href="/TemplateData/style.css" />    
 ...
 </head>
 
 ```
-Then, follow the process detailed in the section [5.3.1 Build with Nexplayer’s Template]() to use NexPlayer in a custom template and build the application.
+Then, follow the process detailed in the section 5.3.1 Build with Nexplayer’s Template to use NexPlayer in a custom template and build the application.
 
 # 6. Player Integration - NexPlayerBehaviour
 
@@ -573,12 +572,12 @@ Basic methods inherited from NexPlayerBehaviour:
 The code needs to inherit from NexPlayerBehaviour and requires the NexPlayerRendererController: The render controller must be set according to the scene’s needs. Configure the startingRenderMode and the target render object accordingly:
 
 ```csharp
-[RequireComponent(typeof(NexPlayerRenderController))\]  
+[RequireComponent(typeof(NexPlayerRenderController))]  
 publicclassNexPlayerSimple: NexPlayerBehaviour  
 {  
  private NexPlayerRenderController renderController;  
   
- protectedoverridevoidInitControllers()  
+ protected override void InitControllers()  
  {  
      base.InitControllers();  
   
@@ -839,13 +838,13 @@ Error triggered methods inherited from NexPlayerBehaviour:
 
 	Method triggered by the NexErrorCode PLAYER\_ERROR\_TIME_LOCKED.
 
-	The SDK License is expired. Please contact NexPlayer to extend your license (see the section [Technical Support Information]()).
+	The SDK License is expired. Please contact NexPlayer to extend your license (see the section Technical Support Information).
 
 - **protected virtual void ErrorNotActivateAppID()**
 
 	Method triggered by the NexErrorCode PLAYER\_ERROR\_NOT\_ACTIVATED\_APP_ID.
 
-	The current app ID is not activated for the NexPlayer SD. If you encounter this error, please contact NexPlayer to license your app ID (see the section [Technical Support Information]()).
+	The current app ID is not activated for the NexPlayer SD. If you encounter this error, please contact NexPlayer to license your app ID (see the section Technical Support Information).
 
 - **protected virtual void ErrorNetwork()**
 
@@ -941,7 +940,6 @@ publicclassNexPlayerSimple: NexPlayerBehaviour
 NexPlayer provides the integration for Widevine encrypted content right out of the box, by inheriting from NexPlayerBehaviour.
 
 ## 11.1. NexPlayer API for Widevine
---------------------------------
 
 Widevine variables inherited from NexPlayerBehaviour:
 
@@ -979,12 +977,13 @@ protectedoverridevoidSetPreInitConfiguration()
    ...  
    #region Widevine Playback
 
- 	// mandatory Widevine encrypted contentkeyServerURI = "your key server url";  
+ 	// mandatory Widevine encrypted contentkey
+ 	ServerURI = "your key server url";  
    licenseRequestTimeout = 0;            // optional  
   
    // Only when using additional widevine headers  
-   string\[\] wvHeaderKeys = newstring\[\] { "key1",  "key2"};  
-   string\[\] wvheaderValues = newstring\[\] { "value1",  "value2"};  
+   string[] wvHeaderKeys = new string[] { "key1",  "key2"};  
+   string[] wvheaderValues = new string[] { "value1",  "value2"};  
    SetWidevineHeaders(wvHeaderKeys, wvheaderValues);  
    #endregion  
    ...  
@@ -1026,9 +1025,9 @@ In order to control which audio track is playing and change it in your custom pl
 
 ```chsarp
 // variable for storing the information about the audio tracks present inside the manifest  
-NexPlayerAudioStream\[\] audioStreams;  
+NexPlayerAudioStream[] audioStreams;  
   
-protectedoverridevoidEventPlaybackStarted()  
+protected override void EventPlaybackStarted()  
 {  
    base.EventPlaybackStarted();  
    // At this event the player has finished reading the manifest and is safe to ask for the audio tracks  
@@ -1066,7 +1065,6 @@ You will find the usage of this API in the code of our sample project located at
 The NexPlayer™ SDK supports retrieval, selection and display of closed captions configured in any DASH and HLS manifest. For example, to change the captions from English to Spanish and display them. This functionality is only supported in Android and iOS devices.
 
 ## 13.1. NexPlayer APIs for closed captions
-----------------------------------------
 
 Closed captions variables inherited from NexPlayerBehaviour:
 
@@ -1101,11 +1099,11 @@ Closed captions methods inherited from NexPlayerBehaviour:
 ## 13.2. Sample code for closed captions
 
 Similar to the audio tracks, in order to control which closed caption track will be outputted by the player, it is necessary to declare a variable of type NexPlayerCaptionStream to store the information extracted from the manifest.This information is retrieved after the event EventPlaybackStarted. Also, create a public method for setting the desired closed caption track:
+```csharp  
 
 // variable for storing the information about the closed captions tracks present inside the manifest  
 NexPlayerCaptionStream\[\] captionStreams;  
 
-```csharp  
 protected override void EventPlaybackStarted()  
 {  
    base.EventPlaybackStarted();  
@@ -1217,13 +1215,12 @@ public void SetMaxAndTargetBitrate(int bitrate)
 
 Set bandwidth to specific tracks' bitrate in a specific stream. To change the target multiview instance, call MultiStreamController.ChooseControlIndex(int index) beforehand.
 
-15.2. Sample code for Multiview
--------------------------------
+## 15.2. Sample code for Multiview
 
 Like all custom players, inherit from NexPlayerBehaviour and use NexPlayerMultistreamController to allow for multiple streams and NexPlayerRenderController to display the videos on Unity objects. Define the variables maxBitrate, minBitrate and mainScreenIndex that will be used afterwards for the track change:
 
 ```csharp
-\[RequireComponent(typeof(NexPlayerRenderController), typeof(NexPlayerMultistreamController))\]  
+[RequireComponent(typeof(NexPlayerRenderController), typeof(NexPlayerMultistreamController))]  
 public class NexPlayerMultiview: NexPlayerBehaviour  
 {  
    private NexPlayerRenderController renderController;  
@@ -1237,11 +1234,11 @@ public class NexPlayerMultiview: NexPlayerBehaviour
        base.InitControllers();  
   
        // Multistream  
-       MultistreamController = GetComponent&lt;NexPlayerMultistreamController&gt;();  
+       MultistreamController = GetComponent<NexPlayerMultistreamController>();  
        MultistreamController.Init(this);  
   
        // Render  
-       renderController = GetComponent&lt;NexPlayerRenderController&gt;();  
+       renderController = GetComponent<NexPlayerRenderController>();  
        renderController.Init(this);  
    }
 ```
@@ -1249,7 +1246,7 @@ public class NexPlayerMultiview: NexPlayerBehaviour
 Then, override the SetPreInitConfiguration method, making sure to call the base implementation, to set your playback settings before the player is opened:
 
 ```csharp
-protectedoverridevoidSetPreInitConfiguration()  
+protected override void SetPreInitConfiguration()  
 {  
    base.SetPreInitConfiguration();  
   
@@ -1289,7 +1286,7 @@ protectedoverridevoidSetPreInitConfiguration()
 Override the method EventPlaybackStarted to reset the multiview control instance to the first one:
 
 ```csharp
-protectedoverridevoidEventPlaybackStarted()  
+protected override void EventPlaybackStarted()  
 {  
    int initalizedPlayerIndex = GetInitializedPlayerIndex();  
    if(initalizedPlayerIndex > -1)  
@@ -1321,7 +1318,7 @@ public void Swap()
 The method ForceBitRate changes the streams’ resolutions, regarding the Multiview instance player and the target bitrate.
 
 ```csharp
-privatevoidForceBitRate(intindex, int bitrate)  
+private void ForceBitRate(intindex, int bitrate)  
 {  
    // Choose player index to control  
    MultistreamController.ChooseControlIndex(index);
@@ -1336,7 +1333,6 @@ You will find the usage of this API in the code of our sample project located at
 
 # 16. 360º Playback
 
-
 NexPlayer has support for 360º video. This feature doesn’t require any specific API or code, it’s done entirely on the Unity Editor.
 
 ## 16.1. Scene setup
@@ -1345,7 +1341,6 @@ To configure a scene for 360º video, use the simple player configured for Mater
 Next, add the script Assets/NexPlayer/Scripts/SampleCode/FullFeat/UI/StereoMode.cs to the sphere gameobject, and set the projection mode to match the content. Finally, to handle the camera rotation, add the script NexPlayer360Controller.cs to the video player GameObject and set the camera reference.
 
 ## 17. Logs
-========
 
 NexPlayer has support to enable or disable displaying descriptive debugging logs. When enabled, the procedure to see this logs is different per platform, you can see more information at the following link: [https://docs.unity3d.com/Manual/LogFiles.html](https://www.google.com/url?q=https://docs.unity3d.com/Manual/LogFiles.html&sa=D&source=editors&ust=1642678466573631&usg=AOvVaw0Hs9rr4LY-TNDbmEsuJ4-F)
 
@@ -1402,7 +1397,7 @@ The player info can be obtained from any script, but in the following example it
 ```csharp
 // Override EventOnTime to execute the following code once per second.  
 // This is useful for UI.  
-protectedoverridevoidEventOnTime()  
+protected override void EventOnTime()  
 {  
      base.EventOnTime();  
   
@@ -1451,11 +1446,9 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 
 	![](images/image31.png)
 
-
 5.  Set Player settings → Other settings → Optimization → Managed Strippinglevel to high. You may need to adjust this if you have runtime issues.
 
 	![](images/image50.png)
-
 
 ## 19.2. iOS
 
@@ -1467,7 +1460,6 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 
 	![](images/image6.png)
 
-
 # 20. FAQ
 
 #### Why is the player crashing when deploying on iOS with an “EXC\_BAD\_ACCESS” error on XCode?
@@ -1476,19 +1468,15 @@ XCode debugging is not supported while opening Widevine content. To prevent it, 
 
 ![](images/image43.png)
 
-Question Image
-
 #### How do I solve the unexpected duplicate task problem when building my project in iOS?
 
 ![](images/image18.png)
 
 ![](images/image59.png)
 
-
 When you build your iOS project in the Unity Editor, create a new Xcode project, or if you want to overwrite your old project, check the ‘Enable replace’ checkbox and then select the option ‘Replace’ 
 	
 ![](images/image30.png)
-
 
 #### Why is the video not working on the Windows Unity Editor?
 
@@ -1542,11 +1530,11 @@ This is how a package whose license ends on August 30th, 2020 looks: NexPlayerSD
 
 If your package’s license is expired, download the updated package following these [instructions](#h.up28vk9qsoed).
 
-If this does not solve your problem, please check if your PC meets the [system requirements of NexPlayer](#h.9wm154r20yoq), update windows, restart your computer and try again.
+If this does not solve your problem, please check if your PC meets the system requirements of NexPlayer, update windows, restart your computer and try again.
 
 #### Why does the editor crash after importing the package in Unity 2018?
 
-First, check if everything was imported correctly. Second, check Unity’s Asset Serialization as mentioned [here](#h.t7c1mtfwz58s)
+First, check if everything was imported correctly. Second, check Unity’s Asset Serialization as mentioned in 4.1. Installing the Package 
 
 #### Why does my WebGL build shows ERR_CONNECTION_REFUSED?
 
@@ -1584,7 +1572,7 @@ Due to browser policies, in order to video autoplay the volume must be set to 0 
 
 #### WebGL build shows the error “setWebGLKey is not defined”.
 
-This is caused by using a WebGL template that is not compatible with the player. Instead, you should [use the template included in the package](#h.c6bgzxmvfd3w)or [make your own template](#h.fkkhg0y1ulbi). |
+This is caused by using a WebGL template that is not compatible with the player. Instead, you should use the template included in the package or make your own template.
 
 #### When importing the package on macOS, package damaged pop-up appears
 
