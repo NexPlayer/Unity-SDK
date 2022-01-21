@@ -74,7 +74,7 @@ After importing the Unity package into your Unity project, you should perform th
 3. Select any of the different samples provided by NexPlayer on the “NexPlayerSamplesController”.
 4. Change the NexPlayer component inside NexPlayer_Manager with the required stream settings.
 
-	1. Set Media Source Values (PlayMode, Url, HTTP Headers and DRM).
+	1. Set Media Source Values (PlayMode, Url, isLiveStream, HTTP Headers and DRM).
 	2. Set Media Output Section Values (RenderMode and Rendering GameObject).
 	3. Set the Playback Properties (Autoplay, Loop…).
 
@@ -574,6 +574,10 @@ Basic variables inherited from NexPlayerBehavior:
 
 	URL to get the media from.
 
+- **public bool isLiveStream**
+
+	Enable when the video to be opened is a live stream. Takes effect when Open() is called.
+
 - **public bool autoPlay**
 
 	When enabled the video will auto start playing. Otherwise the video will be initialized, but the playback will not start automatically, remaining paused.
@@ -598,7 +602,7 @@ Basic methods inherited from NexPlayerBehaviour:
 
 - **protected virtual void SetPreInitConfiguration()**
 
-	Method called prior to the player creation. Use it to initialize all the variables needed for the basic playback settings such as URL, autoplay, volume, etc...
+	Method called prior to the player creation. Use it to initialize all the variables needed for the basic playback settings such as URL, isLiveStream, autoplay, volume, etc...
 
 ## 7.2. Sample code for Basic Playback (non-DRM):
 
@@ -654,7 +658,7 @@ publicclassNexPlayerSimple: NexPlayerBehaviour
 
 You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the “Render Mode” region.
 
-Finally use SetPreInitConfiguration method to set your playback settings such as URL, autoplay, loopPlay and volume:
+Finally use SetPreInitConfiguration method to set your playback settings such as URL, isLiveStream, autoplay, loopPlay and volume:
 
 ```
 protected overridevoidSetPreInitConfiguration()  
@@ -662,6 +666,7 @@ protected overridevoidSetPreInitConfiguration()
    base.SetPreInitConfiguration();  
   
    URL = "testURL";  
+   isLiveStream = false;  
   
    autoPlay = true;  	// After opening the content the player will automatically start playing it.
    loopPlay = false; 	// The player will stop when it reaches the end of the content.
@@ -1418,13 +1423,19 @@ Player information methods inherited from NexPlayerBehaviour:
 
 	For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track while, on Windows, it is the server time value and this value only updates once per second.
 
+- **public int GetTotalTime()**
+
+	For VOD streams, it retrieves the media duration of the current content.
+
+	For live streams on Android and Windows, the end of the range of the current content that is seekable.
+
 - **public NexRenderMode GetRenderMode()**
 
 	Retrieves the current render mode the player is using.
 
 ## 18.2. Sample code for player information
 
-The player info can be obtained from any script, but in the following example it’s done on every frame. For this, override the Update method and call the base implementation. Then, you can retrieve information about the player by using API methods such as GetPlayerStatus(), GetCurrentTime() and GetRenderMode();
+The player info can be obtained from any script, but in the following example it’s done on every frame. For this, override the Update method and call the base implementation. Then, you can retrieve information about the player by using API methods such as GetPlayerStatus(), GetCurrentTime(), GetTotalTime() and GetRenderMode();
 
 ```csharp
 // Override EventOnTime to execute the following code once per second.  
@@ -1435,6 +1446,7 @@ protected override void EventOnTime()
   
      NexPlayerStatus currentStatus = GetPlayerStatus();  
      int currentTime = GetCurrentTime();  
+     int totalTime = GetTotalTime();  
      NexRenderMode currentMode = GetRenderMode();  
 }
 ```
