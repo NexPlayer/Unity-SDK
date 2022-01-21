@@ -1633,13 +1633,13 @@ xattr -cr PATH_TO_PROJECT_ROOT
 To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
 
-# 23. Legal Notes
+# 22. Legal Notes
 
-## 23.1. Disclaimer for Intellectual Property
+## 22.1. Disclaimer for Intellectual Property
 
 This product is designed for general purposes, and accordingly the customer is responsible for any and all intellectual property licenses required for actual application. NexStreaming Europe SL. does not provide any indemnification for any intellectual properties owned by third parties.
 
-## 23.2. Copyright
+## 22.2. Copyright
 
 Copyright for all documents, drawings, and programs related to this specification are owned by NexStreaming Europe SL. No part of the specification shall be reproduced or distributed without prior written approval by NexStreaming Europe SL. Content and configuration of any and all parts of the specification shall not be modified nor distributed without prior written approval by NexStreaming Europe SL.
 
