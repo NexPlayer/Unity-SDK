@@ -1596,6 +1596,27 @@ This is caused by macOS failing to verify the package. To resolve it, run the fo
 xattr -cr PATH_TO_PROJECT_ROOT 
 ```
 
+#### The video texture looks brighter or darker than the source video. How can I fix it?
+
+This issue is caused by the environment lighting.
+
+To prevent it, it’s recommended to apply an unlit shader to the material in the 3D object where the video will be rendered.
+
+This unlit shader will make the material not be affected by the light.
+
+This shader can be created from the Unity Editor by following the next steps:
+
+1. Create a new Shader by right-clicking in the Unity Editor and select Create > Shader > Unlit Shader.
+
+2. Open the new shader with your code editor and add the Cull Off property in the Subshader section, right behind the LOD property.
+
+3. Create a new Material by right-clicking in the Unity Editor and select Create > Material.
+
+4. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
+
+5. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
+
+
 # 21. Detailed Feature List
 
 | VIDEO DELIVERY FORMATS | Android | iOS | Mac | Windows | WebGL |
