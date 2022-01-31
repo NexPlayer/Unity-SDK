@@ -835,6 +835,16 @@ Event triggered methods inherited from NexPlayerBehaviour:
 	This event is called when new timed metadata is ready for display in HLS.
 
 	Timed metadata includes additional information about the playing content that may be displayed to the user, and this information may change at different times throughout the content. Each time new metadata is available for display, this event is triggered.
+	
+	
+- **protected virtual void EventTotalTimeChanged()**
+
+	Method triggered by the NexPlayerEvent NEXPLAYER_EVENT_ON_TOTAL_TIME_CHANGED.
+	
+	This event occurs when the total time changes during the playback.
+	
+	Normally it’s triggered when the end of the seekable range loads further during a live stream.
+	
 
 - **protected virtual void EventUnhandled()**
 
