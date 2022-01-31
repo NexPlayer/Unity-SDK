@@ -25,7 +25,7 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 	* This will add a new GameObject (NexPlayerSimple) to your scene, which will contain the NexPlayerSimple component along with the NexPlayerRenderController component.  
     
 
-2.  NexPlayersimple supports any of the three supported RenderModes (RawImage, RenderTexture and Material Override). Using the inspector in the NexPlayerRenderController component, select the desired Render Mode and set the reference to that Render Object:  
+2.  NexPlayerSimple supports RawImage, RenderTexture and Material Override Render Modes. Using the inspector in the NexPlayerRenderController component, select the desired Render Mode and set the reference to that Render Object:  
     
 	![](images/image52.png)
 
@@ -49,15 +49,14 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
     ![](images/image64.png)  
     
 2.  Create a cube in your scene (GameObject → 3D Object → Cube) and drag and drop it onto the Material Override field of the NexPlayerRenderController component:  
+
     ![](images/image26.png)  
     
 3.  Start the scene and the video will play on the cube.
 
-
-
 ## 2.2. Using NexPlayer
 
-NexPlayer is our full-featured example player.
+NexPlayer is our full-featured sample player.
 
 ### 2.2.1. Setup the NexPlayer™ Video Player
 
@@ -83,7 +82,6 @@ To display a video in your own RenderTexture object, remember to add a material 
 
 It is recommended to refer to section 5. Build Configurations before building the project.  
 
-
 ### 2.2.2. Sample Scene
 
 The NexPlayer™ Plugin for Unity provides different samples that can be created on a blank scene through Unity’s Context Menus. Once created, it offers 10 different use cases that can be easily chosen in the NexPlayerSamplesController Inspector.
@@ -96,16 +94,13 @@ Context Menu 2:
 
 ![](images/image47.png)
 
-
 Final Hierarchy:
 
 ![](images/image53.png)
 
-
 Use Case selection:
 
 ![](images/image15.png)
-
 
 #### 2.2.2.1. Use Cases
 
@@ -129,13 +124,11 @@ Use Case selection:
 
 * **Multistream\_RenderTexture\_Sample:** Video player using different links and Render Textures to play multiple videos at the same time. Not supported on Windows.
 
-
 ## 2.3. NexPlayer Flow Diagram
 
 In order to start using the NexPlayer™ Plugin for Unity SDK, it is good to have an understanding of the basic flow that the player needs to follow in order to work properly.
 
 ![](images/image1.png)
-
 
 # 3. Capabilities and Limitations
 
@@ -182,54 +175,111 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 	* Microsoft Edge 18 
 	* Apple Safari 12.1.
 
-## 3.2. Summary of Protocols & Graphic APIs
+## 3.2. Capabilities
 
-| Platform | Supported Graphics APIs | HLS | DASH | PD  | Local | Streaming Assets |
-| --- | --- | --- | --- | --- | --- | --- |
-| Android<br>(arm64-v8a, armeabi-v7a and x86) | OpenGL ES 3<br> OpenGL ES 2 | ✔   | ✔   | ✔   | ✔   | ✔   |
-| iOS | Metal | ✔   | ✔   | ✔   | ✔   | ✔   |
-| macOS | Metal | ✔   |     | ✔   | ✔   | ✔   |
-| Windows | DirectX 11 | ✔   | ✔   | ✔   | ✔   | ✔   |
-| WebGL | WebGL 2.0, WebGL 1.0 | ✔   | ✔   | ✔   |     |     |
-
-## 3.3. Summary of Supported VR Devices
-
-| Device | Android | iOS |
+| Supported VR Devices | Android | iOS |
 | --- | --- | --- |
 | Oculus Go | ✔   |     |
 | Oculus Quest | ✔   |     |
 | Oculus Quest 2 | ✔   |     |
 | Google Cardboard | ✔   | ✔   |
 
-## 3.4. Summary of Codecs        
-
-| Feature | Android<br><br>(armeabi-v7a and x86) | iOS | Windows standalone and Editor | MacOS standalone and Editor |
-| --- | --- | --- | --- | --- |
-| H.264 | ✔   | ✔   | ✔   | ✔   |
-| HEVC/H.265 | ✔   | ✔   |     |     |
-| MPEG-4 | ✔   | ✔   | ✔   | ✔   |
-| AAC-LC | ✔   | ✔   | ✔   | ✔   |
-| HE-AAC | ✔   | ✔   | ✔   |     |
-
-## 3.5. Summary of Features
-
-| Feature | Android | iOS | Windows standalone<br>and Editor | MacOS standalone<br>and Editor | WebGL |
+| Video Delivery Formats | Android | iOS | Mac | Windows | WebGL |
 | --- | --- | --- | --- | --- | --- |
-| Basic Functionality* | ✔   | ✔   | ✔   | ✔   | ✔   |
-| WebVTT Subtitles | ✔   | ✔   | ✔   | ✔   |     |
-| CEA-608 Subtitles |     |     |     | ✔   |     |
-| Adaptive Bitrate (ABR) | ✔   | ✔   | ✔   | ✔   | ✔   |
-| 360º Video | ✔   | ✔   | ✔   | ✔   |     |
-| Progressive Download | ✔   | ✔   | ✔   | ✔   | ✔   |
-| HTTP Optional Headers | ✔   | ✔   |     |     |     |
-| Widevine DRM & Optional Headers | ✔   | ✔   |     |     |     |
-| Advanced Features** | ✔   | ✔   | ✔   | ✔   |     |
+| HLS 						| ✔   | ✔   | ✔   | ✔   | ✔ |
+| DASH 					| ✔   | ✔   |     | ✔   | ✔ |
+| Progressive Download 	| ✔   | ✔   | ✔   | ✔   | ✔ |
+| Local Playback 		| ✔   | ✔   | ✔   | ✔   |  |
 
-\* Basic functionality includes: start, pause/resume, subtitles on/off, seek, scale, audio on/off, audio volume adjustment, loop playback, stop, portrait/landscape screen, and buffering.
+| Video Container Formats | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| MP4 | ✔   | ✔   | ✔   | ✔   | ✔ |
+| AVI |    |    |     | ✔   |  |
+| MKV | ✔   |    |    | ✔   |  |
 
-\** Advanced features include: set video output position, adjust audio output volume, video rotation, and screen scaling.
+| Video Codecs | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| H.264 / AVC 		| ✔   | ✔   | ✔   | ✔   | ✔ * |
+| H.265 / HEVC		| ✔   | ✔   | ✔   |    | ✔ * |
+| MPEG-4 				| ✔   | ✔   | ✔   | ✔   | ✔ * |
+\* *Depends on the System*
 
-For a more in-depth look at our player's features, please refer to section 10. Detailed Feature List of this guide.
+| Audio Codecs | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| AAC-LC 				| ✔   | ✔   | ✔   | ✔   | ✔ * |
+| HE-AAC				| ✔   | ✔   |     |     | ✔ * |
+| HE-AACv2 			| ✔   | ✔   | ✔   |    | ✔ * |
+\* *Depends on the System*
+
+| Subtitle Formats | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| WebVTT | ✔   | ✔   | ✔   | ✔   |  |
+
+| Content Protection | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| Widevine | ✔   | ✔   |    |    |  |
+| AES-128 | ✔   | ✔   |     |     | |
+
+| Rendering Modes | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| RawImage<br>(Unity UI) 			| ✔   | ✔   | ✔   | ✔   | ✔ |
+| RenderTexture<br>(Unity Asset) | ✔   | ✔   | ✔    | ✔    | ✔ |
+| Material Override 			| ✔   | ✔   | ✔   | ✔   | ✔ |
+
+| Playback Controls | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| Start | ✔   | ✔   |   ✔ |  ✔  | ✔ |
+| Play/Pause | ✔   | ✔   |   ✔  |   ✔  |✔ |
+| Resume | ✔   | ✔   |  ✔   |   ✔  |✔|
+| Stop | ✔   | ✔   |    ✔ |    ✔ | ✔|
+| Close | ✔   | ✔   |  ✔   |   ✔  | ✔|
+| Seek | ✔   | ✔   |   ✔  |    ✔ |✔ |
+| AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ |
+| Loop | ✔   | ✔   |   ✔  |    ✔ |✔ |
+| Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|
+| Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |
+| Run in Background | ✔   | ✔   |    ✔ |   ✔  | |
+| Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ |
+| Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ |
+| Change Subtitle Track | ✔   | ✔   |     |     |  |
+| Change Audio Track | ✔   | ✔   |     |    |  |
+
+| Advanced Features | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| 360 Media Playback | ✔   | ✔   |  ✔  |  ✔  | ✔ |
+| Stereoscopic 360 Media Playback | ✔   |  ✔  |    | ✔   |  |
+| Video with Transparency (Chroma Shader) | ✔   |  ✔  | ✔    |  ✔   | ✔ |
+| Video Spread (World Space Shader) | ✔   |  ✔  |  ✔  |  ✔  | ✔ |
+| Play Video on multiple objects | ✔   |  ✔  |  ✔  |  ✔  | |
+| HTTP Headers | ✔   | ✔   |     |     |  |
+| Advanced ABR Controls | ✔  |  ✔  |     |     |  |
+| Offline Playback | ✔   |    |     |     |  |
+| ID3 Metadata | ✔   |  ✔  |     |  ✔   |  |
+| Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  |
+| Multiple Streams (Up to 5) | ✔   |   ✔ |  ✔   |     |  |
+| Synchronized Multiple Streams | ✔   |  ✔  |     |     |  |
+
+| Graphics APIs | Android | iOS | Mac | Windows | WebGL |
+| --- | --- | --- | --- | --- | --- |
+| Metal |    | ✔   |   ✔  |    |  |
+| OpenGL ES 2 |  ✔ * |    |     |    |  |
+| OpenGL ES 3 |  ✔ * |    |     |    |  |
+| DirectX 11 |    |    |     |  ✔  |  |
+| WebGL 1.0 |    |    |     |    | ✔ |
+| WebGL 2.0 |    |    |     |    | ✔ |
+
+\* *Supported architectures: arm64-v8a, armeabi-v7a and x86*
+
+### 3.2.1 Supported Browsers for WebGL
+
+| Browser | HLS | Dash | MP4 |
+| --- | --- | --- | --- |
+| Chrome | ✔   | ✔   | ✔   |
+| Firefox | ✔   | ✔   | ✔   |
+| Opera | ✔   | ✔   | ✔   |
+| Edge | ✔   | ✔   | ✔   |
+| Safari | ✔    |     | ✔   |
+
 
 # 4. SDK Installation
 
@@ -283,8 +333,6 @@ The following warning will be displayed if the build configuration is not correc
 
 ![](images/image62.png)
 
-
-
 ## 5.2. Android Build Configuration
 
 The NexPlayer™ Plugin for Unity supports builds for Android applications.
@@ -298,7 +346,6 @@ These configurations can be set in the following Unity section:
 File → Build Settings → Player Settings (Android) → Other Settings
 
 ![](images/image38.png)
-
 
 In order to build for the Android platform, it is also necessary to set the graphics APIs to use OpenGLES3 as the main graphics API:
 
@@ -366,7 +413,6 @@ The following image shows how to set the correct configuration:
 
 ![](images/image33.png)
 
-
 Remove armv7 Architecture from Unity-iPhone, Unity-iPhone Tests and UnityFramework:
 
 ![](images/image37.png)
@@ -374,7 +420,6 @@ Remove armv7 Architecture from Unity-iPhone, Unity-iPhone Tests and UnityFramewo
 Finally, delete the NexPlayer Frameworks from the Embed Frameworks section of the UnityFramework’s target located in the Build Phases tab:
 
 ![](images/image44.png)
-
 
 ### 5.3.2. Build iOS with Unity 2018.X and below
 
@@ -417,8 +462,6 @@ Select and add UnitySharedDecls.h and UnityTrampolineCompatibility.h
 ![](images/image42.png)
 
 Finally, the Xcode project can be run and installed to an iOS device.
-
-
 
 ## 5.4. Windows Build Configuration
 
@@ -476,17 +519,7 @@ Due to browser autoplay policies the Web Build will throw a warning and will not
 
 In order to make the playback start automatically the initial Volume Property must be set to 0.
 
-### 5.6.3. Browser Support in WebGL
-
-| Browser | HLS | Dash | MP4 |
-| --- | --- | --- | --- |
-| Chrome | ✔   | ✔   | ✔   |
-| Firefox | ✔   | ✔   | ✔   |
-| Opera | ✔   | ✔   | ✔   |
-| Edge | ✔   | ✔   | ✔   |
-| Safari | ✔    |     | ✔   |
-
-### 5.6.4. Build with Custom Template
+### 5.6.3. Build with Custom Template
 
 If you want to create your own custom template, keep in mind that you need to include nexplayer.js and nexplayerUnity.js inside your index.html file as follows:
 
@@ -802,6 +835,16 @@ Event triggered methods inherited from NexPlayerBehaviour:
 	This event is called when new timed metadata is ready for display in HLS.
 
 	Timed metadata includes additional information about the playing content that may be displayed to the user, and this information may change at different times throughout the content. Each time new metadata is available for display, this event is triggered.
+	
+	
+- **protected virtual void EventTotalTimeChanged()**
+
+	Method triggered by the NexPlayerEvent NEXPLAYER_EVENT_ON_TOTAL_TIME_CHANGED.
+	
+	This event occurs when the total time changes during the playback.
+	
+	Normally it’s triggered when the end of the seekable range loads further during a live stream.
+	
 
 - **protected virtual void EventUnhandled()**
 
@@ -829,7 +872,6 @@ public class NexPlayerSimple: NexPlayerBehaviour
 ```
 
 You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs.
-
 
 # 10. Errors
 
@@ -1617,104 +1659,18 @@ This shader can be created from the Unity Editor by following the next steps:
 5. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
 
 
-# 21. Detailed Feature List
-
-| VIDEO DELIVERY FORMATS | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| HLS 						| ✔   | ✔   | ✔   | ✔   | ✔ |
-| DASH 					| ✔   | ✔   |     | ✔   | ✔ |
-| Progressive Download 	| ✔   | ✔   | ✔   | ✔   | ✔ |
-| Local Playback 		| ✔   | ✔   | ✔   | ✔   |  |
-
-| Video Codecs | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| H.264 / AVC 		| ✔   | ✔   | ✔   | ✔   | ✔ * |
-| H.265 / HEVC		| ✔   | ✔   | ✔   |    | ✔ * |
-| MPEG-4 				| ✔   | ✔   | ✔   | ✔   | ✔ * |
-
-\* *Depends on the System*
-
-| Container Formats | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| MP4 | ✔   | ✔   | ✔   | ✔   | ✔ |
-| AVI |    |    |     | ✔   |  |
-| MKV | ✔   |    |    | ✔   |  |
-
-
-| Audio Codecs | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| AAC-LC 				| ✔   | ✔   | ✔   | ✔   | ✔ * |
-| HE-AAC				| ✔   | ✔   |     |     | ✔ * |
-| HE-AACv2 			| ✔   | ✔   | ✔   |    | ✔ * |
-
-\* *Depends on the System*
-
-| Rendering Modes | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| RawImage (Unity UI) 			| ✔   | ✔   | ✔   | ✔   | ✔ |
-| RenderTexture (Unity Asset) | ✔   | ✔   | ✔    | ✔    | ✔ |
-| Material Override 			| ✔   | ✔   | ✔   | ✔   | ✔ |
-
-| Audio APIs | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ |
-| Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ |
-| Change Audio Track | ✔   | ✔   |     |    |  |
-
-| Subtitles | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| WebVTT | ✔   | ✔   | ✔   | ✔   |  |
-| Change Subtitle Track | ✔   | ✔   |     |     |  |
-
-| Content Protection | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| Widevine | ✔   | ✔   |    |    |  |
-| AES-128 | ✔   | ✔   |     |     | |
-
-| Playback Controls | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| Start | ✔   | ✔   |   ✔ |  ✔  | ✔ |
-| Play/Pause | ✔   | ✔   |   ✔  |   ✔  |✔ |
-| Resume | ✔   | ✔   |  ✔   |   ✔  |✔|
-| Stop | ✔   | ✔   |    ✔ |    ✔ | ✔|
-| Close | ✔   | ✔   |  ✔   |   ✔  | ✔|
-| Seek | ✔   | ✔   |   ✔  |    ✔ |✔ |
-| AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ |
-| Loop | ✔   | ✔   |   ✔  |    ✔ |✔ |
-| Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|
-| Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |
-| Run in Background | ✔   | ✔   |    ✔ |   ✔  | |
-
-
-| Advanced Features | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| 360 Media Playback | ✔   | ✔   |  ✔  |  ✔  | ✔ |
-| Stereoscopic 360 Media Playback | ✔   |  ✔  |    | ✔   |  |
-| Video with Transparency (Chroma Shader) | ✔   |  ✔  | ✔    |  ✔   | ✔ |
-| Video Spread (World Space Shader) | ✔   |  ✔  |  ✔  |  ✔  | ✔ |
-| Play Video on multiple objects | ✔   |  ✔  |  ✔  |  ✔  | |
-| HTTP Headers | ✔   | ✔   |     |     |  |
-| Advanced ABR Controls | ✔  |  ✔  |     |     |  |
-| Offline Playback | ✔   |    |     |     |  |
-| ID3 Metadata | ✔   |  ✔  |     |  ✔   |  |
-| Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  |
-| Multiple Streams (Up to 5) | ✔   |   ✔ |  ✔   |     |  |
-| Synchronized Multiple Streams | ✔   |  ✔  |     |     |  |
-
-
-# 23. Technical Support Information
+# 22. Technical Support Information
 
 To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
 
+# 22. Legal Notes
 
-# 24. Legal Notes
-
-## 24.1. Disclaimer for Intellectual Property
+## 22.1. Disclaimer for Intellectual Property
 
 This product is designed for general purposes, and accordingly the customer is responsible for any and all intellectual property licenses required for actual application. NexStreaming Europe SL. does not provide any indemnification for any intellectual properties owned by third parties.
 
-## 24.2. Copyright
+## 22.2. Copyright
 
 Copyright for all documents, drawings, and programs related to this specification are owned by NexStreaming Europe SL. No part of the specification shall be reproduced or distributed without prior written approval by NexStreaming Europe SL. Content and configuration of any and all parts of the specification shall not be modified nor distributed without prior written approval by NexStreaming Europe SL.
 
