@@ -1638,7 +1638,40 @@ This is caused by macOS failing to verify the package. To resolve it, run the fo
 xattr -cr PATH_TO_PROJECT_ROOT 
 ```
 
-# 22. Technical Support Information
+#### The video texture looks brighter or darker than the source video. How can I fix it?
+
+This issue is caused by the render target not being configured to ignore environment lighting or not being configured for Linear color space.
+
+To prevent the render target from using lighting, apply an unlit shader to the material in the 3D object where the video will be rendered.
+
+This unlit shader will make the material not be affected by the light.
+
+This shader can be created from the Unity Editor by following the next steps:
+
+1. Create a new Shader by right-clicking in the Unity Editor and select Create > Shader > Unlit Shader.
+2. Open the new shader with your code editor and add the Cull Off property in the Subshader section, right behind the LOD property.
+3. Create a new Material by right-clicking in the Unity Editor and select Create > Material.
+4. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
+5. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
+
+Then, to make sure the shader supports Linear color space:
+
+1. Open the shader you created and make the following changes (see NexPlayerDefaultShader.shader for reference):
+   1. Add the following line to define the color correction symbol:
+        ```HLSL
+        #pragma multi_compile __ COLOR_CORRECTION
+        ```
+   2. Add the following code block to the fragment code to apply color correction when needed (handled by the NexPlayer SDK):
+        ```HLSL
+        #if !UNITY_COLORSPACE_GAMMA && COLOR_CORRECTION
+            col.rgb = GammaToLinearSpace(col.rgb); // Remove gamma correction
+        #endif
+        ```
+2. On the project window, right click and press Create → Shader Variant Collection
+3. Select the Shader Variant Collection and, on the Inspector, add the shader previously created and all its variants. This will ensure all variants get included when making a build.
+
+
+# 21. Technical Support Information
 
 To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
