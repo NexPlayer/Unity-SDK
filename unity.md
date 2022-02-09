@@ -1514,6 +1514,58 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 
 	![](images/image6.png)
 
+# 20. Migrating from previous releases
+
+## 20.1. Migrating from version 2.1.x to later versions
+
+The following APIs have been moved to new namespaces. Please, make sure you call them corretly.
+
+| Script (NexPlayer/)                                                         | Previous namespace     | Current namespace |
+|:----------------------------------------------------------------------------|:-----------------------|:------------------|
+| NexPlayer360/Scripts/NexPlayer360.cs                                        | NexPlayerAPI           | NexPlayerSample   |
+| NexPlayer360/Scripts/NexPlayer360KeyControls.cs                             | NexPlayerAPI           | NexPlayerSample   |
+| NexPlayer360/Scripts/NexVRInteractable.cs                                   | NexPlayerAPI           | NexPlayerSample   |
+| NexPlayer360/Scripts/NexVRInteractableSeekBar.cs                            | NexPlayerAPI           | NexPlayerSample   |
+| NexPlayer360/Scripts/NexVRUIController.cs                                   | NexPlayerAPI           | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/MenuAnimator.cs                                 | VRStandardAssets.Menu  | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/MenuItemPopout.cs                               | VRStandardAssets.Menu  | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/MenuSelectorMover.cs                            | VRStandardAssets.Menu  | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/MenuButton.cs                                   | VRStandardAssets.Menu  | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/Reticle.cs                                      | VRStandardAssets.Utils | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/SelectionRadial.cs                              | VRStandardAssets.Utils | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/SelecionSlider.cs                               | VRStandardAssets.Utils | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/VRCameraFade.cs                                 | VRStandardAssets.Utils | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/VREyeRaycaster.cs                               | VRStandardAssets.Util  | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/VRCameraUI.cs                                   | VRStandardAssets.Utils | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/VRInput.cs                                      | VRStandardAssets.Utils | NexPlayerSample   |
+| NexPlayer360/VRMenu/Scripts/VRInteractiveItem.cs                            | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/Utility/GameObjectUtil.cs                                |                        | NexUtility        |
+| Scripts/SDK/Core/Utility/ID3MetadataHelper.cs                               |                        | NexUtility        |
+| Scripts/SampleCode/FullFeat/UI/PlaybackSettings.cs                          | NexPlayerAPI           | NexUtility        |
+| Scripts/SampleCode/FullFeat/UI/OfflineStreamingDownload/OfflineStreaming.cs |                        | NexUtility        |
+| Scripts/SampleCode/Utility/NexHolder.cs                                     | NexPlayerSample        | NexUtility        |
+| Scripts/Editor/AutoVersion.cs                                               |                        | NexUtility        |
+| Scripts/Editor/BuildPostProcessor.cs                                        |                        | NexPlayerAPI      |
+| Scripts/Editor/ImportManager.cs                                             |                        | NexUtility        |
+| Scripts/Editor/NexBuildConfigurationHelper.cs                               |                        | NexUtility        |
+| Scripts/Editor/NexBuildConfigurationWindow.cs                               |                        | NexUtility        |
+| Scripts/Editor/NexMaterialsEditor.cs                                        |                        | NexUtility        |
+| Scripts/Editor/NexVersionHelper.cs                                          |                        | NexUtility        |
+| Scripts/Editor/NexVersionHelperEditor.cs                                    |                        | NexUtility        |
+| Scripts/Editor/PostAndroidManifest.cs                                       |                        | NexPlayerAPI      |
+| Scripts/Editor/PostBuildUtil.cs                                             |                        | NexPlayerAPI      |
+| Scripts/SampleCode/Editor/NexPlayerEditor.cs **                             | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NexPlayerSamplesEditor.cs **                      |                        | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NexUIEditor.cs **                                 |                        | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NxPMenuItems.cs **                                |                        | NexPlayerSample   |
+
+
+** Moved scripts from Scripts/Editor/ to Scripts/SampleCode/Editor
+
+
+
+## 20.2. Migrating from version 1.9.x to later versions
+
 # 20. FAQ
 
 #### Why is the player crashing when deploying on iOS with an “EXC\_BAD\_ACCESS” error on XCode?
