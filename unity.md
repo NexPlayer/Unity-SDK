@@ -1564,7 +1564,7 @@ The namespaces of the following APIs have been changed. Please, make sure to cal
 (**) Moved scripts from NexPlayer/Scripts/Editor/ to NexPlayer/Scripts/SampleCode/Editor/
 
 
-# 20. FAQ
+# 21. FAQ
 
 #### Why is the player crashing when deploying on iOS with an “EXC\_BAD\_ACCESS” error on XCode?
 
@@ -1721,18 +1721,18 @@ Then, to make sure the shader supports Linear color space:
 3. Select the Shader Variant Collection and, on the Inspector, add the shader previously created and all its variants. This will ensure all variants get included when making a build.
 
 
-# 21. Technical Support Information
+# 22. Technical Support Information
 
 To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
 
-# 22. Legal Notes
+# 23. Legal Notes
 
-## 22.1. Disclaimer for Intellectual Property
+## 23.1. Disclaimer for Intellectual Property
 
 This product is designed for general purposes, and accordingly the customer is responsible for any and all intellectual property licenses required for actual application. NexStreaming Europe SL. does not provide any indemnification for any intellectual properties owned by third parties.
 
-## 22.2. Copyright
+## 23.2. Copyright
 
 Copyright for all documents, drawings, and programs related to this specification are owned by NexStreaming Europe SL. No part of the specification shall be reproduced or distributed without prior written approval by NexStreaming Europe SL. Content and configuration of any and all parts of the specification shall not be modified nor distributed without prior written approval by NexStreaming Europe SL.
 
