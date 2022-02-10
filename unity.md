@@ -1514,7 +1514,58 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 
 	![](images/image6.png)
 
-# 20. FAQ
+# 20. Migrating from previous releases
+
+## 20.1. Migrating from version 2.1.x to later versions
+
+The namespaces of the following APIs have been changed. Please, make sure to call them correctly.
+
+| Script (NexPlayer/)                                                         | Previous namespace     | Current namespace |
+|:----------------------------------------------------------------------------|:-----------------------|:------------------|
+| Scripts/SampleCode/NexPlayer360/Scripts/NexPlayer360.cs (*)                 | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/Scripts/NexPlayer360KeyControls.cs (*)      | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/Scripts/NexVRInteractable.cs (*)            | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/Scripts/NexVRInteractableSeekBar.cs (*)     | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/Scripts/NexVRUIController.cs (*)            | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuAnimator.cs (*)          | VRStandardAssets.Menu  | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuItemPopout.cs (*)        | VRStandardAssets.Menu  | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuSelectorMover.cs (*)     | VRStandardAssets.Menu  | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuButton.cs (*)            | VRStandardAssets.Menu  | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/Reticle.cs (*)               | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelectionRadial.cs (*)       | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelecionSlider.cs (*)        | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraFade.cs (*)          | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VREyeRaycaster.cs (*)        | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraUI.cs (*)            | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInput.cs (*)               | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInteractiveItem.cs (*)     | VRStandardAssets.Utils | NexPlayerSample   |
+| Scripts/SampleCode/Utility/GameObjectUtil.cs                                |                        | NexUtility        |
+| Scripts/SampleCode/Utility/NexHolder.cs                                     | NexPlayerSample        | NexUtility        |
+| Scripts/SampleCode/FullFeat/UI/PlaybackSettings.cs                          | NexPlayerAPI           | NexUtility        |
+| Scripts/SampleCode/FullFeat/UI/OfflineStreamingDownload/OfflineStreaming.cs |                        | NexUtility        |
+| Scripts/SampleCode/Editor/NexPlayerEditor.cs (**)                           | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NexPlayerSamplesEditor.cs (**)                    |                        | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NexUIEditor.cs (**)                               |                        | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NxPMenuItems.cs (**)                              |                        | NexPlayerSample   |
+| Scripts/SDK/Core/Utility/ID3MetadataHelper.cs                               |                        | NexUtility        |
+| Scripts/Editor/AutoVersion.cs                                               |                        | NexUtility        |
+| Scripts/Editor/BuildPostProcessor.cs                                        |                        | NexPlayerAPI      |
+| Scripts/Editor/ImportManager.cs                                             |                        | NexUtility        |
+| Scripts/Editor/NexBuildConfigurationHelper.cs                               |                        | NexUtility        |
+| Scripts/Editor/NexBuildConfigurationWindow.cs                               |                        | NexUtility        |
+| Scripts/Editor/NexMaterialsEditor.cs                                        |                        | NexUtility        |
+| Scripts/Editor/NexVersionHelper.cs                                          |                        | NexUtility        |
+| Scripts/Editor/NexVersionHelperEditor.cs                                    |                        | NexUtility        |
+| Scripts/Editor/PostAndroidManifest.cs                                       |                        | NexPlayerAPI      |
+| Scripts/Editor/PostBuildUtil.cs                                             |                        | NexPlayerAPI      |
+
+
+(*) Moved scripts from NexPlayer/NexPlayer360/ to NexPlayer/Scripts/SampleCode/NexPlayer360/
+
+(**) Moved scripts from NexPlayer/Scripts/Editor/ to NexPlayer/Scripts/SampleCode/Editor/
+
+
+# 21. FAQ
 
 #### Why is the player crashing when deploying on iOS with an “EXC\_BAD\_ACCESS” error on XCode?
 
@@ -1671,18 +1722,18 @@ Then, to make sure the shader supports Linear color space:
 3. Select the Shader Variant Collection and, on the Inspector, add the shader previously created and all its variants. This will ensure all variants get included when making a build.
 
 
-# 21. Technical Support Information
+# 22. Technical Support Information
 
 To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
 
-# 22. Legal Notes
+# 23. Legal Notes
 
-## 22.1. Disclaimer for Intellectual Property
+## 23.1. Disclaimer for Intellectual Property
 
 This product is designed for general purposes, and accordingly the customer is responsible for any and all intellectual property licenses required for actual application. NexStreaming Europe SL. does not provide any indemnification for any intellectual properties owned by third parties.
 
-## 22.2. Copyright
+## 23.2. Copyright
 
 Copyright for all documents, drawings, and programs related to this specification are owned by NexStreaming Europe SL. No part of the specification shall be reproduced or distributed without prior written approval by NexStreaming Europe SL. Content and configuration of any and all parts of the specification shall not be modified nor distributed without prior written approval by NexStreaming Europe SL.
 
