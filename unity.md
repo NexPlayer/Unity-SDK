@@ -1518,7 +1518,7 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 
 ## 20.1. Migrating from version 2.1.x to later versions
 
-The namespaces of the following APIs have been changed. Please, make sure to call them corretly.
+The namespaces of the following APIs have been changed. Please, make sure to call them correctly.
 
 | Script (NexPlayer/)                                                         | Previous namespace     | Current namespace |
 |:----------------------------------------------------------------------------|:-----------------------|:------------------|
@@ -1535,15 +1535,19 @@ The namespaces of the following APIs have been changed. Please, make sure to cal
 | Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelectionRadial.cs (*)       | VRStandardAssets.Utils | NexPlayerSample   |
 | Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelecionSlider.cs (*)        | VRStandardAssets.Utils | NexPlayerSample   |
 | Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraFade.cs (*)          | VRStandardAssets.Utils | NexPlayerSample   |
-| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VREyeRaycaster.cs (*)        | VRStandardAssets.Util  | NexPlayerSample   |
+| Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VREyeRaycaster.cs (*)        | VRStandardAssets.Utils | NexPlayerSample   |
 | Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraUI.cs (*)            | VRStandardAssets.Utils | NexPlayerSample   |
 | Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInput.cs (*)               | VRStandardAssets.Utils | NexPlayerSample   |
 | Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInteractiveItem.cs (*)     | VRStandardAssets.Utils | NexPlayerSample   |
 | Scripts/SampleCode/Utility/GameObjectUtil.cs                                |                        | NexUtility        |
-| Scripts/SDK/Core/Utility/ID3MetadataHelper.cs                               |                        | NexUtility        |
+| Scripts/SampleCode/Utility/NexHolder.cs                                     | NexPlayerSample        | NexUtility        |
 | Scripts/SampleCode/FullFeat/UI/PlaybackSettings.cs                          | NexPlayerAPI           | NexUtility        |
 | Scripts/SampleCode/FullFeat/UI/OfflineStreamingDownload/OfflineStreaming.cs |                        | NexUtility        |
-| Scripts/SampleCode/Utility/NexHolder.cs                                     | NexPlayerSample        | NexUtility        |
+| Scripts/SampleCode/Editor/NexPlayerEditor.cs (**)                           | NexPlayerAPI           | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NexPlayerSamplesEditor.cs (**)                    |                        | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NexUIEditor.cs (**)                               |                        | NexPlayerSample   |
+| Scripts/SampleCode/Editor/NxPMenuItems.cs (**)                              |                        | NexPlayerSample   |
+| Scripts/SDK/Core/Utility/ID3MetadataHelper.cs                               |                        | NexUtility        |
 | Scripts/Editor/AutoVersion.cs                                               |                        | NexUtility        |
 | Scripts/Editor/BuildPostProcessor.cs                                        |                        | NexPlayerAPI      |
 | Scripts/Editor/ImportManager.cs                                             |                        | NexUtility        |
@@ -1554,10 +1558,7 @@ The namespaces of the following APIs have been changed. Please, make sure to cal
 | Scripts/Editor/NexVersionHelperEditor.cs                                    |                        | NexUtility        |
 | Scripts/Editor/PostAndroidManifest.cs                                       |                        | NexPlayerAPI      |
 | Scripts/Editor/PostBuildUtil.cs                                             |                        | NexPlayerAPI      |
-| Scripts/SampleCode/Editor/NexPlayerEditor.cs (**)                           | NexPlayerAPI           | NexPlayerSample   |
-| Scripts/SampleCode/Editor/NexPlayerSamplesEditor.cs (**)                    |                        | NexPlayerSample   |
-| Scripts/SampleCode/Editor/NexUIEditor.cs (**)                               |                        | NexPlayerSample   |
-| Scripts/SampleCode/Editor/NxPMenuItems.cs (**)                              |                        | NexPlayerSample   |
+
 
 (*) Moved scripts from NexPlayer/NexPlayer360/ to NexPlayer/Scripts/SampleCode/NexPlayer360/
 
