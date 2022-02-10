@@ -1656,7 +1656,7 @@ This shader can be created from the Unity Editor by following the next steps:
 
 Then, to make sure the shader supports Linear color space:
 
-1. Open the shader you created and make the following changes (see NexPlayerDefaultShader.shader for reference):
+1. Open the shader you created and make the following changes (for reference see NexPlayerDefaultShader.shader or NexPlayerDefaultShaderRawImage.shader for a rawImage):
    1. Add the following line to define the color correction symbol:
         ```HLSL
         #pragma multi_compile __ COLOR_CORRECTION
