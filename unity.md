@@ -1683,7 +1683,7 @@ This is caused by using a WebGL template that is not compatible with the player.
 
 ![](images/image66.png)
 
-This is caused by macOS failing to verify the package. To resolve it, press 'Cancel' (as many times as the pop-up appears) and then press the Unity Editor Play button to stop the execution. Open a console, change directory to path /Assets/NexPlayer/Scripts/SDK/Utility/ and run the following command:
+This is caused by macOS failing to verify the package. To resolve it, press 'Cancel' (as many times as the pop-up appears) and then press the Unity Editor Play button to stop the execution. Then, execute the shell script located at /Assets/NexPlayer/Scripts/SDK/Utility/repair_macos_bundle.sh. You can do so by opening a terminal at that path and running the following command:
 
 `sh repair_macos_bundle.sh`
 
