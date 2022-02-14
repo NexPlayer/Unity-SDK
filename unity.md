@@ -1683,11 +1683,10 @@ This is caused by using a WebGL template that is not compatible with the player.
 
 ![](images/image66.png)
 
-This is caused by macOS failing to verify the package. To resolve it, run the following command in the terminal, making sure to change it to your project path:
+This is caused by macOS failing to verify the package. To resolve it, press 'Cancel' (as many times as the pop-up appears) and then press the Unity Editor Play button to stop the execution. Then, execute the shell script located at /Assets/NexPlayer/Scripts/SDK/Utility/repair_macos_bundle.sh. You can do so by opening a terminal at that path and running the following command:
 
-```
-xattr -cr PATH_TO_PROJECT_ROOT 
-```
+`sh repair_macos_bundle.sh`
+
 
 #### The video texture looks brighter or darker than the source video. How can I fix it?
 
