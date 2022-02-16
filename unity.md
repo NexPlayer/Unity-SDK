@@ -845,6 +845,15 @@ Event triggered methods inherited from NexPlayerBehaviour:
 	
 	Normally it’s triggered when the end of the seekable range loads further during a live stream.
 	
+	
+- **protected virtual void EventHandleAudioPCM(int ts, float[] buff)**
+
+	Method triggered by the NexPlayerEvent NEXPLAYER_EVENT_ON_HANDLE_EXTERNAL_PCM.
+	
+	This event occurs whenever there is new audio PCM data during the playback.
+	
+	The audio buffers are floats ranging from -1.0f to 1.0f. Only supported on Android.
+	
 
 - **protected virtual void EventUnhandled()**
 
