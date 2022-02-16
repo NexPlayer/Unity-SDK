@@ -852,7 +852,7 @@ Event triggered methods inherited from NexPlayerBehaviour:
 	
 	This event occurs whenever there is new audio PCM data during the playback.
 	
-	The audio buffers are floats ranging from -1.0f to 1.0f. Only supported on Android
+	The audio buffers are floats ranging from -1.0f to 1.0f. Only supported on Android.
 	
 
 - **protected virtual void EventUnhandled()**
