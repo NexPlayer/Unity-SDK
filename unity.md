@@ -32,15 +32,19 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 
 ### 2.1.1. Example: Using Raw Image
 
-* Set the “Starting Render Mode” to Raw Image:  
+1. Set the “Starting Render Mode” to Raw Image:  
     
     ![](images/image57.png)  
     
-* Create a Raw Image in your scene (GameObject → UI → Raw Image) and drag and drop it onto the Raw Image field of the NexPlayerRenderController component:  
+2. Create a Raw Image in your scene (GameObject → UI → Raw Image) and drag and drop it onto the Raw Image field of the NexPlayerRenderController component:  
 
 	![](images/image51.png)  
+
+3.  Set NexPlayerDefaultMaterialRawImage into the Raw Image as material.
+
+	![](images/RawImage.png)
     
-*  Start the scene and the video will play on the Raw Image.
+4.  Start the scene and the video will play on the Raw Image.
 
 ### 2.1.2. Example: Using Material Override
 
@@ -52,7 +56,11 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 
     ![](images/image26.png)  
     
-3.  Start the scene and the video will play on the cube.
+3.  Set NexPlayerDefaultMaterial into the cube as material.
+
+	![](images/cube.png)
+	
+4.  Start the scene and the video will play on the cube.
 
 ## 2.2. Using NexPlayer
 
