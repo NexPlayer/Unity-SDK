@@ -138,11 +138,11 @@ In order to start using the NexPlayer™ Plugin for Unity SDK, it is good to hav
 
 ![](images/image1.png)
 
-# 3. Capabilities and Limitations
+# 3. Capabilities and Requirements
 
 The NexPlayer™ Plugin for Unity is compatible with all Long Term Support (LTS) Unity versions: 2020,2019, and 2018. It is also compatible with Unity Versions 2021.2.Xand 2021.1.X.
 
-NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS and WebGL.
+NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS, WebGL and Nintendo Switch.
 
 ## 3.1. System Requirements
 
