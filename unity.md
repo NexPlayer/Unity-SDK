@@ -289,7 +289,7 @@ The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Packa
 
 ![](images/image68.png)
 
-The NexPlayer package is composed by 3 different packages, the NexPlayer SDK that is obligatory import to use NexPlayer, the NexPlayer full feat sample, it contain different samples in order to know the possibilities of NexPlayer and finally the NexPlayer simple sample, it contain a sample scripts to know how to use the sdk.+
+The NexPlayer package is composed by 3 different packages, the NexPlayer SDK that is mandatory to import to use NexPlayer; the NexPlayer full feat sample, which contains different samples in order to know the possibilities of NexPlayer and finally the NexPlayer simple sample, which contains sample scripts to know how to use the SDK.
 
 The NexPlayer™ package supports multiple Unity versions (2021.2.X, 2021.1.X, 2020, 2019).
 
@@ -658,7 +658,7 @@ publicclassNexPlayerSimple: NexPlayerBehaviour
  }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Render Mode” region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Render Mode” region.
 
 Finally use SetPreInitConfiguration method to set your playback settings such as URL, isLiveStream, autoplay, loopPlay and volume:
 
@@ -676,7 +676,7 @@ protected overridevoidSetPreInitConfiguration()
    volume = 1; 			// The player starts with maximum volume.  
 }
 ```
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Basic Playback” and “Playback settings” regions.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Basic Playback” and “Playback settings” regions.
 
 
 # 8. Playback Control
@@ -872,7 +872,7 @@ public class NexPlayerSimple: NexPlayerBehaviour
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs.)
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).
 
 
 # 10. Errors
@@ -1039,7 +1039,7 @@ protectedoverridevoidSetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Widevine region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Widevine region.
 
 # 12. Audio Tracks
 
@@ -1105,7 +1105,7 @@ public void SetAudioStream(int index)
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguages.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs.)
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguages.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
 
 
 
@@ -1198,7 +1198,7 @@ protected override void EventTextRender()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguage.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguage.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
 
 
 # 14. Synchronization
@@ -1250,7 +1250,7 @@ protected override void SetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Synchronization region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Synchronization region.
 
 # 15. MultiView
 
@@ -1378,7 +1378,7 @@ private void ForceBitRate(intindex, int bitrate)
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultiview.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultiview.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).
 
 # 16. 360º Playback
 
@@ -1417,7 +1417,7 @@ protected override void SetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Debug region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Debug region.
 
 
 
@@ -1465,7 +1465,7 @@ protected override void EventOnTime()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Player information region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Player information region.
 
 # 19. How to Reduce the Build File Size
 
