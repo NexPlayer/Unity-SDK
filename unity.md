@@ -1484,8 +1484,6 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 	* Packages/com.nexplayer.nxplayerfullfeatsample/NexPlayer/SampleCode/NexPlayer360/Scripts
 	* Packages/com.nexplayer.nxplayerfullfeatsample/NexPlayer/SampleCode/NexPlayer360/VRMenu/Scripts
 
-	![](images/image19.png)
-
 
 ## 19.1. Android
 
