@@ -86,7 +86,7 @@ After importing the Unity package into your Unity project, you should perform th
 	2. Set Media Output Section Values (RenderMode and Rendering GameObject).
 	3. Set the Playback Properties (Autoplay, Loop…).
 
-To display a video in your own RenderTexture object, remember to add a material to the object that contains the same texture as you referenced in the player. Standard materials can be found in Assets → NexPlayer → Materials.
+To display a video in your own RenderTexture object, remember to add a material to the object that contains the same texture as you referenced in the player. Standard materials can be found in Packages → NexPlayer SDK → NexPlayer → Materials.
 
 It is recommended to refer to section 5. Build Configurations before building the project.  
 
@@ -297,7 +297,9 @@ The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Packa
 
 ![](images/image68.png)
 
-The NexPlayer™ package supports multiple Unity versions (2021.2.X, 2021.1.X, 2020, 2019, 2018).
+The NexPlayer package is composed by 3 different packages, the NexPlayer SDK that is mandatory to import to use NexPlayer; the NexPlayer full feat sample, which contains different samples in order to know the possibilities of NexPlayer and finally the NexPlayer simple sample, which contains sample scripts to know how to use the SDK.
+
+The NexPlayer™ package supports multiple Unity versions (2021.2.X, 2021.1.X, 2020, 2019).
 
 #### Import NexPlayer™ into Unity 2018.X
 
@@ -389,7 +391,7 @@ This also can be set up by using the NexPlayer’s Build Configuration Window, a
 
 ![](images/image10.png)  
 
-After importing the NexPlayer Unity package, some iOS frameworks have to be correctly set. Go to Assets → NexPlayer → Plugins → iOS.
+After importing the NexPlayer Unity package, some iOS frameworks have to be correctly set. Go to Packages → NexPlayer SDK → NexPlayer → Plugins → iOS.
 
 First, select NexPlayer.framework, widevine\_cdm\_secured\_ios\_tmux.framework, and WidevineIntegration.framework and check the “iOS” and “Add to Embedded Binaries” checkboxes, as shown below, and then click on “Apply”:
 
@@ -497,7 +499,7 @@ The NexPlayer™ Plugin for Unity supports Standalone Builds for macOS.
 
 First, it is required to set the Target Platformas macOS in the Unity Build Settings configuration.
 
-For Unity version 2020 and above, it is possible to build for architectures: Intel64, Apple Silicon, or Intel 64 + Apple Silicon. For this, the NexPlayer/Plugins/MacOSX/NexPlayerMacOSX.bundle, must be configured in the inspector as Any CPU for Standalone builds, as shown in the picture below:
+For Unity version 2020 and above, it is possible to build for architectures: Intel64, Apple Silicon, or Intel 64 + Apple Silicon. For this, the Packages → NexPlayer SDK → NexPlayer → Plugins → MacOSX → NexPlayerMacOSX.bundle (in the finder: Packages/com.nexplayer.nxplayersdk/NexPlayer/Plugins/MacOSX/NexPlayerMacOSX.bundle), must be configured in the inspector as Any CPU for Standalone builds, as shown in the picture below:
 
 ![](images/image54.png)
 
@@ -515,7 +517,7 @@ The NexPlayer™ Plugin for Unity supports Builds for WebGL applications.
 
 To build the application with Nexplayer’s Template it is required to select the template inside Unity.
 
-Go to Player Settings → WebGL Settings → Resolution and Presentation and choose the correct template according to the Unity version as shown in the image below:
+In the top bar go to NexPlayer → Build Configuration Window and select the nexplayer template as shown in the image below: 
 
 ![](images/image4.png)
 
@@ -664,7 +666,7 @@ publicclassNexPlayerSimple: NexPlayerBehaviour
  }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the “Render Mode” region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Render Mode” region.
 
 Finally use SetPreInitConfiguration method to set your playback settings such as URL, isLiveStream, autoplay, loopPlay and volume:
 
@@ -682,8 +684,7 @@ protected overridevoidSetPreInitConfiguration()
    volume = 1; 			// The player starts with maximum volume.  
 }
 ```
-
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the “Basic Playback” and “Playback settings” regions.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Basic Playback” and “Playback settings” regions.
 
 
 # 8. Playback Control
@@ -888,7 +889,8 @@ public class NexPlayerSimple: NexPlayerBehaviour
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).
+
 
 # 10. Errors
 
@@ -1054,7 +1056,7 @@ protectedoverridevoidSetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the Widevine region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Widevine region.
 
 # 12. Audio Tracks
 
@@ -1120,7 +1122,7 @@ public void SetAudioStream(int index)
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerMultipleLanguages.cs.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguages.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
 
 
 
@@ -1213,7 +1215,7 @@ protected override void EventTextRender()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerMultipleLanguages.cs.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguage.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
 
 
 # 14. Synchronization
@@ -1265,7 +1267,7 @@ protected override void SetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the Synchronization region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Synchronization region.
 
 # 15. MultiView
 
@@ -1393,7 +1395,7 @@ private void ForceBitRate(intindex, int bitrate)
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerMultiview.cs.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultiview.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).
 
 # 16. 360º Playback
 
@@ -1401,8 +1403,9 @@ NexPlayer has support for 360º video. This feature doesn’t require any specif
 
 ## 16.1. Scene setup
 
-To configure a scene for 360º video, use the simple player configured for Material Override rendering. Then, place the camera inside of a sphere, where the video will be rendered.  
-Next, add the script Assets/NexPlayer/Scripts/SampleCode/FullFeat/UI/StereoMode.cs to the sphere gameobject, and set the projection mode to match the content. Finally, to handle the camera rotation, add the script NexPlayer360Controller.cs to the video player GameObject and set the camera reference.
+To configure a scene for 360º video, use the simple player configured for Material Override rendering. Then, place the camera inside of a sphere, where the video will be rendered.
+Next, add the script Packages/com.nexplayer.nxplayerfullfeatsample/NexPlayer/SampleCode/FullFeat/UI/StereoMode.cs to the sphere gameobject, and set the projection mode to match the content. Finally, to handle the camera rotation, add the script NexPlayer360Controller.cs to the video player GameObject and set the camera reference.
+
 
 # 17. Logs
 
@@ -1431,7 +1434,8 @@ protected override void SetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the Debug region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Debug region.
+
 
 
 # 18. Player information
@@ -1478,7 +1482,7 @@ protected override void EventOnTime()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at NexPlayer/Scripts/SampleCode/Players/NexPlayerSimple.cs by unfolding the Player information region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the Player information region.
 
 # 19. How to Reduce the Build File Size
 
@@ -1488,16 +1492,14 @@ The NexPlayer™ Unity SDK can be reduced to occupy the minimum size possible.
 
 It’s recommended to follow the next steps to optimize the Unity SDK:
 
-1. The essential files to use the video player are included in Assets/NexPlayer/Scriptsand Assets/NexPlayer/Plugins. Remove all the unused resources.For instance, all the files located under Assets/NexPlayer/Resourcesand Assets/StreamingAssets. Assets/NexPlayer/NexPlayer360 can also be removed if the resources inside it are not used.
+1. The essential files to use the video player are included in Packages/com.nexplayer.nxplayersdk/NexPlayer.
 
 	![](images/image70.png)
 
 2. If you need NexPlayer360, keep the following NexPlayer360 folders:
 
-	* Assets/NexPlayer/NexPlayer360/Scripts
-	* Assets/NexPlayer/NexPlayer360/VRMenu/Scripts
-
-	![](images/image19.png)
+	* Packages/com.nexplayer.nxplayerfullfeatsample/NexPlayer/SampleCode/NexPlayer360/Scripts
+	* Packages/com.nexplayer.nxplayerfullfeatsample/NexPlayer/SampleCode/NexPlayer360/VRMenu/Scripts
 
 
 ## 19.1. Android
@@ -1508,8 +1510,8 @@ It’s recommended to follow the next steps to optimize the Unity SDK:
 
 2.  Remove all the unnecessary .so libraries that the Player will not need. They are located under:
 
-	1.  Assets/NexPlayer/Plugins/Android/libs/arm64-v8a
-	2.  Assets/Plugins/Android/libs/armeabi-v7a.  
+	1.  Packages/com.nexplayer.nxplayersdk/NexPlayer/Plugins/Android/libs/arm64-v8a
+	2.  Packages/com.nexplayer.nxplayersdk/NexPlayer/Plugins/Android/libs/armeabi-v7a. 
     
 3.  Libnexplayerengine_vm.so, libnexcal\_dolby\_armv7.so and every sample .so can be deleted without affecting the Player’s behaviour.
 
