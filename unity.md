@@ -138,11 +138,11 @@ In order to start using the NexPlayer™ Plugin for Unity SDK, it is good to hav
 
 ![](images/image1.png)
 
-# 3. Capabilities and Limitations
+# 3. Capabilities and Requirements
 
 The NexPlayer™ Plugin for Unity is compatible with all Long Term Support (LTS) Unity versions: 2020,2019, and 2018. It is also compatible with Unity Versions 2021.2.Xand 2021.1.X.
 
-NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS and WebGL.
+NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS, WebGL and Nintendo Switch.
 
 ## 3.1. System Requirements
 
@@ -192,12 +192,12 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Oculus Quest 2 | ✔   |     |
 | Google Cardboard | ✔   | ✔   |
 
-| Video Delivery Formats | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| HLS 						| ✔   | ✔   | ✔   | ✔   | ✔ |
-| DASH 					| ✔   | ✔   |     | ✔   | ✔ |
-| Progressive Download 	| ✔   | ✔   | ✔   | ✔   | ✔ |
-| Local Playback 		| ✔   | ✔   | ✔   | ✔   |  |
+| Video Delivery Formats | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| --- | --- | --- | --- | --- | --- | --- |
+| HLS 						| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
+| DASH 					| ✔   | ✔   |     | ✔   | ✔ | ✔ |
+| Progressive Download 	| ✔   | ✔   | ✔   | ✔   | ✔ |  |
+| Local Playback 		| ✔   | ✔   | ✔   | ✔   |  |  |
 
 | Video Container Formats | Android | iOS | Mac | Windows | WebGL |
 | --- | --- | --- | --- | --- | --- |
@@ -219,38 +219,38 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | HE-AACv2 			| ✔   | ✔   | ✔   |    | ✔ * |
 \* *Depends on the System*
 
-| Subtitle Formats | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| WebVTT | ✔   | ✔   | ✔   | ✔   |  |
+| Subtitle Formats | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| --- | --- | --- | --- | --- | --- | --- |
+| WebVTT | ✔   | ✔   | ✔   | ✔   |  | ✔   |
 
 | Content Protection | Android | iOS | Mac | Windows | WebGL |
 | --- | --- | --- | --- | --- | --- |
 | Widevine | ✔   | ✔   |    |    |  |
 | AES-128 | ✔   | ✔   |     |     | |
 
-| Rendering Modes | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| RawImage<br>(Unity UI) 			| ✔   | ✔   | ✔   | ✔   | ✔ |
-| RenderTexture<br>(Unity Asset) | ✔   | ✔   | ✔    | ✔    | ✔ |
-| Material Override 			| ✔   | ✔   | ✔   | ✔   | ✔ |
+| Rendering Modes | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| --- | --- | --- | --- | --- | --- | --- |
+| RawImage<br>(Unity UI) 			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
+| RenderTexture<br>(Unity Asset) | ✔   | ✔   | ✔    | ✔    | ✔ | ✔ |
+| Material Override 			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
 
-| Playback Controls | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| Start | ✔   | ✔   |   ✔ |  ✔  | ✔ |
-| Play/Pause | ✔   | ✔   |   ✔  |   ✔  |✔ |
-| Resume | ✔   | ✔   |  ✔   |   ✔  |✔|
-| Stop | ✔   | ✔   |    ✔ |    ✔ | ✔|
-| Close | ✔   | ✔   |  ✔   |   ✔  | ✔|
-| Seek | ✔   | ✔   |   ✔  |    ✔ |✔ |
-| AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ |
-| Loop | ✔   | ✔   |   ✔  |    ✔ |✔ |
-| Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|
-| Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |
-| Run in Background | ✔   | ✔   |    ✔ |   ✔  | |
-| Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ |
-| Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ |
-| Change Subtitle Track | ✔   | ✔   |     |     |  |
-| Change Audio Track | ✔   | ✔   |     |    |  |
+| Playback Controls | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| --- | --- | --- | --- | --- | --- | --- |
+| Start | ✔   | ✔   |   ✔ |  ✔  | ✔ | ✔ |
+| Play/Pause | ✔   | ✔   |   ✔  |   ✔  |✔ | ✔ |
+| Resume | ✔   | ✔   |  ✔   |   ✔  |✔| ✔ |
+| Stop | ✔   | ✔   |    ✔ |    ✔ | ✔| ✔ |
+| Close | ✔   | ✔   |  ✔   |   ✔  | ✔| ✔ |
+| Seek | ✔   | ✔   |   ✔  |    ✔ |✔ | ✔ |
+| AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ | ✔ |
+| Loop | ✔   | ✔   |   ✔  |    ✔ |✔ |  |
+| Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|  |
+| Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |  |
+| Run in Background | ✔   | ✔   |    ✔ |   ✔  | |  |
+| Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
+| Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ | ✔ |
+| Change Subtitle Track | ✔   | ✔   |     |     |  |  |
+| Change Audio Track | ✔   | ✔   |     |    |  |  |
 
 | Advanced Features | Android | iOS | Mac | Windows | WebGL |
 | --- | --- | --- | --- | --- | --- |
@@ -267,14 +267,15 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Multiple Streams (Up to 5) | ✔   |   ✔ |  ✔   |     |  |
 | Synchronized Multiple Streams | ✔   |  ✔  |     |     |  |
 
-| Graphics APIs | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| Metal |    | ✔   |   ✔  |    |  |
-| OpenGL ES 2 |  ✔ * |    |     |    |  |
-| OpenGL ES 3 |  ✔ * |    |     |    |  |
-| DirectX 11 |    |    |     |  ✔  |  |
-| WebGL 1.0 |    |    |     |    | ✔ |
-| WebGL 2.0 |    |    |     |    | ✔ |
+| Graphics APIs | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| --- | --- | --- | --- | --- | --- | --- |
+| Metal |    | ✔   |   ✔  |    |  |  |
+| OpenGL ES 2 |  ✔ * |    |     |    |  |  |
+| OpenGL ES 3 |  ✔ * |    |     |    |  |  |
+| DirectX 11 |    |    |     |  ✔  |  |  |
+| WebGL 1.0 |    |    |     |    | ✔ |  |
+| WebGL 2.0 |    |    |     |    | ✔ |  |
+| Nvn |    |    |     |    |    | ✔ |
 
 \* *Supported architectures: arm64-v8a, armeabi-v7a and x86*
 
