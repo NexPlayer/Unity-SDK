@@ -39,10 +39,6 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 2. Create a Raw Image in your scene (GameObject → UI → Raw Image) and drag and drop it onto the Raw Image field of the NexPlayerRenderController component:  
 
 	![](images/image51.png)  
-
-3.  Set NexPlayerDefaultMaterialRawImage into the Raw Image as material.
-
-	![](images/RawImage.png)
     
 4.  Start the scene and the video will play on the Raw Image.
 
