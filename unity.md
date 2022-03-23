@@ -1,5 +1,3 @@
-
-
 # NexPlayer SDK for Unity
 
 ## 1. Introduction
@@ -510,7 +508,26 @@ For lower Unity versions, set the Architecture as Intel 64-bit. The configurati
 
 ![](images/image5.png)
 
-## 5.6. WebGL Build Configuration
+## 5.6. tvOS Build Configuration
+
+The NexPlayer™ Plugin for Unity supports Builds for tvOS applications.
+
+First, it is required to set the Target Platform as tvOS in the Unity Build Settings configuration.
+Then, proceed with the build process as usual by clicking on File → Build Settings → Build.
+Select the desired folder for saving the build.
+
+Once the build is completed you will have a xCode project called Unity-iPhone go ahead and open the project with xCode.
+
+Once opened you will need to do a couple of steps in order to set up the player.
+First, as usual. Signing the project is required.
+Secondly you need to include the tvOS Plugin into the embed frameworks section as shown in below image.
+
+![](images/tvOSEmbed.png)
+
+Once this is done you will be able to run the project.
+
+
+## 5.7. WebGL Build Configuration
 
 ### 5.6.1. Build with Nexplayer’s Template
 
