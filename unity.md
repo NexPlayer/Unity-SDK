@@ -39,10 +39,6 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 2. Create a Raw Image in your scene (GameObject → UI → Raw Image) and drag and drop it onto the Raw Image field of the NexPlayerRenderController component:  
 
 	![](images/image51.png)  
-
-3.  Set NexPlayerDefaultMaterialRawImage into the Raw Image as material.
-
-	![](images/RawImage.png)
     
 4.  Start the scene and the video will play on the Raw Image.
 
@@ -243,7 +239,7 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Close | ✔   | ✔   |  ✔   |   ✔  | ✔| ✔ |
 | Seek | ✔   | ✔   |   ✔  |    ✔ |✔ | ✔ |
 | AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ | ✔ |
-| Loop | ✔   | ✔   |   ✔  |    ✔ |✔ |  |
+| Loop | ✔   | ✔   |   ✔  |    ✔ |  |  |
 | Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|  |
 | Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |  |
 | Run in Background | ✔   | ✔   |    ✔ |   ✔  | |  |
@@ -1710,7 +1706,7 @@ This is caused by macOS failing to verify the package. To resolve it, press 'Can
 
 #### The video texture looks brighter or darker than the source video. How can I fix it?
 
-This issue is caused by the render target not being configured to ignore environment lighting or not being configured for Linear color space.
+This issue is caused by the render target not being configured to ignore environment lighting.
 
 To prevent the render target from using lighting, apply an unlit shader to the material in the 3D object where the video will be rendered.
 
@@ -1723,22 +1719,6 @@ This shader can be created from the Unity Editor by following the next steps:
 3. Create a new Material by right-clicking in the Unity Editor and select Create > Material.
 4. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
 5. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
-
-Then, to make sure the shader supports Linear color space:
-
-1. Open the shader you created and make the following changes (for reference see NexPlayerDefaultShader.shader or NexPlayerDefaultShaderRawImage.shader for a rawImage):
-   1. Add the following line to define the color correction symbol:
-        ```HLSL
-        #pragma multi_compile __ COLOR_CORRECTION
-        ```
-   2. Add the following code block to the fragment code to apply color correction when needed (handled by the NexPlayer SDK):
-        ```HLSL
-        #if !UNITY_COLORSPACE_GAMMA && COLOR_CORRECTION
-            col.rgb = GammaToLinearSpace(col.rgb); // Remove gamma correction
-        #endif
-        ```
-2. On the project window, right click and press Create → Shader Variant Collection
-3. Select the Shader Variant Collection and, on the Inspector, add the shader previously created and all its variants. This will ensure all variants get included when making a build.
 
 
 # 22. Technical Support Information
