@@ -4,7 +4,7 @@
 
 ## 1. Introduction
 
-NexPlayer™ plugin for Unity is an interactive multiscreen streaming player for Unity apps that supports both standard and 360º video playback across all Android, iOS, Windows and macOS devices, including WebGL. NexPlayer's Unity video plugin is the only player supporting Widevine DRM-protected HLS & DASH streaming on all Android & iOS devices.
+NexPlayer™ plugin for Unity is an interactive multiscreen streaming player for Unity apps that supports both standard and 360º video playback across all Android, iOS and macOS devices, including WebGL. NexPlayer's Unity video plugin is the only player supporting Widevine DRM-protected HLS & DASH streaming on all Android & iOS devices.
 
 NexPlayer™ plugin for Unity was developed in collaboration with the native NexPlayer™ SDK, and it has access to all of its features, such as Intelligent ABR, HTTP live streaming (HLS), DASH, progressive download, local playback, customizable APIs, 360º video, and more.
 
@@ -241,7 +241,7 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ | ✔ |
 | Loop | ✔   | ✔   |   ✔  |    ✔ |  |  |
 | Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|  |
-| Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |  |
+| Change Aspect Ratio | ✔   | ✔   |     |     |  |  |
 | Run in Background | ✔   | ✔   |    ✔ |   ✔  | |  |
 | Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
 | Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ | ✔ |
@@ -260,8 +260,8 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Offline Playback | ✔   |    |     |     |  |
 | ID3 Metadata | ✔   |  ✔  |     |  ✔   |  |
 | Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  |
-| Multiple Streams (Up to 5) | ✔   |   ✔ |  ✔   |     |  |
-| Synchronized Multiple Streams | ✔   |  ✔  |     |     |  |
+| Multiple Streams (Up to 5) |    |   ✔ |  ✔   |     |  |
+| Synchronized Multiple Streams |    |  ✔  |     |     |  |
 
 | Graphics APIs | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
 | --- | --- | --- | --- | --- | --- | --- |
