@@ -260,8 +260,8 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Offline Playback | ✔   |    |     |     |  |
 | ID3 Metadata | ✔   |  ✔  |     |  ✔   |  |
 | Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  |
-| Multiple Streams (Up to 5) |    |   ✔ |  ✔   |     |  |
-| Synchronized Multiple Streams |    |  ✔  |     |     |  |
+| Multiple Streams (Up to 5) | ✔ |   ✔ |  ✔   |     |  |
+| Synchronized Multiple Streams | ✔ |  ✔  |     |     |  |
 
 | Graphics APIs | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
 | --- | --- | --- | --- | --- | --- | --- |
