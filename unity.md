@@ -1723,7 +1723,7 @@ This shader can be created from the Unity Editor by following the next steps:
 
 # 22. Technical Support Information
 
-To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
+To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [unity.support@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
 
 # 23. Legal Notes
