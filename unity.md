@@ -1624,7 +1624,7 @@ Due to browser policies, in order to video autoplay the volume must be set to 0 
 
 ![](images/image20.png)
 
-#### WebGL build shows the error “setWebGLKey is not defined”.
+#### WebGL build shows the error “x is not defined”.
 
 This is caused by using a WebGL template that is not compatible with the player. Instead, you should use the template included in the package or make your own template.
 
