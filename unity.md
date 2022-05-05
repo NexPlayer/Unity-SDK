@@ -373,6 +373,8 @@ This configuration can be set up by navigating to the following Unity section: F
 
 ![](images/image46.png)
 
+Option for AGA has been removed from Unity iOS in 2020.2.x, in this case, you don't need to enable it.
+
 In order to the application work in background is necessary enable custom background behavior and select the property “Audio, AirPlay, PiP”:
 
 ![](images/image71.png)
