@@ -120,9 +120,9 @@ Use Case selection:
     
 * **360_Sample:** Video player using a Material Override component in a sphere to display the video in 360º.  
     
-* **Multistream\_RawImage\_Sample:** Video player using different links and Raw Images to play multiple videos at the same time. Not supported on Windows.
+* **Multistream\_RawImage\_Sample:** Video player using different links and Raw Images to play multiple videos at the same time. *Not supported on Windows.*
 
-* **Multistream\_RenderTexture\_Sample:** Video player using different links and Render Textures to play multiple videos at the same time. Not supported on Windows.
+* **Multistream\_RenderTexture\_Sample:** Video player using different links and Render Textures to play multiple videos at the same time. *Not supported on Windows.*
 
 ## 2.3. NexPlayer Flow Diagram
 
