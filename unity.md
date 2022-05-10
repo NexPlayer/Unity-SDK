@@ -471,9 +471,7 @@ Select and add UnitySharedDecls.h and UnityTrampolineCompatibility.h
 Finally, the Xcode project can be run and installed to an iOS device.
 
 ### 5.3.3. Build iOS with Unity 2022 Xcode configuration
-Under Unity-iPhone  → “Frameworks, Libraries and Embedded Content”, select NexPlayerSDK.framework → and change the option to “Do Not Embed".
-
-If Xcode makes you delete the framework you will have to re-add them manually from Nexplayer→Plugins→IOS. Then take the NexPlayerSDK.framework file and repeat the previous steps.
+Under Unity-iPhone  → “Frameworks, Libraries and Embedded Content”, you need to sign all the frameworks in this section except "StoreKit.framework".
 
 ![](images/BuildIOS2022.png)
 
