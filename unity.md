@@ -470,6 +470,13 @@ Select and add UnitySharedDecls.h and UnityTrampolineCompatibility.h
 
 Finally, the Xcode project can be run and installed to an iOS device.
 
+### 5.3.3. Build iOS with Unity 2022 Xcode configuration
+
+Under Unity-iPhone  → “Frameworks, Libraries and Embedded Content”, you need to set all the frameworks in this section except "StoreKit.framework" to “Embed & Sign”:
+
+
+![](images/BuildIOS2022.png)
+
 ## 5.4. Windows Build Configuration
 
 The NexPlayer™ Plugin for Unity supports Standalone Builds for Windows.
