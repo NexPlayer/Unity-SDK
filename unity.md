@@ -549,6 +549,30 @@ If you want to create your own custom template, keep in mind that you need to in
 ```
 Then, follow the process detailed in the section 5.3.1 Build with Nexplayer’s Template to use NexPlayer in a custom template and build the application.
 
+## 5.7. Xbox Series X/S Build Configuration
+
+The NexPlayer™ Plugin for Unity supports UWP Builds for Xbox Series X/S.
+
+It is required to set the Target Platform as Universal Windows Platform in the Unity Build Settings configuration as shown in the image below:
+
+![](images/image74.png)
+
+In order to allow the UWP app to access the internet, the capability option InternetClient needs to be checked in the Unity player settings.
+
+These configurations can be set in the following Unity section: 
+File → Build Settings → Player Settings (Universal Windows Platform) → Publishing Settings
+
+![](images/image75.png)
+
+Then, proceed with the build normally by clicking on File → Build Settings → Build 
+This will launch a File Explorer window asking for a destination folder. Create a folder next to the Assets directory of the project, and choose this folder as the destination folder of the build. Unity has now created a new Visual Studio solution that will be used to deploy the UWP program.
+
+![](images/image76.png)
+
+Open the newly generated solution in the build folder, and then change the target platform to x64. You can deploy the UWP program to Xbox by changing Target device to Remote Machine.
+
+![](images/image77.png)
+
 # 6. Player Integration - NexPlayerBehaviour
 
 The NexPlayer™ Plugin for Unity API allows you to integrate the video player functionalities through code.
