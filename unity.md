@@ -567,11 +567,11 @@ File → Build Settings → Player Settings (Universal Windows Platform) → Pub
 Then, proceed with the build normally by clicking on File → Build Settings → Build 
 This will launch a File Explorer window asking for a destination folder. Create a folder next to the Assets directory of the project, and choose this folder as the destination folder of the build. Unity has now created a new Visual Studio solution that will be used to deploy the UWP program.
 
-![](images/image76.png)
+![](images/image76.PNG)
 
 Open the newly generated solution in the build folder, and then change the target platform to x64. You can deploy the UWP program to Xbox by changing Target device to Remote Machine.
 
-![](images/image77.png)
+![](images/image77.PNG)
 
 # 6. Player Integration - NexPlayerBehaviour
 
