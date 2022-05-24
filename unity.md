@@ -4,7 +4,7 @@
 
 ## 1. Introduction
 
-NexPlayer™ plugin for Unity is a multiscreen video streaming player for Unity games and apps that supports both standard and 360º video playback across all Android, iOS, Windows, macOS, WebGL, and Nintendo Switch platform. NexPlayer for Unity is the only video player plugin that supports Widevine DRM-protected HLS & DASH streaming on all Android & iOS devices.
+NexPlayer™ plugin for Unity is a multiscreen video streaming player for Unity games and apps that supports both standard and 360º video playback across all Android, iOS, Windows, macOS, WebGL, Nintendo Switch, and Xbox Seriex X/S platform. NexPlayer for Unity is the only video player plugin that supports Widevine DRM-protected HLS & DASH streaming on all Android & iOS devices.
 
 The NexPlayer™ plugin for Unity was developed in collaboration with the native NexPlayer™ SDK, and it has access to all of its features, e.g. Intelligent ABR, HTTP live streaming (HLS), DASH, progressive download, local playback, 360º video, and more.
 
@@ -118,15 +118,15 @@ Use Case selection:
     
 * **MaterialOverride_Sample:** Video player using a Material Override component to display the video through a rotating cube.          
     
-* **MultipleRenderers_Sample:** Video player using different objects that share the Material renderer to display the same video multiple times. *Not supported on Windows.*
+* **MultipleRenderers_Sample:** Video player using different objects that share the Material renderer to display the same video multiple times. *Not supported on Windows and Xbox Seriex X/S.*
     
 * **ChangeRenderMode_Sample:** Video player that changes the render mode to display a video in all the supported renderers. Displays one render mode at the same time.          
     
 * **360_Sample:** Video player using a Material Override component in a sphere to display the video in 360º.  
     
-* **Multistream\_RawImage\_Sample:** Video player using different links and Raw Images to play multiple videos at the same time. Not supported on Windows.
+* **Multistream\_RawImage\_Sample:** Video player using different links and Raw Images to play multiple videos at the same time. Not supported on Windows and Xbox Seriex X/S.
 
-* **Multistream\_RenderTexture\_Sample:** Video player using different links and Render Textures to play multiple videos at the same time. Not supported on Windows.
+* **Multistream\_RenderTexture\_Sample:** Video player using different links and Render Textures to play multiple videos at the same time. Not supported on Windows and Xbox Seriex X/S.
 
 ## 2.3. NexPlayer Flow Diagram
 
@@ -138,7 +138,7 @@ In order to start using the NexPlayer™ Plugin for Unity SDK, it is good to hav
 
 The NexPlayer™ Plugin for Unity is compatible with all Long Term Support (LTS) Unity versions: 2020,2019, and 2018. It is also compatible with Unity Versions 2021.2.Xand 2021.1.X.
 
-NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS, WebGL and Nintendo Switch.
+NexPlayer™ Plugin for Unity gives support for building for Android, iOS, Windows and macOS, WebGL, Nintendo Switch, and Xbox Seriex X/S.
 
 ## 3.1. System Requirements
 
@@ -188,90 +188,90 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Oculus Quest 2 | ✔   |     |
 | Google Cardboard | ✔   | ✔   |
 
-| Video Delivery Formats | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| Video Delivery Formats | Android | iOS | Mac | Windows | WebGL | Nintendo Switch | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| HLS | ✔   | ✔   | ✔   | ✔   | ✔ | ✔ | ✔ |
+| DASH 	| ✔   | ✔   |     | ✔   | ✔ | ✔ | ✔ |
+| Progressive Download | ✔   | ✔   | ✔   | ✔   | ✔ |  | ✔ |
+| Local Playback | ✔   | ✔   | ✔   | ✔   |  |  | ✔ |
+
+| Video Container Formats | Android | iOS | Mac | Windows | WebGL | Xbox Seriex X/S |
 | --- | --- | --- | --- | --- | --- | --- |
-| HLS 						| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
-| DASH 					| ✔   | ✔   |     | ✔   | ✔ | ✔ |
-| Progressive Download 	| ✔   | ✔   | ✔   | ✔   | ✔ |  |
-| Local Playback 		| ✔   | ✔   | ✔   | ✔   |  |  |
+| MP4 | ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
+| AVI |    |    |     | ✔   |  | ✔ |
+| MKV | ✔   |    |    | ✔   |  | ✔ |
 
-| Video Container Formats | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| MP4 | ✔   | ✔   | ✔   | ✔   | ✔ |
-| AVI |    |    |     | ✔   |  |
-| MKV | ✔   |    |    | ✔   |  |
-
-| Video Codecs | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| H.264 / AVC 		| ✔   | ✔   | ✔   | ✔   | ✔ * |
-| H.265 / HEVC		| ✔   | ✔   | ✔   |    | ✔ * |
-| MPEG-4 				| ✔   | ✔   | ✔   | ✔   | ✔ * |
+| Video Codecs | Android | iOS | Mac | Windows | WebGL | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- |
+| H.264 / AVC 		| ✔   | ✔   | ✔   | ✔   | ✔ * | ✔ |
+| H.265 / HEVC		| ✔   | ✔   | ✔   |    | ✔ * |  |
+| MPEG-4 				| ✔   | ✔   | ✔   | ✔   | ✔ * | ✔ |
 \* *Depends on the System*
 
-| Audio Codecs | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| AAC-LC 				| ✔   | ✔   | ✔   | ✔   | ✔ * |
-| HE-AAC				| ✔   | ✔   |     |     | ✔ * |
-| HE-AACv2 			| ✔   | ✔   | ✔   |    | ✔ * |
+| Audio Codecs | Android | iOS | Mac | Windows | WebGL | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- |
+| AAC-LC 				| ✔   | ✔   | ✔   | ✔   | ✔ * | ✔ |
+| HE-AAC				| ✔   | ✔   |     |     | ✔ * |  |
+| HE-AACv2 			| ✔   | ✔   | ✔   |    | ✔ * |  |
 \* *Depends on the System*
 
-| Subtitle Formats | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| Subtitle Formats | Android | iOS | Mac | Windows | WebGL | Nintendo Switch | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| WebVTT | ✔   | ✔   | ✔   | ✔   |  | ✔   | ✔ |
+
+| Content Protection | Android | iOS | Mac | Windows | WebGL | Xbox Seriex X/S |
 | --- | --- | --- | --- | --- | --- | --- |
-| WebVTT | ✔   | ✔   | ✔   | ✔   |  | ✔   |
+| Widevine | ✔   | ✔   |    |    |  |  |
+| AES-128 | ✔   | ✔   |     |     | |  |
 
-| Content Protection | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| Widevine | ✔   | ✔   |    |    |  |
-| AES-128 | ✔   | ✔   |     |     | |
+| Rendering Modes | Android | iOS | Mac | Windows | WebGL | Nintendo Switch | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| RawImage<br>(Unity UI) 			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ | ✔ |
+| RenderTexture<br>(Unity Asset) | ✔   | ✔   | ✔    | ✔    | ✔ | ✔ | ✔ |
+| Material Override 			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ | ✔ |
 
-| Rendering Modes | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
+| Playback Controls | Android | iOS | Mac | Windows | WebGL | Nintendo Switch | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Start | ✔   | ✔   |   ✔ |  ✔  | ✔ | ✔ | ✔ |
+| Play/Pause | ✔   | ✔   |   ✔  |   ✔  |✔ | ✔ | ✔ |
+| Resume | ✔   | ✔   |  ✔   |   ✔  |✔| ✔ | ✔ |
+| Stop | ✔   | ✔   |    ✔ |    ✔ | ✔| ✔ | ✔ |
+| Close | ✔   | ✔   |  ✔   |   ✔  | ✔| ✔ | ✔ |
+| Seek | ✔   | ✔   |   ✔  |    ✔ |✔ | ✔ | ✔ |
+| AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ | ✔ | ✔ |
+| Loop | ✔   | ✔   |   ✔  |    ✔ |  |  | ✔ |
+| Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|  | ✔ |
+| Change Aspect Ratio | ✔   | ✔   |     |     |  |  |  |
+| Run in Background | ✔   | ✔   |    ✔ |   ✔  | |  | ✔ |
+| Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ | ✔ |
+| Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ | ✔ | ✔ |
+| Change Subtitle Track | ✔   | ✔   |     |     |  |  |  |
+| Change Audio Track | ✔   | ✔   |     |    |  |  |  |
+
+| Advanced Features | Android | iOS | Mac | Windows | WebGL | Xbox Seriex X/S |
 | --- | --- | --- | --- | --- | --- | --- |
-| RawImage<br>(Unity UI) 			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
-| RenderTexture<br>(Unity Asset) | ✔   | ✔   | ✔    | ✔    | ✔ | ✔ |
-| Material Override 			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
+| 360 Media Playback | ✔   | ✔   |  ✔  |  ✔  | ✔ | ✔ |
+| Stereoscopic 360 Media Playback | ✔   |  ✔  |    | ✔   |  | ✔ |
+| Video with Transparency (Chroma Shader) | ✔   |  ✔  | ✔    |  ✔   | ✔ | ✔ |
+| Video Spread (World Space Shader) | ✔   |  ✔  |  ✔  |  ✔  | ✔ | ✔ |
+| Play Video on multiple objects | ✔   |  ✔  |  ✔  |  ✔  | | ✔ |
+| HTTP Headers | ✔   | ✔   |     |     |  |  |
+| Advanced ABR Controls | ✔  |  ✔  |     |     |  |  |
+| Offline Playback | ✔   |    |     |     |  |  |
+| ID3 Metadata | ✔   |  ✔  |     |  ✔   |  | ✔ |
+| Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  | ✔ |
+| Multiple Streams (Up to 5) | ✔ |   ✔ |  ✔   |     |  |  |
+| Synchronized Multiple Streams | ✔ |  ✔  |     |     |  |  |
 
-| Playback Controls | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
-| --- | --- | --- | --- | --- | --- | --- |
-| Start | ✔   | ✔   |   ✔ |  ✔  | ✔ | ✔ |
-| Play/Pause | ✔   | ✔   |   ✔  |   ✔  |✔ | ✔ |
-| Resume | ✔   | ✔   |  ✔   |   ✔  |✔| ✔ |
-| Stop | ✔   | ✔   |    ✔ |    ✔ | ✔| ✔ |
-| Close | ✔   | ✔   |  ✔   |   ✔  | ✔| ✔ |
-| Seek | ✔   | ✔   |   ✔  |    ✔ |✔ | ✔ |
-| AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ | ✔ |
-| Loop | ✔   | ✔   |   ✔  |    ✔ |  |  |
-| Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|  |
-| Change Aspect Ratio | ✔   | ✔   |     |     |  |  |
-| Run in Background | ✔   | ✔   |    ✔ |   ✔  | |  |
-| Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
-| Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ | ✔ |
-| Change Subtitle Track | ✔   | ✔   |     |     |  |  |
-| Change Audio Track | ✔   | ✔   |     |    |  |  |
-
-| Advanced Features | Android | iOS | Mac | Windows | WebGL |
-| --- | --- | --- | --- | --- | --- |
-| 360 Media Playback | ✔   | ✔   |  ✔  |  ✔  | ✔ |
-| Stereoscopic 360 Media Playback | ✔   |  ✔  |    | ✔   |  |
-| Video with Transparency (Chroma Shader) | ✔   |  ✔  | ✔    |  ✔   | ✔ |
-| Video Spread (World Space Shader) | ✔   |  ✔  |  ✔  |  ✔  | ✔ |
-| Play Video on multiple objects | ✔   |  ✔  |  ✔  |  ✔  | |
-| HTTP Headers | ✔   | ✔   |     |     |  |
-| Advanced ABR Controls | ✔  |  ✔  |     |     |  |
-| Offline Playback | ✔   |    |     |     |  |
-| ID3 Metadata | ✔   |  ✔  |     |  ✔   |  |
-| Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  |
-| Multiple Streams (Up to 5) | ✔ |   ✔ |  ✔   |     |  |
-| Synchronized Multiple Streams | ✔ |  ✔  |     |     |  |
-
-| Graphics APIs | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
-| --- | --- | --- | --- | --- | --- | --- |
-| Metal |    | ✔   |   ✔  |    |  |  |
-| OpenGL ES 2 |  ✔ * |    |     |    |  |  |
-| OpenGL ES 3 |  ✔ * |    |     |    |  |  |
-| DirectX 11 |    |    |     |  ✔  |  |  |
-| WebGL 1.0 |    |    |     |    | ✔ |  |
-| WebGL 2.0 |    |    |     |    | ✔ |  |
-| Nvn |    |    |     |    |    | ✔ |
+| Graphics APIs | Android | iOS | Mac | Windows | WebGL | Nintendo Switch | Xbox Seriex X/S |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Metal |    | ✔   |   ✔  |    |  |  |  |
+| OpenGL ES 2 |  ✔ * |    |     |    |  |  |  |
+| OpenGL ES 3 |  ✔ * |    |     |    |  |  |  |
+| DirectX 11 |    |    |     |  ✔  |  |  | ✔ |
+| WebGL 1.0 |    |    |     |    | ✔ |  |  |
+| WebGL 2.0 |    |    |     |    | ✔ |  |  |
+| Nvn |    |    |     |    |    | ✔ |  |
 
 \* *Supported architectures: arm64-v8a, armeabi-v7a and x86*
 
@@ -549,6 +549,30 @@ If you want to create your own custom template, keep in mind that you need to in
 ```
 Then, follow the process detailed in the section 5.3.1 Build with Nexplayer’s Template to use NexPlayer in a custom template and build the application.
 
+## 5.7. Xbox Series X/S Build Configuration
+
+The NexPlayer™ Plugin for Unity supports UWP Builds for Xbox Series X/S.
+
+It is required to set the Target Platform as Universal Windows Platform in the Unity Build Settings configuration as shown in the image below:
+
+![](images/image74.png)
+
+In order to allow the UWP app to access the internet, the capability option InternetClient needs to be checked in the Unity player settings.
+
+These configurations can be set in the following Unity section: 
+File → Build Settings → Player Settings (Universal Windows Platform) → Publishing Settings
+
+![](images/image75.png)
+
+Then, proceed with the build normally by clicking on File → Build Settings → Build 
+This will launch a File Explorer window asking for a destination folder. Create a folder next to the Assets directory of the project, and choose this folder as the destination folder of the build. Unity has now created a new Visual Studio solution that will be used to deploy the UWP program.
+
+![](images/image76.PNG)
+
+Open the newly generated solution in the build folder, and then change the target platform to x64. You can deploy the UWP program to Xbox by changing Target device to Remote Machine.
+
+![](images/image77.PNG)
+
 # 6. Player Integration - NexPlayerBehaviour
 
 The NexPlayer™ Plugin for Unity API allows you to integrate the video player functionalities through code.
@@ -785,13 +809,13 @@ Event triggered methods inherited from NexPlayerBehaviour:
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_BUFFERING_STARTED.
 
-	This event occurs whenever the player has started buffering. Not supported on Windows.
+	This event occurs whenever the player has started buffering. Not supported on Windows and Xbox Series X/S.
 
 - **protected virtual void EventBuffering(int percent)**
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_BUFFERING.
 
-	This event occurs while the player is buffering. Not supported on Windows.
+	This event occurs while the player is buffering. Not supported on Windows and Xbox Series X/S.
 
 - **protected virtual void EventBufferingEnded()**
 
@@ -803,13 +827,13 @@ Event triggered methods inherited from NexPlayerBehaviour:
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_STOPPED.
 
-	This event occurs whenever the playback has stopped. Not supported on Windows.
+	This event occurs whenever the playback has stopped. Not supported on Windows and Xbox Series X/S.
 
 - **protected virtual void EventOpened()**
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_OPENED.
 
-	This event occurs whenever the player has closed (ended all the work on the content currently open and closed content data). Not supported on Windows.
+	This event occurs whenever the player has closed (ended all the work on the content currently open and closed content data). Not supported on Windows and Xbox Series X/S.
 
 - **protected virtual void EventClosed()**
 
@@ -821,7 +845,7 @@ Event triggered methods inherited from NexPlayerBehaviour:
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_SEEKED.
 
-	This event occurs whenever the player has finished seeking. Not supported on Windows.
+	This event occurs whenever the player has finished seeking. Not supported on Windows and Xbox Series X/S.
 
 - **protected virtual void EventLoading()**
 
@@ -839,7 +863,7 @@ Event triggered methods inherited from NexPlayerBehaviour:
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_TEXT_INIT.
 
-	This event occurs when the subtitle parsing is complete. Not supported on Windows.
+	This event occurs when the subtitle parsing is complete. Not supported on Windows and Xbox Series X/S.
 
 - **protected virtual void EventTimedMetadataRender()**
 
@@ -865,7 +889,7 @@ Event triggered methods inherited from NexPlayerBehaviour:
 	
 	This event occurs whenever there is new audio PCM data during the playback.
 	
-	The audio buffers are floats ranging from -1.0f to 1.0f. Only supported on Android.
+	The audio buffers are floats ranging from -1.0f to 1.0f. Supported on Android, Windows and Xbox Series X/S.
 	
 
 - **protected virtual void EventUnhandled()**
@@ -876,7 +900,7 @@ Event triggered methods inherited from NexPlayerBehaviour:
 
 	Method triggered by the NexPlayerEvent NEXPLAYER\_EVENT\_ERROR.
 
-	This event is triggered when an internal error occurs. The base implementation of this method logs the error information and calls the error specific virtual function. On Windows it only supports the NexErrorCodes PLAYER\_ERROR\_TIME\_LOCKED, HAS\_NO\_EFFECT and ERROR\_MEDIA\_NOT\_FOUND.
+	This event is triggered when an internal error occurs. The base implementation of this method logs the error information and calls the error specific virtual function. On Windows and Xbox Series X/S it only supports the NexErrorCodes PLAYER\_ERROR\_TIME\_LOCKED, HAS\_NO\_EFFECT and ERROR\_MEDIA\_NOT\_FOUND.
 
 ## 9.2. Sample code for Events
 
@@ -1456,13 +1480,13 @@ Player information methods inherited from NexPlayerBehaviour:
 
 	For VOD streams, it retrieves the current playback time.
 
-	For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track while, on Windows, it is the server time value and this value only updates once per second.
+	For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track while, on Windows and Xbox Series X/S, it is the server time value and this value only updates once per second.
 
 - **public int GetTotalTime()**
 
 	For VOD streams, it retrieves the media duration of the current content.
 
-	For live streams on Android and Windows, the end of the range of the current content that is seekable.
+	For live streams on Android, Windows and Xbox Series X/S, the end of the range of the current content that is seekable.
 
 - **public NexRenderMode GetRenderMode()**
 
