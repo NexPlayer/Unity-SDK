@@ -118,7 +118,7 @@ Use Case selection:
     
 * **MaterialOverride_Sample:** Video player using a Material Override component to display the video through a rotating cube.          
     
-* **MultipleRenderers_Sample:** Video player using different objects that share the Material renderer to display the same video multiple times. *Not supported on Windows.*
+* **MultipleRenderers_Sample:** Video player using different objects that share the Material renderer to display the same video multiple times.
     
 * **ChangeRenderMode_Sample:** Video player that changes the render mode to display a video in all the supported renderers. Displays one render mode at the same time.          
     
