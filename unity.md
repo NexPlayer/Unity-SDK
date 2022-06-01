@@ -4,9 +4,9 @@
 
 ## 1. Introduction
 
-NexPlayer™ plugin for Unity is an interactive multiscreen streaming player for Unity apps that supports both standard and 360º video playback across all Android, iOS, Windows and macOS devices, including WebGL. NexPlayer's Unity video plugin is the only player supporting Widevine DRM-protected HLS & DASH streaming on all Android & iOS devices.
+NexPlayer™ plugin for Unity is a multiscreen video streaming player for Unity games and apps that supports both standard and 360º video playback across all Android, iOS, Windows, macOS, WebGL, and Nintendo Switch platform. NexPlayer for Unity is the only video player plugin that supports Widevine DRM-protected HLS & DASH streaming on all Android & iOS devices.
 
-NexPlayer™ plugin for Unity was developed in collaboration with the native NexPlayer™ SDK, and it has access to all of its features, such as Intelligent ABR, HTTP live streaming (HLS), DASH, progressive download, local playback, customizable APIs, 360º video, and more.
+The NexPlayer™ plugin for Unity was developed in collaboration with the native NexPlayer™ SDK, and it has access to all of its features, e.g. Intelligent ABR, HTTP live streaming (HLS), DASH, progressive download, local playback, 360º video, and more.
 
 The plugin was built to be fast and reliable without sacrificing performance, and it has proven compatibility with international standards.
 
@@ -118,7 +118,7 @@ Use Case selection:
     
 * **MaterialOverride_Sample:** Video player using a Material Override component to display the video through a rotating cube.          
     
-* **MultipleRenderers_Sample:** Video player using different objects that share the Material renderer to display the same video multiple times. *Not supported on Windows.*
+* **MultipleRenderers_Sample:** Video player using different objects that share the Material renderer to display the same video multiple times.
     
 * **ChangeRenderMode_Sample:** Video player that changes the render mode to display a video in all the supported renderers. Displays one render mode at the same time.          
     
@@ -241,7 +241,7 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | AutoPlay | ✔   | ✔   |  ✔   |   ✔  |✔ | ✔ |
 | Loop | ✔   | ✔   |   ✔  |    ✔ |  |  |
 | Maximize Screen | ✔   | ✔   |✔     |   ✔  | ✔|  |
-| Change Aspect Ratio | ✔   | ✔   |     |     | ✔ |  |
+| Change Aspect Ratio | ✔   | ✔   |     |     |  |  |
 | Run in Background | ✔   | ✔   |    ✔ |   ✔  | |  |
 | Volume Control			| ✔   | ✔   | ✔   | ✔   | ✔ | ✔ |
 | Mute Volume | ✔   | ✔   |  ✔   |   ✔  | ✔ | ✔ |
@@ -260,8 +260,8 @@ The NexPlayer™ Plugin for Unity has the following requirements for the differe
 | Offline Playback | ✔   |    |     |     |  |
 | ID3 Metadata | ✔   |  ✔  |     |  ✔   |  |
 | Custom ID3 Tags | ✔   |  ✔  |     |   ✔  |  |
-| Multiple Streams (Up to 5) | ✔   |   ✔ |  ✔   |     |  |
-| Synchronized Multiple Streams | ✔   |  ✔  |     |     |  |
+| Multiple Streams (Up to 5) | ✔ |   ✔ |  ✔   |     |  |
+| Synchronized Multiple Streams | ✔ |  ✔  |     |     |  |
 
 | Graphics APIs | Android | iOS | Mac | Windows | WebGL | Nintendo Switch |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -471,6 +471,13 @@ Select and add UnitySharedDecls.h and UnityTrampolineCompatibility.h
 ![](images/image42.png)
 
 Finally, the Xcode project can be run and installed to an iOS device.
+
+### 5.3.3. Build iOS with Unity 2022 Xcode configuration
+
+Under Unity-iPhone  → “Frameworks, Libraries and Embedded Content”, you need to set all the frameworks in this section except "StoreKit.framework" to “Embed & Sign”:
+
+
+![](images/BuildIOS2022.png)
 
 ## 5.4. Windows Build Configuration
 
@@ -1725,7 +1732,7 @@ This shader can be created from the Unity Editor by following the next steps:
 
 # 22. Technical Support Information
 
-To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [support.madrid@nexplayer.com](mailto:supportmadrid@nexplayer.com)
+To get in contact with the NexPlayer™ Unity SDK Team to request any Technical Support or assistance send an email to [unity.support@nexplayer.com](mailto:supportmadrid@nexplayer.com)
 
 
 # 23. Legal Notes
