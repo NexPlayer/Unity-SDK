@@ -374,11 +374,13 @@ To create a new IPA file that includes the NexPlayer™ Plugin for Unity, the de
 
 To play videos from the network on iOS, the option Allow downloads over HTTP needs to be enabled.
 
-It is highly recommended to use the following configuration. Also, it is preferable to enable the Auto Graphics APIoption in versions of Unity that support OpenGL.
+It is highly recommended to use the following configuration. Also, it is preferable to enable the Auto Graphics API (AGA) option in versions of Unity that support OpenGL.
 
 This configuration can be set up by navigating to the following Unity section: File → Build Settings → Player Settings (iOS) → Other Settings
 
 ![](images/image46.png)
+
+Option for AGA has been removed from Unity iOS in 2020.2.x, in case you are using this or neewer versions you don't need to enable AGA.
 
 In order to the application work in background is necessary enable custom background behavior and select the property “Audio, AirPlay, PiP”:
 
