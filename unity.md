@@ -733,6 +733,10 @@ Playback control methods inherited from NexPlayerBehaviour:
 
 	This method ends all the work on the content currently open and terminates the SDK work. The content must be stopped before calling this method. The correct way to finish playing content is to either wait for the end of content or to call stop and wait for the stop operation to complete, then call close.
 
+- **public void ChangeVideoContent()**
+
+	This method closes the video content currently playing, and opens the new URL provided as a parameter.
+
 # 9. Events
 
 The NexPlayer™ SDK provides a list of virtual methods which begin with “Event”. These allow you to provide custom behaviour to answer any NexPlayerEvent.
