@@ -523,7 +523,7 @@ The NexPlayer™ Plugin for Unity supports Builds for WebGL applications.
 
 To build the application with Nexplayer’s Template it is required to select the template inside Unity.
 
-In the top bar go to NexPlayer → Build Configuration Window and select the nexplayer template as shown in the image below: 
+In the top bar go to NexPlayer → Build Configuration Window and import the WebGL templates and select the nexplayer template as shown in the image below: 
 
 ![](images/image4.png)
 
