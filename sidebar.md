@@ -1,5 +1,17 @@
-- [NexPlayer SDK for Android](/unity.md) 
+- [NexPlayer SDK for Unity](/introduction.md) 
+- Getting Started
+	- Setup Guide
+	- Closed Captions
+	- Track Selection
+	- Player Statistics
+	- Timed Metadata
+	- Low Latency
+	- NexPlayer Logs
+	- Error Codes
+- Advanced Usage
+	- [MultiView](/advanced/multiview.md) 
+	- Properties
+- [Releases](/releases.md)  
 **Links**
-- [<img src="https://nexplayer.github.io/Unity-SDK/assets/help.svg">Request Demo](https://nexplayersdk.com/android-player-sdk/)
-- [<img src="https://nexplayer.github.io/Unity-SDK/assets/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
-- [<img src="https://nexplayer.github.io/Unity-SDK/assets/code.svg">Other Platforms](https://nexplayer.github.io/)
+- [<img src="https://nexplayer.github.io/iOS-SDK/asset/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
+- [<img src="https://nexplayer.github.io/iOS-SDK/asset/code.svg">Other Platforms](https://nexplayer.github.io/)
