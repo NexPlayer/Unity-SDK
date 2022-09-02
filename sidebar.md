@@ -3,6 +3,7 @@
 	- [Windows](/platforms/windows.md)
 	- Mac
 	- Android
+		- Oculus
 	- iOS
 	- WebGL
 	- Nintendo Switch
@@ -11,7 +12,7 @@
 		- Hololens
 - [Getting Started](/basic/getting-started.md)
 	- [Setup Guide](/basic/set-up.md.md)
-	- Licensing
+	- [Licensing](/basic/licensing.md)
 	- Events
 	- Closed Captions
 	- Track Selection
