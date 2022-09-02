@@ -15,3 +15,8 @@ Wa du heck this method doing again... Adding keys called "Referer" to all player
 
 ##### AllPlayersAreReady()
 Change name to **AllPlayersArePlaying**
+
+##### CheckFailedMultiStreams()
+THIS IS RETURNING TRUE IF ANY OF THE STREAMS STATE == PAUSE
+
+WA DU HEEEEEECK

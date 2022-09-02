@@ -57,7 +57,7 @@ Returns the number of streams applied to the ***MultistreamController***.
 
 ##### MultiStreamSetProperties()
 Sets the specific properties such as ABR and SPD to multiview streams. You should set the value for this properties before calling this method, such as:  
-NexPlayerBehaviour.SynchronizationEnable = true;
+> NexPlayerBehaviour.SynchronizationEnable = true;
 
 ##### SetMuteMultiStreams(bool setMuted)
 Mute or unmute all multiview players.
@@ -65,7 +65,8 @@ Mute or unmute all multiview players.
 ##### MultiStreamHTTPHeaders(int playerIndex, string key, string value)
 Adds a HTTP header to the *playerIndex* player with *key* and *value*.
 
-
+##### SetMultiStreamsBitrate(int bitrate)
+This method allow setting the bitrate of all streams. Bitrate value should be in bits.
 
 ---
 ## Sample code for Multiview
@@ -133,7 +134,6 @@ protected override void InitControllers()
     }
 ```
 
-
 Then, lets override the **SetPreInitConfiguration** method, here you should set your playback settings, so this settings are applyed before the player is opened:
 
 ```csharp
@@ -146,6 +146,7 @@ protected override void SetPreInitConfiguration() {
     volume = 0.5f;
 }
 ```
+
 There are lots of functions for events you can override to do the custom actions you desire whenever one stream trigguers an event. You don't need to call the base."overridenEvent" for this functions.  
 Keep in mind there are 2 kinds of functions for events, the ones with a parameter wich indicates the player instance that triggered the event and another one for only 1 stream (without playerInstance parameter).
 
@@ -170,6 +171,7 @@ protected override void EventPlaybackStarted() {
 	Debug.Log("This event will never be trigguered when using multiview");
 }
 ```
+
 About the track change, there is a function to alternate which Multiview instance plays at the highest bitrate and which one(s) at the lowest.
 
 ```csharp
