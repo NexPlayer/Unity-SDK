@@ -1,6 +1,18 @@
 - [NexPlayer SDK for Unity](/introduction.md) 
-- Getting Started
-	- Setup Guide
+- [Platforms](/platforms/platforms.md)
+	- [Windows](/platforms/windows.md)
+	- Mac
+	- Android
+	- iOS
+	- WebGL
+	- Nintendo Switch
+	- UWP
+		- Xbox Series X/S
+		- Hololens
+- [Getting Started](/basic/getting-started.md)
+	- [Setup Guide](/basic/set-up.md.md)
+	- Licensing
+	- Events
 	- Closed Captions
 	- Track Selection
 	- Player Statistics
@@ -8,7 +20,7 @@
 	- Low Latency
 	- NexPlayer Logs
 	- Error Codes
-- Advanced Usage
+- [Advanced Usage](/advanced/advanced-usage.md)
 	- [MultiView](/advanced/multiview.md) 
 	- Properties
 - [Releases](/releases.md)  
