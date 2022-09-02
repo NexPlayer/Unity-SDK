@@ -1,4 +1,4 @@
-# NexPlayer SDK for iOS
+# NexPlayer SDK for Unity
 
 NexPlayer is the market leader player SDK for premium video apps. NexPlayer ensures the best video streaming quality across all devices with the most advanced features and 24/7 customer support. 
 
@@ -6,7 +6,7 @@ NexPlayer is the market leader player SDK for premium video apps. NexPlayer ensu
 
 #### Operating Systems
 
-- iOS 9 and above
+- Unity 2019 and above
 
 #### Video Delivery Formats
 
@@ -82,13 +82,6 @@ NexPlayer is the market leader player SDK for premium video apps. NexPlayer ensu
 - HTTP/2 Support
 - Cookie Manipulation 
 - Proxy Protection
-
-#### Integrations
-_Subject to additional and/or 3rd party licenses_
-
-- Ad Insertion 
-	- VAST
-	- VMAP
 
 ## Legal Notices
 
