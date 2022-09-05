@@ -8,47 +8,46 @@ NexPlayer is the market leader player SDK for premium video apps. NexPlayer ensu
 
 - Unity 2019 and above
 
+#### Platforms
+
+- Android
+ 	- Oculus
+- iOS
+- MacOS
+- Windows
+- WebGL
+- UWP (Universal Windows platforms)
+	- Xbox Series X/S
+	- Hololens
+- Nintendo Switch
+
 #### Video Delivery Formats
 
 - HLS
 - DASH
-- Microsoft Smooth Streaming
+- RTSP
+- Smooth Streaming
 - Progressive Download
 - Local Playback
 
 #### Video Codecs
 
-- H.263
 - H.264 (AVC)
 - H.265 (HEVC)
-- MPEG-4 
-- MPEG-2
+- WMV
+- VP8
 - VP9
 
 #### Audio Codecs
 
 - AAC-LC
-- HE AAC (ACC LC+SBR)
-- HE AAC v2 (AAC-LC+SBR+PS)
 - MP3
-- Dolby AC3
-- Dolby EC3
-- Dolby AC4
-- Dolby Atmos
-- Dolby AC3 (SW)
-- Dolby AC4 (SW)
 
 #### Subtitles
 
 - CEA-608
 - CEA-708
 - WebVTT
-- TTML
-- DXFP
-- Image based closed caption at TTML 
-- External subtitles (smi, srt, sub, dfxp) 
-- 3gpp Timed Text (3GPP file format)
-- EBU Timed text (EBU-TT)
 
 #### Content Protection
 
@@ -78,10 +77,6 @@ NexPlayer is the market leader player SDK for premium video apps. NexPlayer ensu
 - Advanced Playback Control
 - Advanced Statistics APIs
 - Advanced Logging Features
-- Controlling video/audio decoder
-- HTTP/2 Support
-- Cookie Manipulation 
-- Proxy Protection
 
 ## Legal Notices
 

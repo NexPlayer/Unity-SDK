@@ -1,4 +1,16 @@
 - [NexPlayer SDK for Unity](/introduction.md) 
+- [Getting Started](/basic/getting-started.md)
+	- [Setup Guide](/basic/set-up.md.md)
+	- [Quicks start guide](/basic/quickstart-guide.md)
+	- [Licensing](/basic/licensing.md)
+	- Events
+	- Closed Captions
+	- Track Selection
+	- Player Statistics
+	- Timed Metadata
+	- Low Latency
+	- NexPlayer Logs
+	- Error Codes
 - [Platforms](/platforms/platforms.md)
 	- [Windows](/platforms/windows.md)
 	- Mac
@@ -10,17 +22,6 @@
 	- UWP
 		- Xbox Series X/S
 		- Hololens
-- [Getting Started](/basic/getting-started.md)
-	- [Setup Guide](/basic/set-up.md.md)
-	- [Licensing](/basic/licensing.md)
-	- Events
-	- Closed Captions
-	- Track Selection
-	- Player Statistics
-	- Timed Metadata
-	- Low Latency
-	- NexPlayer Logs
-	- Error Codes
 - [Advanced Usage](/advanced/advanced-usage.md)
 	- [MultiView](/advanced/multiview.md) 
 	- Properties
