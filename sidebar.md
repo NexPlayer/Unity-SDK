@@ -1,31 +1,32 @@
-- [NexPlayer SDK for Unity](/introduction.md) 
+- [NexPlayer SDK for Unity](/introduction.md)
 - [Getting Started](/basic/getting-started.md)
 	- [Setup Guide](/basic/set-up.md.md)
 	- [Quicks start guide](/basic/quickstart-guide.md)
 	- [Licensing](/basic/licensing.md)
-	- Events
-	- Closed Captions
-	- Track Selection
-	- Player Statistics
-	- Timed Metadata
-	- Low Latency
-	- NexPlayer Logs
-	- Error Codes
+	- [Events](/basic/events.md)
+	- [Closed Captions](/basic/closed-captions.md)
+	- [Track Selection](/basic/track-selection.md)
+	- [Player Statistics](/basic/player-statistics.md)
+	- [Timed Metadata](/basic/timed-metadata.md)
+	- [Low Latency](/basic/low-lantecy.md)
+	- [NexPlayer Logs](/basic/logs.md)
+	- [Error Codes](/basic/error-codes.md)
 - [Platforms](/platforms/platforms.md)
 	- [Windows](/platforms/windows.md)
-	- Mac
-	- Android
-		- Oculus
-	- iOS
-	- WebGL
-	- Nintendo Switch
-	- UWP
-		- Xbox Series X/S
-		- Hololens
+	- [Mac](/platforms/mac.md)
+	- [Android](/platforms/android.md)
+		- [Oculus](/platforms/oculus.md)
+	- [iOS](/platforms/ios.md)
+	- [WebGL](/platforms/webgl.md)
+	- [Nintendo Switch](/platforms/nintendo.md)
+	- [UWP](/platforms/uwp.md)
+		- [Xbox Series X/S](/platforms/xbox.md)
+		- [Hololens](/platforms/hololens.md)
 - [Advanced Usage](/advanced/advanced-usage.md)
-	- [MultiView](/advanced/multiview.md) 
-	- Properties
-- [Releases](/releases.md)  
+ 	- Properties
+	- [MultiView](/advanced/multiview.md)
+- [Releases](/releases.md)
+- [FAQ](/faq.md)  
 **Links**
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/code.svg">Other Platforms](https://nexplayer.github.io/)

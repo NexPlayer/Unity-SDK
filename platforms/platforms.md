@@ -8,23 +8,23 @@ You can refer to below integration guides to setup your project on the desired p
 	**Minimum Memory**: 8GB RAM.  
 	**Minimum GPU**: NVIDIA GeForce 840M 2GB.  
 	**Supported Graphics APIs**: Direct3D11.  
-- Mac  
+- [Mac](/platforms/mac.md)  
 	**Minimum OS**: macOS Catalina (version 10.15).  
 	**Supported Graphics APIs**: Metal.  
 	**Supported CPU**: Intel 64-bit and Apple Silicon M1 (only Unity ver. 2020 and above).  
-- Android  
-	- Oculus  
+- [Android](/platforms/android.md). 
+	- [Oculus](/platforms/oculus.md)  
 	**Minimum API level**: 19 (Android 4.4 KitKat).  
 	**Minimum API level for VR features**: 21 (Android 5 Lollipop).  
 	**Supported Graphics APIs**: OpenGL ES  3.0 and OpenGL ES 2.0.  
-- iOS  
+- [iOS](/platforms/ios.md)  
 	**Minimum API level**: iOS 11.0.  
 	**Minimum API level for VR features**: iOS 11.0.  
 	**Supported Graphics APIs**: OpenGL.  
-- WebGL  
+- [WebGL](/platforms/webgl.md)  
 	**Minimum browsers version**: Google Chrome 75, Mozilla Firefox 67, Opera 12, Microsoft Edge 18 and Apple Safari 12.1.
-- Nintendo Switch  
+- [Nintendo Switch](/platforms/nintendo.md)  
 	**Minimum API**: Nintendo SDK version 14.3.0.
-- UWP
-	- Xbox Series X/S
-	- Hololens
+- [UWP](/platforms/uwp.md)
+	- [Xbox Series X/S](/platforms/xbox.md)
+	- [Hololens](/platforms/hololens.md)

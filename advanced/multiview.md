@@ -1,5 +1,9 @@
 # MultiView
 
+***This is a premium feature***
+
+Multiview is only supported on iOS.
+
 NexPlayer MultiView feature provides a way to reproduce up to 8 simultaneous streams on the same scene. This streams might use the same properties as the ones abailables for single stream.
 
 ---

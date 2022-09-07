@@ -1,5 +1,5 @@
 # Licensing
-This feature is currently only operational on **Android Platform**.
+This feature is currently only operational on **Android & iOS Platforms**.
 
 A remote licensing system provides streaming service for users that are under a license registered by NexPlayer. In order to authorize playback, please enter the license key which was provided to you in the License Key field shown below:
 

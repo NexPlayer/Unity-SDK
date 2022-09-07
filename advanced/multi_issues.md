@@ -1,3 +1,5 @@
+When you set the property debuglogs to true -> crash on Android
+
 Methods to remove or change from MultistreamController.
 
 ##### SetMultiStreamPlayersVisible
