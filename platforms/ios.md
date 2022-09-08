@@ -100,7 +100,7 @@ To display HTTP videos in iOS, the option **Allow downloads over HTTP** needs to
 It is preferable to enable the **Auto Graphics API** (AGA) option in versions of Unity that support OpenGL. 
 
 These configurations can be set in the following Unity section:
-**File → Build Settings → Player Settings (Android) → Other Settings**
+**File → Build Settings → Player Settings (iOS) → Other Settings**
 
 *Recommended configuration*  
 ![](../assets/platforms/ios0.png)
