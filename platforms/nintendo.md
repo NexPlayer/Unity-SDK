@@ -55,6 +55,7 @@ The NexPlayer requires the following build configuration for Unity to run on any
 In the Other Settings tab of the Player Settings, it’s necessary to set the Initialize Sockets option :
 
 **Initialize Sockets: Active.**
+
 ![](../assets/platforms/nin1.png)
 
 Alternatively, the Socket Initialization can be done from code, but it’s necessary to initialize the socket before the video player is created. NexPlayer doesn’t finalize the socket internally during termination to give more flexibility. Remember to finalize the socket after closing the video player and before closing your application.
