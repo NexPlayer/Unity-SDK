@@ -55,7 +55,7 @@ The NexPlayer requires the following build configuration for Unity to run on any
 In the Other Settings tab of the Player Settings, it’s necessary to set the Initialize Sockets option :
 
 **Initialize Sockets: Active.**
-![](../assets/platforms/image78.png)
+![](../assets/platforms/nin1.png)
 
 Alternatively, the Socket Initialization can be done from code, but it’s necessary to initialize the socket before the video player is created. NexPlayer doesn’t finalize the socket internally during termination to give more flexibility. Remember to finalize the socket after closing the video player and before closing your application.
 
@@ -63,7 +63,7 @@ Alternatively, the Socket Initialization can be done from code, but it’s neces
 In the Publishing Settings tab of the Player Settings, please remove the following unnecessary values to the Dependent Libraries option:
 
 **Dependent Libraries: glslc.nso;multimedia.nso;**
-![](../assets/platforms/image79.png)
+![](../assets/platforms/nin2.png)
 
 It’s possible to apply this build configuration automatically by selecting NexPlayer Build Configuration in the NexPlayer tab at the Unity Menu: **NexPlayer → Build Configuration Nintendo Switch**
 

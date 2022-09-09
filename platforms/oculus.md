@@ -6,13 +6,13 @@ The NexPlayer™ Plugin for Unity supports Builds for Android in Oculust devices
 To build application in oculust is required to use XR Plugin
 
 Go to Project settings → XR Plugin Management and click the button **Install XR Plugin Management**.
-![](../assets/platforms/image80.png)
+![](../assets/platforms/ocu1.png)
 
 Go to the Android section and select Oculus as Plugin Provider.
-![](../assets/platforms/image81.png)
+![](../assets/platforms/ocu2.png)
 
 Now that the Oculus plugin is in place, use the ContextMenu Actions to generate an XR Rig. GameObject → XR → Covert Main Camera to XR Rig.
-![](../assets/platforms/image82.png)
+![](../assets/platforms/ocu3.png)
 
 In order to use more Oculus functionality, there is a free Unity package in the Asset Store called Oculus Integration with utilities like 3D controllers.
 
