@@ -8,7 +8,7 @@
 #### Media Source
 - Streams (*External URL*)
 	- HLS (.m3u8)
-	- DASH (.mpd)		º
+	- DASH (.mpd)		
 
 #### Rendering Mode  
 - RawImage (*Unity UI*)	
