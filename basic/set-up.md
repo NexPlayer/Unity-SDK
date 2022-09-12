@@ -17,6 +17,8 @@ The NexPlayer™ package supports Unity versions from 2019 upwards.
 
 ## Updating the SDK
 
+### Updating the Package from SDK version 2.1.4 or higher.
+
 To update the current Unity Package search in the top toolbar “NexPlayer / Import Tool” and select “Update Package”, a contextual window will appear to select the new unity package to import.  
 The tool does not remove any custom files allocated on NexPlayer or WebGLTemplates.
 
