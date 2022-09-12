@@ -1,8 +1,8 @@
-# Closed captions
+# Closed Captions
 
 The NexPlayer™ SDK supports retrieval, selection and display of closed captions configured in any DASH and HLS manifest. For example, to change the captions from English to Spanish and display them. This functionality is only supported in Android and iOS devices.
 
-# NexPlayer API for closed captions
+## NexPlayer API for closed captions
 
 #### Closed captions variables inherited from NexPlayerBehaviour:
 
@@ -42,7 +42,7 @@ Clear all the widevine headers and keys.
 Changes the value assigned to the given key to the given value. Returns true if the key is found and successfully set.
 
 
-# Sample code for playing Widevine content:
+## Sample code for playing Widevine content:
 
 Similar to the audio tracks, in order to control which closed caption track will be outputted by the player, it is necessary to declare a variable of type NexPlayerCaptionStream to store the information extracted from the manifest. This information is retrieved after the event EventPlaybackStarted. Also, create a public method for setting the desired closed caption track:
 

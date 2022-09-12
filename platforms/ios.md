@@ -30,6 +30,9 @@
 - Volume Control
 - Mute volume
 - Change Audio Language
+- Speed Control
+- Pitch Control
+- Audio Selection Control
 
 #### Video Playback Control
 - Start Player

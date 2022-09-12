@@ -2,7 +2,7 @@
 
 The NexPlayer™ SDK provides the functionality to retrieve and select the Audio Tracks configured in any DASH and HLS manifest. For example, to output and change the audio from English to Spanish. This functionality is only supported in Android and iOS devices.
 
-# NexPlayer API for audio tracks
+## NexPlayer API for audio tracks
 
 #### Audio track variables inherited from NexPlayerBehaviour:
 
@@ -21,7 +21,7 @@ Returns an array of all the possible audio tracks or null if the platform doesn'
 **public virtual void SetAudioStream(NexPlayerAudioStream audioStream)**
 Sets a track to be used during the video playback. The list of possible audio tracks can be obtained with the method GetAudioStreams.
 
-# Sample code for audio tracks
+## Sample code for audio tracks
 
 In order to control which audio track is playing and change it in your custom player, the first step is to create a variable to save all the audio tracks extracted from the manifest. In order to be sure that the manifest has been read, you should override the virtual function EventPlaybackStarted:
 

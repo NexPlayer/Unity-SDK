@@ -6,7 +6,7 @@ Synchronization is only supported on iOS and Android.
 
 NexPlayer synchronization technology allows you to sync the video arrival and stream video synchronously across different devices using the DASH SPD value. This is also possible for HLS streams by controlling the SPD value from the client-side.
 
-# NexPlayer API for synchronization
+## NexPlayer API for synchronization
 
 #### Synchronization variables inherited from NexPlayerBehavior:
 
@@ -34,7 +34,7 @@ Clear all the widevine headers and keys.
 Changes the value assigned to the given key to the given value. Returns true if the key is found and successfully set.
 
 
-# Sample code for playing Widevine content:
+## Sample code for playing Widevine content:
 
 Synchronization technology (SPD) is meant to be used with live streaming content only. After setting a live content URL just set the synchronization variables inherited from NexPlayerBehaviour, and synchronization technology will automatically be triggered. The variables must be set prior to the player initialization, so use the method SetPreInitConfiguration to do so:
 

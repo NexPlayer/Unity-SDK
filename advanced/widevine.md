@@ -6,7 +6,7 @@ WideVine is only supported on iOS and Android.
 
 NexPlayer provides the integration for Widevine encrypted content right out of the box, by inheriting from NexPlayerBehaviour.
 
-# NexPlayer API for Widevine
+## NexPlayer API for Widevine
 
 #### Widevine variables inherited from NexPlayerBehaviour:
 
@@ -28,7 +28,7 @@ Clear all the widevine headers and keys.
 Changes the value assigned to the given key to the given value. Returns true if the key is found and successfully set.
 
 
-# Sample code for playing Widevine content:
+## Sample code for playing Widevine content:
 
 All widevine settings must be set before opening the player, NexPlayer provides the virtual method SetPreInitConfiguration() to do so:
 
