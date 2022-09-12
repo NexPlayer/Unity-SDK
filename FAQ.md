@@ -2,22 +2,28 @@
 
 **Question:** Why is the player crashing when deploying on iOS with an “EXC_BAD_ACCESS” error on Xcode?
 **Answer:** Xcode debugging is not supported while opening Widevine content. To prevent it, you can either unplug the device from the mac or stop the app on Xcode and open it manually on the iOS device.
+
 ![](../assets/basic/fqa1.png)
 
 **Question:** How do I solve the problem below when building my project in iOS?
 **Answer:** When you build your iOS project in the Unity Editor, create a new Xcode project, or if you want to overwrite your old project, check the ‘Enable replace’ checkbox and then select the option ‘Replace’
+
 ![](../assets/basic/fqa2.png)
+
 ![](../assets/basic/fqa3.png)
+
 ![](../assets/basic/fqa4.png)
 
 **Question:** Why is the video not working on the Windows Unity Editor?
 **Answer:** This occurs when the Unity Editor platform is not specified in the  
 Windows NexPlayer DLL. It should be specified as shown in the Answer Image. If you do not have the Windows NexPlayer DLL, you need to re-import the package and check if the dll exists
+
 ![](../assets/basic/fqa5.png)
 
 **Question:** Why can’t I play DRM content when I build my app on Android?
 **Answer:** To allow any remote video on Android, the option ‘Internet Access’ 
 needs to be set to ‘Require’ in the Unity player settings and the option ‘Write Permission’ should be set to External (SD Card). This configuration is needed to save the DRM certification data on the Android SDCard
+
 ![](../assets/basic/fqa6.png)
 
 **Question:** Does the player support Widevine Auto License Renewal? How does it work?
@@ -28,6 +34,7 @@ needs to be set to ‘Require’ in the Unity player settings and the option ‘
 
 **Question:** Why can’t I see the stream displayed on an Android device when I build a project with Unity 2019?
 **Answer:** Review the configuration of the graphics APIs in the Project Settings. Unity sets Vulkan as the main graphics API by default. To use the NexPlayer™ Unity Plugin, you must select OpenGL ES3 as the main graphics API. Change the order or delete the Vulkan API option to solve this issue
+
 ![](../assets/FQA/fqa7.png)
 
 **Question:** Does the NexPlayer™ Unity Plugin support license files to verify the app ID?
@@ -35,7 +42,9 @@ needs to be set to ‘Require’ in the Unity player settings and the option ‘
 
 **Question:** I have the error shown in the Question Image I can’t run the app
 **Answer:** There are missing compilation tools on the version of Visual Studio that you are using. Please restore or reinstall Visual Studio to solve this issue. Additionally, you may need to add C++ gaming components to your Visual Studio installation components.
+
 ![](../assets/basic/fqa8.png)
+
 ![](../assets/basic/fqa9.png)
 
 **Question:** Why is the editor crashing on Windows whenever I hit “Play”?
@@ -46,23 +55,30 @@ If this does not solve your problem, please check if your PC meets the system re
 
 **Question:** Why does my WebGL build throw the error shown in the Question Image?
 **Answer:** Unity’s connection to your browser can sometimes fail. The best procedure in this case is rebuilding your application. Make sure to close the error tab and delete the previous build folder to avoid more fails and problems
+
 ![](../assets/basic/fqa10.png)
 
 **Question:** My video frames on Firefox are flickering. How can I fix this?
 **Answer:** This problem is due to Firefox’s settings. You need to disable them in order to fix it.
 First, you need to open the options tab on your browser.
 Then, go to General → Performance and disable “Use recommended performance settings” and “Use hardware acceleration when available”. Don’t forget to close Firefox to apply these settings.
+
 ![](../assets/basic/fqa11.png)
+
 ![](../assets/basic/fqa12.png)
 
 **Question:** I've built the app in WebGL and I have the error shown in the Question Image. Which is the mistake?
 **Answer:** When using Unity 2020.2 or higher, Unity is able to catch Arithmetic exceptions. These exceptions will stop the execution. To get rid of them go to Project Settings→Player→Publishing Settings and set the WebAssembly to Ignore as shown in the answer image.
+
 ![](../assets/basic/fqa13.png)
+
 ![](../assets/basic/fqa14.png)
 
 **Question:** I've built the app in WebGL with Autoplay and it doesn’t start. The browser throws the warning in the Question Image. Which is the mistake?
 **Answer:** Due to browser policies, in order to video autoplay the volume must be set to 0 as shown in the answer image. Mute is not needed.
+
 ![](../assets/basic/fqa15.png)
+
 ![](../assets/basic/fqa16.png)
 
 **Question:** I've built the app in WebGL and I receive many error messages saying “X is not defined”. How can I fix this?
@@ -71,6 +87,7 @@ Then, go to General → Performance and disable “Use recommended performance s
 **Question:** When importing the package on macOS, the pop-up shown in the Question Image shows up. How can I fix this?
 **Answer:** This is caused by macOS failing to verify the package. To resolve it, press 'Cancel' (as many times as the pop-up appears) and then press the Unity Editor Play button to stop the execution. Then, execute the shell script located at /Packages/NexPlayerSDK/NexPlayer/Scripts/SDK/Utility/repair_macos_bundle.sh. You can do so by opening a terminal at that path and running the following command:
 sh repair_macos_bundle.sh
+
 ![](../assets/basic/fqa17.png)
 
 **Question:** The video texture looks brighter or darker than the source video. How can I fix it?
