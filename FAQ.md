@@ -92,4 +92,3 @@ This shader can be created from the Unity Editor by following the next steps:
 
 5. Select the new Material and associate the new shader to it. The new shader must be in the section Unlit of the dropdown.
 
-
