@@ -1,5 +1,6 @@
 - [NexPlayer SDK for Unity](/introduction.md)
 - [Getting Started](/basic/getting-started.md)
+- [FAQ](/FAQ.md)  
 	- [Setup Guide](/basic/set-up.md.md)
 	- [Quicks start guide](/basic/quickstart-guide.md)
 	- [Licensing](/basic/licensing.md)
@@ -26,7 +27,6 @@
  	- Properties
 	- [MultiView](/advanced/multiview.md)
 - [Releases](/releases.md)
-- [FAQ](/faq.md)  
 **Links**
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/code.svg">Other Platforms](https://nexplayer.github.io/)
