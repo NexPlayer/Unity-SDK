@@ -39,6 +39,7 @@
 - [Player information](/releases.md)
 - [Releases](/releases.md)
 - [Technical support information](/technical-support-information.md)
+
 **Links**
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/code.svg">Other Platforms](https://nexplayer.github.io/)
