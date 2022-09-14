@@ -25,7 +25,6 @@
 	- [Xbox Series X/S](/platforms/xbox.md)
 	- [Hololens](/platforms/hololens.md)
 - [Advanced Usage](/advanced/advanced-usage.md)
- 	- Properties
 	- [Advanced usage](/advanced/advance-usage.md)
 	- [Audio Track](/advanced/audio-track.md)
 	- [Closed captions](/advanced/closed-captions.md)
