@@ -64,7 +64,8 @@ Alternatively, the Socket Initialization can be done from code, but it’s neces
 In the Publishing Settings tab of the Player Settings, please remove the following unnecessary values to the Dependent Libraries option:
 
 **Dependent Libraries: glslc.nso;multimedia.nso;**
-![](../assets/platforms/nin2.png)
+
+![](../assets/platforms/nin2.PNG)
 
 It’s possible to apply this build configuration automatically by selecting NexPlayer Build Configuration in the NexPlayer tab at the Unity Menu: **NexPlayer → Build Configuration Nintendo Switch**
 
