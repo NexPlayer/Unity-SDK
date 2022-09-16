@@ -25,8 +25,8 @@
 	- [Xbox Series X/S](/platforms/xbox.md)
 	- [Hololens](/platforms/hololens.md)
 - [Advanced Usage](/advanced/advanced-usage.md)
-	- [Advanced usage](/advanced/advance-usage.md)
-	- [Audio Track](/advanced/audio-track.md)
+	- [Advanced usage](/advanced/advanced-usage.md)
+	- [Audio Track](/advanced/audio-tracks.md)
 	- [Closed captions](/advanced/closed-captions.md)
 	- [Migrating from previous releases](/advanced/migrating-from-previous-releases.md)
 	- [Reduce the build file size](/advanced/reduce-the-build-file-size.md)
@@ -38,7 +38,7 @@
 - [Legal notes](/legal-notes.md)
 - [Player information](/releases.md)
 - [Releases](/releases.md)
-- [Technical support information](/technical-support-information.md)
+- [Technical support information](/technical support information.md)
 
 **Links**
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
