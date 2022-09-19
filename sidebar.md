@@ -33,11 +33,9 @@
 	- [Synchronization](/advanced/synchronization.md)
 	- [Widevine](/advanced/widevine.md)
 	- [MultiView](/advanced/multiview.md)
-- [Releases](/releases.md)
 - [Introduction](/introduction.md)
 - [Legal notes](/legal-notes.md)
 - [Player information](/releases.md)
-- [Releases](/releases.md)
 - [Technical support information](/technical-support-information.md)
 
 **Links**
