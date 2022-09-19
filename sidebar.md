@@ -26,7 +26,7 @@
 	- [Hololens](/platforms/hololens.md)
 - [Advanced Usage](/advanced/advanced-usage.md)
 	- [Advanced usage](/advanced/advanced-usage.md)
-	- [Audio Track](/advanced/audio-tracks.md)
+	- [Audio Track](/advanced/audio-track.md)
 	- [Closed captions](/advanced/closed-captions.md)
 	- [Migrating from previous releases](/advanced/migrating-from-previous-releases.md)
 	- [Reduce the build file size](/advanced/reduce-the-build-file-size.md)
