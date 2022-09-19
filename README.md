@@ -14,7 +14,7 @@ Feel free to contact us to request a demo
 
 * support@nexplayer.com
 
-## NexPlayer SDK for Android Release Notes
+## NexPlayer SDK for Unity Release Notes
 
 ### Version 2.3.2
 - [Unity]
