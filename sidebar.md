@@ -1,6 +1,5 @@
 - [NexPlayer SDK for Unity](/introduction.md)
 - [Getting Started](/basic/getting-started.md)
-- [FAQ](/FAQ/FAQ.md)  
 	- [Setup Guide](/basic/set-up.md.md)
 	- [Quicks start guide](/basic/quickstart-guide.md)
 	- [Licensing](/basic/licensing.md)
@@ -34,8 +33,8 @@
 	- [Widevine](/advanced/widevine.md)
 	- [MultiView](/advanced/multiview.md)
 - [Introduction](/introduction.md)
+- [FAQ](/FAQ/FAQ.md)  
 - [Legal notes](/legal-notes.md)
-- [Player information](/releases.md)
 - [Technical support information](/technical-support-information.md)
 
 **Links**
