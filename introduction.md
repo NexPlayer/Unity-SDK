@@ -25,7 +25,6 @@ NexPlayer™ plugin for Unity is a cross-platform video streaming player for Uni
 
 - HLS
 - DASH
-- RTSP
 - Smooth Streaming
 - Progressive Download
 - Local Playback
