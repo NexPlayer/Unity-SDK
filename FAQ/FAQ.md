@@ -16,7 +16,7 @@
 
 **Question:** Why is the video not working on the Windows Unity Editor?
 **Answer:** This occurs when the Unity Editor platform is not specified in the  
-Windows NexPlayer DLL. It should be specified as shown in the Answer Image. If you do not have the Windows NexPlayer DLL, you need to re-import the package and check if the dll exists
+Windows NexPlayer™ DLL. It should be specified as shown in the Answer Image. If you do not have the Windows NexPlayer™ DLL, you need to re-import the package and check if the dll exists
 
 ![](../assets/FAQ/fqa5.png)
 

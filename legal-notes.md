@@ -8,5 +8,5 @@ This product is designed for general purposes, and accordingly the customer is r
 
 Copyright for all documents, drawings, and programs related to this specification are owned by NexStreaming Europe SL. No part of the specification shall be reproduced or distributed without prior written approval by NexStreaming Europe SL. Content and configuration of any and all parts of the specification shall not be modified nor distributed without prior written approval by NexStreaming Europe SL.
 						
-© Copyright 2010-2022 NexPlayer SDK S.L. All rights reserved.
+© Copyright 2010-2022 NexPlayer™ SDK S.L. All rights reserved.
 

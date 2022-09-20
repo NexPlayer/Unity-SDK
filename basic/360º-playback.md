@@ -1,6 +1,6 @@
 # 360º Playback
 
-NexPlayer has support for 360º video. This feature doesn’t require any specific API or code, it’s done entirely on the Unity Editor. 
+NexPlayer™ has support for 360º video. This feature doesn’t require any specific API or code, it’s done entirely on the Unity Editor. 
 
 ## Scene setup
 

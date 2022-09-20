@@ -2,7 +2,7 @@
 
 The NexPlayer™ SDK provides an API that can be called to control the playback of the player.
 
-## NexPlayer API for Playback control
+## NexPlayer™ API for Playback control
 
 Playback control methods inherited from NexPlayerBehaviour:
 

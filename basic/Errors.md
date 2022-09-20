@@ -12,7 +12,7 @@ The SDK License is expired.
 
 **protected virtual void ErrorNotActivateAppID()**
 Method triggered by the NexErrorCode PLAYER_ERROR_NOT_ACTIVATED_APP_ID.
-The current app ID is not activated for the NexPlayer SD. If you encounter this error, please contact NexPlayer to license your app ID (see the section Technical Support Information).
+The current app ID is not activated for the NexPlayer™ SD. If you encounter this error, please contact NexPlayer™ to license your app ID (see the section Technical Support Information).
 
 **protected virtual void ErrorNetwork()**
 Method triggered by the NexErrorCode ERROR_NETWORK_PROTOCOL.
@@ -28,15 +28,15 @@ The subtitles for the video are either invalid or in an unsupported format.
 
 **protected virtual void ErrorInvalidSDK()**
 Method triggered by the NexErrorCode PLAYER_ERROR_INVALID_SDK.
-NexPlayer initialization failed because of an invalid SDK. Error while creating or initializing NexPlayer
+NexPlayer™ initialization failed because of an invalid SDK. Error while creating or initializing NexPlayer
 
 **protected virtual void ErrorInit()**
 Method triggered by the NexErrorCode PLAYER_ERROR_INIT.
-NexPlayer initialization failed. Error while creating or initializing NexPlayer.
+NexPlayer™ initialization failed. Error while creating or initializing NexPlayer.
 
 **protected virtual void ErrorNoLicenseFile()**
 Method triggered by the NexErrorCode PLAYER_ERROR_NO_LICENSE_FILE.
-NexPlayer initialization failed because the License File is missing.
+NexPlayer™ initialization failed because the License File is missing.
 
 **protected virtual void ErrorSrcNotFound()**
 Method triggered by the NexErrorCode NEXPLAYER_ERROR_SRC_NOT_FOUND.
@@ -65,7 +65,7 @@ The error code received was not handled in Error(NexErrorCode error). This metho
 
 ## Sample code for Errors
 
-The following sample code shows how to override inherited virtual methods to respond to any NexPlayer error code:
+The following sample code shows how to override inherited virtual methods to respond to any NexPlayer™ error code:
 
 ```csharp
 public class NexPlayerSimple : NexPlayerBehaviour

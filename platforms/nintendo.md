@@ -50,7 +50,7 @@
 
 ---
 ## Build Configuration
-The NexPlayer requires the following build configuration for Unity to run on any Nintendo Switch device. To modify the build configuration, select from the Unity Menu File → Build Settings... and inside the Build Settings tab, select Player Settings…
+The NexPlayer™ requires the following build configuration for Unity to run on any Nintendo Switch device. To modify the build configuration, select from the Unity Menu File → Build Settings... and inside the Build Settings tab, select Player Settings…
 
 In the Other Settings tab of the Player Settings, it’s necessary to set the Initialize Sockets option :
 
@@ -58,16 +58,16 @@ In the Other Settings tab of the Player Settings, it’s necessary to set the In
 
 ![](../assets/platforms/nin1.png)
 
-Alternatively, the Socket Initialization can be done from code, but it’s necessary to initialize the socket before the video player is created. NexPlayer doesn’t finalize the socket internally during termination to give more flexibility. Remember to finalize the socket after closing the video player and before closing your application.
+Alternatively, the Socket Initialization can be done from code, but it’s necessary to initialize the socket before the video player is created. NexPlayer™ doesn’t finalize the socket internally during termination to give more flexibility. Remember to finalize the socket after closing the video player and before closing your application.
 
-**Update for Nexplayer version 1.2.6.0 and above : **         
+**Update for NexPlayer™ version 1.2.6.0 and above : **         
 In the Publishing Settings tab of the Player Settings, please remove the following unnecessary values to the Dependent Libraries option:
 
 **Dependent Libraries: glslc.nso;multimedia.nso;**
 
 ![](../assets/platforms/nin2.PNG)
 
-It’s possible to apply this build configuration automatically by selecting NexPlayer Build Configuration in the NexPlayer tab at the Unity Menu: **NexPlayer → Build Configuration Nintendo Switch**
+It’s possible to apply this build configuration automatically by selecting NexPlayer™ Build Configuration in the NexPlayer™ tab at the Unity Menu: **NexPlayer™ → Build Configuration Nintendo Switch**
 
 Before building a new application on Unity, it’s important to check if there’s already another application running on the Nintendo Switch device.
 

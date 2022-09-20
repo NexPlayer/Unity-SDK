@@ -98,7 +98,7 @@ This event is triggered when an internal error occurs. The base implementation o
 
 ## Sample code for Events
 
-The following sample code shows how to override inherited virtual methods to respond to any NexPlayer event:
+The following sample code shows how to override inherited virtual methods to respond to any NexPlayer™ event:
 
 ```csharp
 public class NexPlayerSimple : NexPlayerBehaviour
@@ -112,4 +112,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
 }
 
 ```
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).

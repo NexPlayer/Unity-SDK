@@ -4,10 +4,10 @@
 
 Multiview is only supported on iOS.
 
-NexPlayer MultiView feature provides a way to reproduce up to 8 simultaneous streams on the same scene. This streams might use the same properties as the ones abailables for single stream.
+NexPlayer™ MultiView feature provides a way to reproduce up to 8 simultaneous streams on the same scene. This streams might use the same properties as the ones abailables for single stream.
 
 ---
-## NexPlayer API for Multiview
+## NexPlayer™ API for Multiview
 
 When using multiview on your project you should use the ***MultistreamController*** field provided by **NexPlayerBehaviour**.
 
@@ -219,4 +219,4 @@ public void setPitchAllPlayers(int value) {
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultiview.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerMultiview.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).

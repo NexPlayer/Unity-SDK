@@ -2,7 +2,7 @@
 
 The NexPlayer™ SDK provides the functionality to retrieve and select the Audio Tracks configured in any DASH and HLS manifest. For example, to output and change the audio from English to Spanish. This functionality is only supported in Android and iOS devices.
 
-## NexPlayer API for audio tracks
+## NexPlayer™ API for audio tracks
 
 #### Audio track variables inherited from NexPlayerBehaviour:
 
@@ -57,4 +57,4 @@ public void SetAudioStream(int index)
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerMultipleLanguages.cs (in Finder: 
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerMultipleLanguages.cs (in Finder: 

@@ -1,6 +1,6 @@
 <img width="70%" text-align="center" src="./assets/logo.png" alt="NexPlayer" >
 
-# NexPlayer SDK for Unity
+# NexPlayer™ SDK for Unity
 
 You can check our full documentation here:
 

@@ -1,8 +1,8 @@
 # Basic Playback
 
-NexPlayer plays non-DRM (HLS, DASH or MP4) content by simply providing a valid URL and configuring the rendering.
+NexPlayer™ plays non-DRM (HLS, DASH or MP4) content by simply providing a valid URL and configuring the rendering.
 
-## NexPlayer API for Basic Playback
+## NexPlayer™ API for Basic Playback
 
 Basic variables inherited from NexPlayerBehavior:
 
@@ -84,4 +84,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
   }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Render Mode” region.
+You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Render Mode” region.

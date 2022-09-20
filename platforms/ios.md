@@ -119,7 +119,7 @@ This also can be set up by using the NexPlayer’s Build Configuration Window, a
 
 ![](../assets/platforms/ios2.png)
 
-After importing the NexPlayer Unity package, some iOS frameworks have to be correctly set. Go to Packages → NexPlayer SDK → NexPlayer → Plugins → iOS.
+After importing the NexPlayer™ Unity package, some iOS frameworks have to be correctly set. Go to Packages → NexPlayer™ SDK → NexPlayer™ → Plugins → iOS.
 
 First, select **NexPlayer.framework, widevine_cdm_secured_ios.framework,** and **WidevineIntegration.framework** and check the “iOS” and “Add to Embedded Binaries” checkboxes, as shown below, and then click on “Apply”. 
 
@@ -146,6 +146,6 @@ Remove **armv7** Architecture from **Unity-iPhone**, **Unity-iPhone Tests** and 
 
 ![](../assets/platforms/ios5.png)
 
-Finally, delete the NexPlayer Frameworks from the Embed Frameworks section of the **UnityFramework’s target located in the Build Phases tab**:
+Finally, delete the NexPlayer™ Frameworks from the Embed Frameworks section of the **UnityFramework’s target located in the Build Phases tab**:
 
 ![](../assets/platforms/ios6.png)

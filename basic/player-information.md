@@ -1,6 +1,6 @@
 # Player Information
 
-## NexPlayer API for player information
+## NexPlayer™ API for player information
 
 Player information methods inherited from NexPlayerBehaviour:
 

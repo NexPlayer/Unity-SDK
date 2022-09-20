@@ -7,7 +7,7 @@ The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Packa
 *SDK package content*  
 ![](../assets/basic/setup0.png)
 
-The NexPlayer package is composed by 3 different packages:  
+The NexPlayer™ package is composed by 3 different packages:  
 
 - **NxPlayerSDK** that is mandatory to import to use NexPlayer.  
 - **NxPlayerfullfeatsample**, which contains different samples in order to know the possibilities of NexPlayer.  
@@ -20,7 +20,7 @@ The NexPlayer™ package supports Unity versions from 2019 upwards.
 ### Updating the Package from SDK version 2.1.4 or higher.
 
 To update the current Unity Package search in the top toolbar “NexPlayer / Import Tool” and select “Update Package”, a contextual window will appear to select the new unity package to import.  
-The tool does not remove any custom files allocated on NexPlayer or WebGLTemplates.
+The tool does not remove any custom files allocated on NexPlayer™ or WebGLTemplates.
 
 ![](../assets/basic/setup1.png)
 
