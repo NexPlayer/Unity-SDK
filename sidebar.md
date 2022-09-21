@@ -7,7 +7,6 @@
 	- [Playback control](/basic/playback-control.md)
 	- [Getting started](/basic/getting-started.md)
 	- [NexPlayer Logs](/basic/nexplayer-logs.md)
-	- [Events](/basic/events.md)
 	- [Error Codes](/basic/error.md)
 	- [Event Codes](/basic/events.md)
 	- [Player information](/basic/player-information.md)
