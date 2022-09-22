@@ -1,6 +1,6 @@
 # WideVine
 
-***This is a premium feature***
+This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
 
 WideVine is only supported on iOS and Android.
 
