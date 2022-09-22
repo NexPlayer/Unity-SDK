@@ -1,12 +1,10 @@
 # Synchronization
 
-***This is a premium feature***
+This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
 
 Synchronization is only supported on iOS and Android.
 
 NexPlayer™ synchronization technology allows you to sync the video arrival and stream video synchronously across different devices using the DASH SPD value. This is also possible for HLS streams by controlling the SPD value from the client-side.
-
-This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
 
 ## NexPlayer™ API for synchronization
 

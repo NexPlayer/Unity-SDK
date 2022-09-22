@@ -1,10 +1,8 @@
 # MultiView
 
-Multiview is only supported on iOS.
+This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
 
 NexPlayer™ MultiView feature provides a way to reproduce up to 8 simultaneous streams on the same scene. This streams might use the same properties as the ones abailables for single stream.
-
-This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
 
 ---
 ## NexPlayer™ API for Multiview
