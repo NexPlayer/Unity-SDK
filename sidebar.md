@@ -2,7 +2,6 @@
 - [Getting Started](/basic/getting-started.md)
 	- [Setup Guide](/basic/set-up.md.md)
 	- [Quicks start guide](/basic/quickstart-guide.md)
-	- [Licensing](/basic/licensing.md)
 	- [Basic playback](/basic/basic-playback.md)
 	- [Playback control](/basic/playback-control.md)
 	- [Getting started](/basic/getting-started.md)
