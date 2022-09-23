@@ -1,5 +1,7 @@
 # Audio Properties
 
+Audio Properties is only supported on iOS and Android.
+
 - **Public virtual void SetSpeedControl (float)**
 Set the speed control of the playback, the speed value can go between 0.1 to 4.
 
