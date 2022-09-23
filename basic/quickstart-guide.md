@@ -38,6 +38,7 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 ![](../assets/basic/quick12.png)
 2. Create a cube in your scene (GameObject → 3D Object → Cube).
 3. Drag RenderTexture in NexPlayer Proyect (Packages → NexPlayer SDK → NexPlayer → Materials).
+
 ![](../assets/basic/quick13.png)
 3. Drag Render Texture to the created cube
 ![](../assets/basic/quick6.png)
