@@ -26,10 +26,8 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 ![](../assets/basic/quick4.png)
 2. Create a cube in your scene (GameObject → 3D Object → Cube) and drag and drop it onto the Material Override field of the NexPlayerRenderController component:  
 ![](../assets/basic/quick5.png)
-3. Set NexPlayerDefaultMaterial into the cube as material.  
-![](../assets/basic/quick14.png)
 4. Drag and drop it onto the Material Override field of the NexPlayerRenderController component:
-![](../assets/basic/quick15.png)
+![](../assets/basic/quick6.png)
 5. Start the scene and the video will play on the cube.
 
 ### Using Render Texture
@@ -38,13 +36,10 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 ![](../assets/basic/quick12.png)
 2. Create a cube in your scene (GameObject → 3D Object → Cube).
 3. Drag RenderTexture in NexPlayer Proyect (Packages → NexPlayer SDK → NexPlayer → Materials).
-
 ![](../assets/basic/quick13.png)
-3. Drag Render Texture to the created cube
-
-![](../assets/basic/quick6.png)
-
-4. Start the scene and the video will play on the cube.
+4. Drag Render Texture to the created cube
+![](../assets/basic/quick14.png)
+5. Start the scene and the video will play on the cube.
 
 ## NexPlayer
 
