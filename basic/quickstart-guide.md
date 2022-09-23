@@ -38,7 +38,9 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 3. Drag RenderTexture in NexPlayer Proyect (Packages → NexPlayer SDK → NexPlayer → Materials).
 ![](../assets/basic/quick13.png)
 4. Drag Render Texture to the created cube
+
 ![](../assets/basic/quick14.png)
+
 5. Start the scene and the video will play on the cube.
 
 ## NexPlayer
