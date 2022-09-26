@@ -78,7 +78,7 @@ Supported Graphics APIs: OpenGL.
 - Download Stream
 - Offline Stream Playback
 
-#### Multistream Features ***TODO***
+#### Multistream Features
 - Multiple Stream Playback
 - Individual Stream Playback Control
 - Synchronized Multiple Streams
