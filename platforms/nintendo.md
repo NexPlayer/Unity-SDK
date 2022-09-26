@@ -1,6 +1,6 @@
 # Nintendo Switch
 
-> **Minimum API level**: Nintendo SDK version 14.3.0.
+> Minimum API level: Nintendo SDK version 14.3.0.
 
 ---
 ## Detailed feature list
