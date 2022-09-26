@@ -75,7 +75,7 @@ Supported Graphics APIs: OpenGL ES  3.0 and OpenGL ES 2.0.
 - Download Stream
 - Offline Stream Playback
 
-#### Multistream Features ***TODO***
+#### Multistream Features
 - Multiple Stream Playback
 - Individual Stream Playback Control
 - Synchronized Multiple Streams
