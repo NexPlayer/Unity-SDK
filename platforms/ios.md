@@ -1,8 +1,8 @@
 # iOS
 
-> **Minimum API level**: iOS 11.0.  
-**Minimum API level for VR features**: iOS 11.0.  
-**Supported Graphics APIs**: OpenGL.    
+> Minimum API level: iOS 11.0.  
+Minimum API level for VR features: iOS 11.0.  
+Supported Graphics APIs: OpenGL.    
 
 ---
 ## Detailed Feature list

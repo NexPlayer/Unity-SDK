@@ -26,5 +26,6 @@ You can refer to below integration guides to setup your project on the desired p
 - [Nintendo Switch](/platforms/nintendo.md)  
 	**Minimum API**: Nintendo SDK version 14.3.0.
 - [Xbox Series X/S](/platforms/xbox.md)
+
 	**Minimum Device**: Xbox Series X/S
 - [Hololens](/platforms/hololens.md)

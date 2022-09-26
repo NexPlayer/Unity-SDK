@@ -1,8 +1,8 @@
 # Android
 
-> **Minimum API level**: 19 (Android 4.4 KitKat).  
-**Minimum API level for VR features**: 21 (Android 5 Lollipop).  
-**Supported Graphics APIs**: OpenGL ES  3.0 and OpenGL ES 2.0.  
+> Minimum API level: 19 (Android 4.4 KitKat).  
+Minimum API level for VR features: 21 (Android 5 Lollipop).  
+Supported Graphics APIs: OpenGL ES  3.0 and OpenGL ES 2.0.  
 
 ---
 ## Detailed Feature list
