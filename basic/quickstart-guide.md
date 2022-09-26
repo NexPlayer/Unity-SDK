@@ -30,9 +30,6 @@ NexPlayerSimple is a slimmed down version of our full-featured example player, N
 ![](../assets/basic/quick6.png)
 4. Start the scene and the video will play on the cube.
 
-### Using Render Texture
-// TODO
-
 ## NexPlayer
 
 NexPlayer™ is our full-featured example player.
