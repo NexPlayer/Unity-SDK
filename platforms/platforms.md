@@ -25,6 +25,5 @@ You can refer to below integration guides to setup your project on the desired p
 	**Minimum browsers version**: Google Chrome 75, Mozilla Firefox 67, Opera 12, Microsoft Edge 18 and Apple Safari 12.1.
 - [Nintendo Switch](/platforms/nintendo.md)  
 	**Minimum API**: Nintendo SDK version 14.3.0.
-- [UWP](/platforms/uwp.md)
-	- [Xbox Series X/S](/platforms/xbox.md)
-	- [Hololens](/platforms/hololens.md)
+- [Xbox Series X/S](/platforms/xbox.md)
+- [Hololens](/platforms/hololens.md)
