@@ -16,10 +16,9 @@ NexPlayer™ plugin for Unity is a cross-platform video streaming player for Uni
 - MacOS
 - Windows
 - WebGL
-- UWP (Universal Windows platforms)
-	- Xbox Series X/S
-	- Hololens
 - Nintendo Switch
+- Xbox Series X/S
+- Hololens
 
 ## Legal Notices
 
