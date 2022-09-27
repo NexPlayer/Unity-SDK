@@ -49,8 +49,8 @@ Supported Graphics APIs: OpenGL.
 
 #### Digital Rights Management
 - HTTP Headers (*Streams*)
-- WideVine Protection (*Streams*)
-- WideVine Headers (*Streams*)
+- Widevine Protection (*Streams*)
+- Widevine Headers (*Streams*)
 - Local DRM (*AssetPlay and LocalPlay*)
 
 #### Subtitles

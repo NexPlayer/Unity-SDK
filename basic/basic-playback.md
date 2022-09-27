@@ -26,11 +26,29 @@ Sets the volume of the player (0 - 1).
 
 Basic methods inherited from NexPlayerBehaviour:
 
-**protected virtual void InitControllers()**
+**protected virtual void InitControllers()**  
 Method called prior to the player creation. Use it to initialize all the controllers needed for the custom player.
 
-**protected virtual void SetPreInitConfiguration()**
+**protected virtual void SetPreInitConfiguration()**  
 Method called prior to the player creation. Use it to initialize all the variables needed for the basic playback settings such as URL, isLiveStream, autoplay, volume, etc...
+
+```chsarp
+protected override void SetPreInitConfiguration() {
+	base.SetPreInitConfiguration();
+	
+	URL = "testUrl";
+	isLiveStream = false;
+	
+	// After opening the content the player will automatically start playing.
+	autoPlay = true;
+	// The player will stop when it reaches the end of the content.
+	loopPlay = false;
+	// The player will start with sound enabled.
+	mutePlay = false;
+	// The player starts with maximum volume.
+	volume = 1;
+}
+```
 
 ## Sample code for Basic Playback (non-DRM):
 

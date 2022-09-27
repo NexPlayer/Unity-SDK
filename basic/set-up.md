@@ -9,9 +9,9 @@ The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Packa
 
 The NexPlayer™ package is composed by 3 different packages:  
 
-- **NxPlayerSDK** that is mandatory to import to use NexPlayer.  
-- **NxPlayerfullfeatsample**, which contains different samples in order to know the possibilities of NexPlayer.  
-- **NxPlayersimplesample**, which contains sample scripts to know how to use the SDK.
+- **NexPlayerSDK** that is mandatory to import to use NexPlayer.  
+- **NexPlayerfullfeatsample**, which contains different samples in order to know the possibilities of NexPlayer.  
+- **NexPlayersimplesample**, which contains sample scripts to know how to use the SDK.
 
 The NexPlayer™ package supports Unity versions from 2019 upwards.
 
