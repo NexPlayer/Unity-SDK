@@ -9,7 +9,7 @@ Retrieves the current state of the player.
 
 **public int GetCurrentTime()**
 For VOD streams, it retrieves the current playback time. 
-For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track while, on Windows and Xbox Series X/S, it is the server time value and this value only updates once per second.
+For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track while, on Windows and Xbox Series X/S, it's the server time value and this value only updates once per second.
 
 **public int GetTotalTime()**
 For VOD streams, it retrieves the media duration of the current content. 
@@ -37,4 +37,4 @@ protected override void EventOnTime()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Player information” region.
+You will find the usage of this API in the code of our sample project located in **Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Player information” region.

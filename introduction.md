@@ -4,7 +4,7 @@ NexPlayer™ plugin for Unity is a cross-platform video streaming player for Uni
 
 ## Capabilities
 
-#### Operating Systems
+#### Supported Versions
 
 - Unity 2019 and above
 

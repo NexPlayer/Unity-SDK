@@ -5,7 +5,7 @@ A remote licensing system provides streaming service for users that are under a 
 
 ![](../assets/basic/license0.jpg)
 
-If the entered key is valid and the license that corresponds to it is currently active, the player should run without any problems.
+If the entered key is valid and the license that corresponds to it's currently active, the player should run without any problems.
 
 ## Licensing Errors
 
@@ -35,7 +35,7 @@ The license corresponding to the key entered was found, but it’s in a deactiva
 
 In the case of Android and iOS, licenses are linked to one or more App IDs, so please make sure your build is set to the allowed ones or contact us to request a modification of what App IDs should be allowed.
 
-One way you can set this value is by going into Edit > Project Settings > Player and modifying the field called Package Name if the selected platform is Android or Bundle Identifier if it’s iOS. It should be under Identification in the Other Settings collapsible menu.
+One way you can set this value is by navigating into Edit > Project Settings > Player and modifying the field called Package Name if the selected platform is Android or Bundle Identifier if it’s iOS. It should be under Identification in the Other Settings collapsible menu.
 
 ![](../assets/basic/license2.jpg)
 
@@ -49,4 +49,4 @@ The license corresponding to the given key has already exceeded the expiration d
 > *"Internal Server Error”*  
 > *"Forbidden"*
 
-There might be a connection issue or the server might be down, so please contact us for support.
+There might be a connection issue or the server could be down, so please contact us for support.

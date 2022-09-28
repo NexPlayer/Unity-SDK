@@ -18,20 +18,20 @@ This option will make a selective apk creation, depending on the different mobil
 
 - **Libnexplayerengine_vm.so, libnexcal_dolby_armv7.so and every sample .so** can be deleted without affecting the Player’s behaviour.
 
-- Make sure to set Player Settings → Other Settings → Configuration → **Api Compatibility Level** to **.NET Standard 2.0** option and **Scripting Backend** to **IL2CPP**.
+- Make sure to set **Player Settings → Other Settings → Configuration → Api Compatibility Level** to the **.NET Standard 2.0** option and **Scripting Backend** to **IL2CPP**.
 
 ![](../assets/advance/red2.png)
 
-- Set Player settings → Other settings → Optimization → **Managed Stripping** level to **high. You may need to adjust this if you have runtime issues.**
+- Set **Player settings → Other settings → Optimization → Managed Stripping** level to **High**. You may need to adjust this if you have runtime issues.**
 
 ![](../assets/advance/red3.png)
 
 ## iOS
 
-- Set the Player Settings → Other Settings → Optimization → **Managed Stripping Level** to **high**, Player Settings → Other Settings → Optimization → **Script Call Optimization** to **Fast but no Exceptions** and make sure to check Player Settings → Other Settings → Optimization → **Strip Engine Code**.
+- Set the **Player Settings → Other Settings → Optimization → Managed Stripping Level** to **High**, **Player Settings → Other Settings → Optimization → Script Call Optimization** to **Fast but no Exceptions** and make sure to check **Player Settings → Other Settings → Optimization → Strip Engine Code**.
 
 ![](../assets/advance/red4.png)
 
-- Set the Build Settings’ compression method to **LZ4HC**.
+- Set the Build Settings compression method to **LZ4HC**.
 
 ![](../assets/advance/red5.png)

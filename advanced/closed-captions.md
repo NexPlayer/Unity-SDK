@@ -44,7 +44,7 @@ Changes the value assigned to the given key to the given value. Returns true if 
 
 ## Sample code for playing Widevine content:
 
-Similar to the audio tracks, in order to control which closed caption track will be outputted by the player, it is necessary to declare a variable of type NexPlayerCaptionStream to store the information extracted from the manifest. This information is retrieved after the event EventPlaybackStarted. Also, create a public method for setting the desired closed caption track:
+Similar to the audio tracks, in order to control which closed caption track will be outputted by the player, it's necessary to declare a variable of type NexPlayerCaptionStream to store the information extracted from the manifest. This information is retrieved after the event EventPlaybackStarted. Also, create a public method for setting the desired closed caption track:
 
 ```csharp
 // variable for storing the information about the closed captions tracks present inside the manifest
@@ -94,4 +94,4 @@ protected override void EventTextRender()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerMultipleLanguage.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
+You will find the usage of this API in the code of our sample project located at Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerMultipleLanguage.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).

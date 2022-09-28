@@ -1,6 +1,7 @@
 # NexPlayer™ Logs
 
-NexPlayer™ has support to enable or disable displaying descriptive debugging logs. When enabled, the procedure to see this logs is different per platform, you can see more information at the following link:[https://docs.unity3d.com/Manual/LogFiles.html](https://docs.unity3d.com/Manual/LogFiles.html)
+NexPlayer™ has support for enabling and disabling the displaying descriptive debugging logs. When enabled, the procedure to see these logs is different per platform. You can find more information at the following link:
+[https://docs.unity3d.com/Manual/LogFiles.html](https://docs.unity3d.com/Manual/LogFiles.html)
 
 ## NexPlayer™ API for Logs
 
@@ -22,4 +23,4 @@ protected override void SetPreInitConfiguration()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Debug” region.
+You will find the usage of this API in the code of our sample project located in **Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Debug” region.

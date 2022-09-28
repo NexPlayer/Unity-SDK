@@ -104,7 +104,7 @@ These configurations can be set in the following Unity section:
 *Required player settings*  
 ![](../assets/platforms/and0.png)
 
-In order to build for the Android platform, it is also necessary to set the graphics APIs to use **OpenGLES3** as the main graphics API.
+In order to build for the Android platform, it's also necessary to set the graphics APIs to use **OpenGLES3** as the main graphics API.
 
 *Recommended Graphics API*  
 ![](../assets/platforms/and1.png)

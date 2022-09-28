@@ -1,27 +1,27 @@
-# Set Up Guide
+# Setup Guide
 
 ## SDK Installation
 
-The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Package and can be imported into your Unity project.
+The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Package that can be imported into your Unity project.
 
 *SDK package content*  
 ![](../assets/basic/setup0.png)
 
-The NexPlayer™ package is composed by 3 different packages:  
+The NexPlayer™ package is composed of 3 different packages:  
 
-- **NexPlayerSDK** that is mandatory to import to use NexPlayer.  
-- **NexPlayerfullfeatsample**, which contains different samples in order to know the possibilities of NexPlayer.  
-- **NexPlayersimplesample**, which contains sample scripts to know how to use the SDK.
+- **NexPlayer SDK**, which is mandatory to import in order to use NexPlayer.  
+- **NexPlayer Full Feat Sample**, which contains a full-featured sample containing all the possibilities of the NexPlayer™ SDK.  
+- **NexPlayer Simple Sample**, which contains sample scripts that show how to implement basic functionality of the NexPlayer™ SDK.
 
-The NexPlayer™ package supports Unity versions from 2019 upwards.
+The NexPlayer™ package supports Unity versions 2019 and onwards.
 
 ## Updating the SDK
 
 ### Updating the Package from SDK version 2.1.4 or higher.
 
-To update the current Unity Package search in the top toolbar “NexPlayer / Import Tool” and select “Update Package”, a contextual window will appear to select the new unity package to import.  
-The tool does not remove any custom files allocated on NexPlayer™ or WebGLTemplates.
+To update the current Unity Package, select **NexPlayer** in the top toolbar and navigate to **Import Tool > Update Package**. A contextual window will appear to help you select the new Unity package to import.  
+The tool does not remove any custom files allocated in the *NexPlayer* and *WebGLTemplates* folders.
 
 ![](../assets/basic/setup1.png)
 
-	Important: In order to use this tool, it is necessary to have an internet connection.
+**Important:** In order to use this tool, it's necessary to have an internet connection.

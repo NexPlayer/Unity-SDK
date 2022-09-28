@@ -70,7 +70,7 @@ Supported Graphics APIs: DirectX 11.
 ## Build Configuration
 The NexPlayer™ Plugin for Unity supports Standalone Builds for Windows.
 
-To create a Windows Standalone program it is required to set the Target Platform as Windows and the Architecture as Intel 64-bit (Unity 2021.2) or x86_64 (Unity 2021.1 and below) in the Unity Build Settings configuration as shown in the image below:
+To create a Windows Standalone program it's required to set the Target Platform as Windows and the Architecture as Intel 64-bit (Unity 2021.2) or x86_64 (Unity 2021.1 and below) in the Unity Build Settings configuration as shown in the image below:
 
 Build settings on unity 2021.2  
 ![](../assets/platforms/win0.png)
@@ -83,4 +83,4 @@ It is also necessary to disable “Auto Graphics API for Windows” and to set t
 Recommended Graphics API  
 ![](../assets/platforms/win2.png)
 
-Then, proceed with the build normally by clicking on File → Build Settings → Build And Run.
+Then, proceed with the build normally by clicking on **File → Build Settings → Build And Run**.

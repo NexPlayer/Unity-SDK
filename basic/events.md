@@ -112,4 +112,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
 }
 
 ```
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).
+You will find the usage of this API in the code of our sample project located in **Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).

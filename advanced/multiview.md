@@ -1,21 +1,21 @@
-# MultiView
+# Multiview
 
-This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
+This is a premium feature. To obtain more information about it, please contact the NexPlayer™ Unity Team at unity.support@nexplayer.com
 
-NexPlayer™ MultiView feature provides a way to reproduce up to 8 simultaneous streams on the same scene. This streams might use the same properties as the ones abailables for single stream.
+NexPlayer™ Multiview feature provides a way to reproduce up to 8 simultaneous streams in the same scene. These streams might use the same properties as the ones abailables for single stream.
 
 ---
 ## NexPlayer™ API for Multiview
 
-When using multiview on your project you should use the ***MultistreamController*** field provided by **NexPlayerBehaviour**.
+When using Multiview on your project you should use the ***MultistreamController*** field provided by **NexPlayerBehaviour**.
 
-The specific API provided by this controller to manage multiview is the following.
+The specific API provided by this controller to manage Multiview is the following.
 
 ##### Init(NexPlayerBehaviour nexPlayerBehaviour)
 Initialization for MultistreamController. It uses the NexPlayerBehaviour to play the videos.
 
 ##### SetMultiStreamRender()
-This method will automatically set the render mode for multiview. It will check first for RawImages and after for RenderTextures. You should only initialize the List for render mode that you are going to use.
+This method will automatically set the render mode for Multiview. It will check first for RawImages and after for RenderTextures. You should only initialize the List for render mode that you are going to use.
 
 ##### ChooseControlIndex(int index)
 Select a player instance to control.
@@ -23,7 +23,7 @@ Select a player instance to control.
 ### Playback Control
 
 ##### StartAllPlayers()
-Open the content for all multiview instances and sets them ready to play.
+Open the content for all Multiview instances and sets them ready to play.
 
 ##### StartChosenPlayer()
 Open the content for selected player instance using the *multiURLPaths* list field as content . Use method *ChooseControlIndex(int index)* to decide which instance is selected.
@@ -32,22 +32,22 @@ Open the content for selected player instance using the *multiURLPaths* list fie
 Starts the selected player instance with an specific content.
 
 ##### ResumeAllPlayers()
-Resumes the playback of all multiview instances.
+Resumes the playback of all Multiview instances.
 
 ##### PauseAllPlayers()
-Pauses the playback of all multiview instances.
+Pauses the playback of all Multiview instances.
 
 ##### StopAllPlayers()
-Pauses the playback of all multiview instances and sets them on stop state. Stop will pause the playback and set the playback time to 0ms.
+Pauses the playback of all Multiview instances and sets them on stop state. Stop will pause the playback and set the playback time to 0ms.
 
 ##### CloseAllPlayers()
-Closes the playback of all multiview instances.
+Closes the playback of all Multiview instances.
 
 ##### ReleaseAllPlayers()
-Release the playback of all multiview instances. It also release and destroy *MultistreamController* instance.
+Release the playback of all Multiview instances. It also release and destroy *MultistreamController* instance.
 
 ##### RestartMultiStreamsPlayback()
-Restart the playback of all multiview instances to the beggining of the content.
+Restart the playback of all Multiview instances to the beggining of the content.
 
 ### OTHERS
 
@@ -58,11 +58,11 @@ Change the content of the selected player instance. The content can be changed o
 Returns the number of streams applied to the ***MultistreamController***.
 
 ##### MultiStreamSetProperties()
-Sets the specific properties such as ABR and SPD to multiview streams. You should set the value for this properties before calling this method, such as:  
+Sets the specific properties such as ABR and SPD to Multiview streams. You should set the value for this properties before calling this method, such as:  
 > NexPlayerBehaviour.SynchronizationEnable = true;
 
 ##### SetMuteMultiStreams(bool setMuted)
-Mute or unmute all multiview players.
+Mute or unmute all Multiview players.
 
 ##### MultiStreamHTTPHeaders(int playerIndex, string key, string value)
 Adds a HTTP header to the *playerIndex* player with *key* and *value*.
@@ -115,7 +115,7 @@ protected override void Awake()
     }
 ```
 
-Now lets override method **InitControllers** to do the final initialization of our controllers.
+Now let's override method **InitControllers** to do the final initialization of our controllers.
 
 ```csharp
 protected override void InitControllers()
@@ -136,7 +136,7 @@ protected override void InitControllers()
     }
 ```
 
-Then, lets override the **SetPreInitConfiguration** method, here you should set your playback settings, so this settings are applyed before the player is opened:
+Then, override the **SetPreInitConfiguration** method, here you should set your playback settings, so this settings are applyed before the player is opened:
 
 ```csharp
 protected override void SetPreInitConfiguration() {
@@ -152,7 +152,7 @@ protected override void SetPreInitConfiguration() {
 There are lots of functions for events you can override to do the custom actions you desire whenever one stream trigguers an event. You don't need to call the base."overridenEvent" for this functions.  
 Keep in mind there are 2 kinds of functions for events, the ones with a parameter wich indicates the player instance that triggered the event and another one for only 1 stream (without playerInstance parameter).
 
-Here are a couple of examples of multiview event functions:
+Here are a couple of examples of Multiview event functions:
 
 ```csharp
 protected override void EventStopped(int playerInstance) {
@@ -170,7 +170,7 @@ protected override void EventPlaybackStarted(int playerInstance)
 }
 
 protected override void EventPlaybackStarted() {
-	Debug.Log("This event will never be trigguered when using multiview");
+	Debug.Log("This event will never be trigguered when using Multiview");
 }
 ```
 
@@ -205,7 +205,7 @@ private void ForceBitRate(intindex, int bitrate)
 }
 ```
 
-Whenever you want to apply a specific method property to all players, simplest way to do it is the following:
+Whenever you want to apply a specific method property to all players, the simplest way to do is the following:
 
 ```csharp
 // Pitch feature is only available for iOS and Android devices.
@@ -217,4 +217,4 @@ public void setPitchAllPlayers(int value) {
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerMultiview.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).
+You will find the usage of this API in the code of our sample project located in **Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerMultiview.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).

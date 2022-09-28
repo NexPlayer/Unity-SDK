@@ -59,4 +59,4 @@ protected override void SetPreInitConfiguration()
     JumpSyncTime = 1000;
 }
 ```
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Synchronization” region.
+You will find the usage of this API in the code of our sample project located at Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Synchronization” region.

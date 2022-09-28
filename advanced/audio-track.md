@@ -57,4 +57,4 @@ public void SetAudioStream(int index)
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerMultipleLanguages.cs (in Finder: 
+You will find the usage of this API in the code of our sample project located in **Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerMultipleLanguages.cs** (in Finder: 

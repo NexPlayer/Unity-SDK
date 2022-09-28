@@ -100,7 +100,7 @@ To create a new IPA file that includes the NexPlayer™ Plugin for Unity, the de
 
 To display HTTP videos in iOS, the option **Allow downloads over HTTP** needs to be enabled.  
 
-It is preferable to enable the **Auto Graphics API** (AGA) option in versions of Unity that support OpenGL. 
+It's preferable to enable the **Auto Graphics API** (AGA) option in versions of Unity that support OpenGL. 
 
 These configurations can be set in the following Unity section:
 **File → Build Settings → Player Settings (iOS) → Other Settings**
@@ -130,7 +130,7 @@ Secondly, select **NexPlayerSDK.framework** and check the “iOS” checkbox, as
 
 Then, proceed with the build normally by clicking on File → Build Settings → Build And Run. This will create an iOS build and open it with Xcode.
 
-To build the application on Xcode, it is required to use **Xcode 12.0** or above.
+To build the application on Xcode, it's required to use **Xcode 12.0** or above.
 
 Firstly, inside Xcode, select **UnityFramework** in the **Targets** area and select the **Embed & Sign** setting for **WidevineIntegration.framework** and **widevine_cdm_secured_ios.framework**.
 

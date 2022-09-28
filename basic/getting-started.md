@@ -1,9 +1,9 @@
 # Getting Started
 
-You can refer to below integration guides to setup your project and start playing your content
+You can refer to the sections below to set up your project and start playing your content.
 
 - [Setup Guide](/basic/set-up.md)
-- [Quicks start guide](/basic/quickstart-guide.md)
+- [Quick start guide](/basic/quickstart-guide.md)
 - [Playback Control](/basic/playback-control.md)
 - [Player Information](/basic/player-information.md)
 - [Player Integration](/basic/player-integration.md)
