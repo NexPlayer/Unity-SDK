@@ -1,15 +1,15 @@
-# Quick Start Guide
+# Quick start guide
 
 ## NexPlayer™ Simple
 
-NexPlayerSimple is a slimmed-down version of our full-featured sample player, NexPlayer.
+NexPlayer™ Simple is a slimmed-down version of our full-featured sample player, NexPlayer.
 
 1. To add video playback to your scene, you will need to add a NexPlayerSimple component to your scene:
-	- Navigate to the NexPlayer™ menu and click "Create NexPlayer™ Simple Object"
+	- Navigate to the **NexPlayer** menu and click **Create NexPlayer Simple Object**
 	![](../assets/basic/quick0.png)
-	- This will add a new GameObject (NexPlayerSimple) to your scene, which will contain the NexPlayerSimple component along with the NexPlayerRenderController component.
+	- This will add a new game object named **NexPlayerSimple** to your scene, which will contain the **Nex Player Simple** component along with the **Nex Player Render Controller** component.
 
-2. NexPlayersimple supports any of the three supported RenderModes (RawImage, RenderTexture and Material Override). Using the inspector in the NexPlayerRenderController component, select the desired Render Mode and set the reference to that Render Object:  
+2. NexPlayer™ Simple supports any of the three supported RenderModes (RawImage, RenderTexture and Material Override). Using the inspector in the NexPlayerRenderController component, select the desired Render Mode and set the reference to that Render Object:  
 ![](../assets/basic/quick1.png)
 
 ### Using Raw Image

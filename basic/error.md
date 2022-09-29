@@ -2,7 +2,7 @@
 
 The NexPlayer™ SDK provides a list of virtual functions which begin with “Error”. These allow you to provide custom behavior to answer any NexErrorCode.
 
-## NexPlayerAPI for Errors
+## NexPlayerAPI for errors
 
 Error triggered methods inherited from NexPlayerBehaviour:
 
@@ -73,8 +73,6 @@ public class NexPlayerSimple : NexPlayerBehaviour
     protected override void ErrorDRMInit()
     {
         base.ErrorDRMInit();
-
-
         // run any custom code
     }
 }

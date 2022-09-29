@@ -7,7 +7,7 @@ NexPlayer™ Multiview feature provides a way to reproduce up to 8 simultaneous 
 ---
 ## NexPlayer™ API for Multiview
 
-When using Multiview on your project you should use the ***MultistreamController*** field provided by **NexPlayerBehaviour**.
+When using Multiview on your project you should use the **MultistreamController** field provided by **NexPlayerBehaviour**.
 
 The specific API provided by this controller to manage Multiview is the following.
 
@@ -55,7 +55,7 @@ Restart the playback of all Multiview instances to the beggining of the content.
 Change the content of the selected player instance. The content can be changed on run time. Internally this method close the chosen player, sets the new stream url and start the new content from the beggining.
 
 ##### GetMultiStreamNumber()
-Returns the number of streams applied to the ***MultistreamController***.
+Returns the number of streams applied to the **MultistreamController**.
 
 ##### MultiStreamSetProperties()
 Sets the specific properties such as ABR and SPD to Multiview streams. You should set the value for this properties before calling this method, such as:  
@@ -73,7 +73,7 @@ This method allow setting the bitrate of all streams. Bitrate value should be in
 ---
 ## Sample code for Multiview
 
-This sample will only use code to setup de environment and will use RawImages to render. You can also use the Unity editor to speed up some steps.
+This sample will only use code to setup the environment and will use RawImages to render. You can also use the Unity editor to speed up some steps.
 
 Like all custom players, inherit from **NexPlayerBehaviour**, use field **NexPlayerMultistreamController** provided by NexPlayerBehaviour to allow for multiple streams and **NexPlayerRenderController** to display the videos on Unity objects.
 
@@ -217,4 +217,4 @@ public void setPitchAllPlayers(int value) {
 }
 ```
 
-You will find the usage of this API in the code of our sample project located in **Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerMultiview.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultiview.cs).
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerMultiview.cs**.

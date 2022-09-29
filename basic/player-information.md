@@ -1,6 +1,6 @@
-# Player Information
+# Player information retrieval
 
-## NexPlayer™ API for player information
+## NexPlayer™ API for player information retrieval
 
 Player information methods inherited from NexPlayerBehaviour:
 
@@ -37,4 +37,4 @@ protected override void EventOnTime()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located in **Packages → NexPlayer Simple Sample → NexPlayer → SampleCode → Players → NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Player information” region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer → SampleCode → Players → NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Player information” region.

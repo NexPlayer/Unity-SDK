@@ -1,6 +1,6 @@
-# Setup Guide
+# Setup guide
 
-## SDK Installation
+## SDK installation
 
 The fully operational NexPlayer™ Plugin for Unity is provided as a Unity Package that can be imported into your Unity project.
 
@@ -17,11 +17,11 @@ The NexPlayer™ package supports Unity versions 2019 and onwards.
 
 ## Updating the SDK
 
-### Updating the Package from SDK version 2.1.4 or higher.
+### Updating the package from SDK version 2.1.4 or higher
 
-To update the current Unity Package, select **NexPlayer** in the top toolbar and navigate to **Import Tool > Update Package**. A contextual window will appear to help you select the new Unity package to import.  
+To update the current Unity Package, select **NexPlayer** in the top toolbar and navigate to **Import Tool → Update Package**. A contextual window will appear to help you select the new Unity package to import.  
 The tool does not remove any custom files allocated in the *NexPlayer* and *WebGLTemplates* folders.
 
 ![](../assets/basic/setup1.png)
 
-**Important:** In order to use this tool, it's necessary to have an internet connection.
+**Disclaimer:** In order to use this tool, it's necessary to have an internet connection.

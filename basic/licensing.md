@@ -7,7 +7,7 @@ A remote licensing system provides streaming service for users that are under a 
 
 If the entered key is valid and the license that corresponds to it's currently active, the player should run without any problems.
 
-## Licensing Errors
+## Licensing errors
 
 Any errors related to licensing are registered in full detail as Console Logs starting with the header *“Licensing Error:”* and additionally accompanied by a red error message in the player’s UI, like so:
 

@@ -1,8 +1,8 @@
-# Basic Playback
+# Basic playback
 
 NexPlayer™ plays non-DRM (HLS, DASH or MP4) content by simply providing a valid URL and configuring the rendering.
 
-## NexPlayer™ API for Basic Playback
+## NexPlayer™ API for basic playback
 
 Basic variables inherited from NexPlayerBehavior:
 
@@ -10,7 +10,7 @@ Basic variables inherited from NexPlayerBehavior:
 URL to get the media from.
 
 - **public bool isLiveStream**
-Enable when the video to be opened is a live stream. Takes effect when Open() is called.This setting will make the GetTotalTime() function to retrieve the maximum seekable range of the current content. This setting only works on Android and Windows platforms.
+Enable when the video to be opened is a live stream. Takes effect when Open() is called.This setting will make the **GetTotalTime()** function to retrieve the maximum seekable range of the current content. This setting only works on Android and Windows platforms.
 
 - **public bool autoPlay**
 When enabled the video will auto start playing. Otherwise the video will be initialized, but the playback will not start automatically, remaining paused.
@@ -32,7 +32,7 @@ Method called prior to the player creation. Use it to initialize all the control
 **protected virtual void SetPreInitConfiguration()**  
 Method called prior to the player creation. Use it to initialize all the variables needed for the basic playback settings such as URL, isLiveStream, autoplay, volume, etc...
 
-```chsarp
+```csharp
 protected override void SetPreInitConfiguration() {
 	base.SetPreInitConfiguration();
 	
@@ -50,9 +50,9 @@ protected override void SetPreInitConfiguration() {
 }
 ```
 
-## Sample code for Basic Playback (non-DRM):
+## Sample code for basic playback (without DRM):
 
-The code needs to inherit from NexPlayerBehaviour and requires the NexPlayerRendererController: The render controller must be set according to the scene’s needs. Configure the startingRenderMode and the target render object accordingly:
+The code needs to inherit from **NexPlayerBehaviour** and requires the **NexPlayerRendererController**: The render controller must be set according to the scene’s needs. Configure the **startingRenderMode** and the target render object accordingly:
 
 ```csharp
 [RequireComponent(typeof(NexPlayerRenderController))]
@@ -102,4 +102,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
   }
 ```
 
-You will find the usage of this API in the code of our sample project located in **Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Render Mode” region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the **Render Mode** region.

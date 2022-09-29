@@ -8,7 +8,7 @@ NexPlayer™ synchronization technology allows you to sync the video arrival and
 
 ## NexPlayer™ API for synchronization
 
-#### Synchronization variables inherited from NexPlayerBehavior:
+### Synchronization variables inherited from NexPlayerBehavior
 
 **public bool SynchronizationEnable**
 Enables or disables the use of synchronization to UTC time (SPD).
@@ -22,7 +22,7 @@ Maximum time that the playback is allowed to be out of synchronization before it
 **public uint JumpSyncTime**
 Maximum time that the playback is allowed to be out of synchronization before it jumps to synchronize the video with the latency set in the Delay Time.
 
-#### Sample code for synchronization
+### Sample code for synchronization
 
 **public void SetWidevineHeaders(string[] keys, string[] values)**
 Optionally, NexPlayer™ allows sending headers within the license server request, in case they are needed to get the license key(s). It takes two string arrays, the first one contains the keys and the second the values. Both arrays must have the same size and key in position (i) must pair with the value in the same (i) position.
@@ -59,4 +59,4 @@ protected override void SetPreInitConfiguration()
     JumpSyncTime = 1000;
 }
 ```
-You will find the usage of this API in the code of our sample project located at Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Synchronization” region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Synchronization” region.

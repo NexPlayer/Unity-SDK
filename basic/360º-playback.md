@@ -1,4 +1,4 @@
-# 360° Playback
+# 360° playback
 
 NexPlayer™ has support for 360° video. This feature doesn’t require any specific API or code, as it’s entirely implemented in the Unity Editor. 
 

@@ -1,8 +1,8 @@
 # Events
 
-The NexPlayer™ SDK provides a list of virtual methods which begin with “Event”. These allow you to provide custom behaviour to answer any NexPlayerEvent.
+The NexPlayer™ SDK provides a list of virtual methods which begin with “Event”. These allow you to provide custom behavior to answer any NexPlayerEvent.
 
-## NexPlayerAPI for Events
+## NexPlayerAPI for events
 
 Event triggered methods inherited from NexPlayerBehaviour:
 
@@ -112,4 +112,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
 }
 
 ```
-You will find the usage of this API in the code of our sample project located in **Packages > NexPlayer™ Simple Sample > NexPlayer™ > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs).

@@ -1,4 +1,4 @@
-# Reduce the Build File Size
+# Reducing the build file size
 
 Application Stores for Android and iOS have a limited file size to distribute the app.
 The NexPlayer™ Unity SDK can be reduced to occupy the minimum size possible.
