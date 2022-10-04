@@ -95,7 +95,7 @@ The NexPlayer™ Plugin for Unity supports builds for Android applications.
 
 To create a new APK file that includes the NexPlayer™ Plugin for Unity, the default configurations must be changed.                                                        
 
-In order to allow remote videos on Android, the option **Internet Access** needs to be set to ‘**Require**’ in the Unity player settings and the option **Write Permission** should be set to ‘**External (SD Card)**’. This configuration is needed to save DRM certification data in the Android SDCard.
+In order to allow remote videos on Android, the option **Internet Access** needs to be set to ‘**Require**' in the Unity player settings and the option **Write Permission** should be set to ‘**External (SD Card)**'. This configuration is needed to save DRM certification data in the Android SDCard.
 
 These configurations can be set in the following Unity section:
 

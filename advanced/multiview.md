@@ -12,7 +12,7 @@ When using Multiview on your project you should use the **MultistreamController*
 The specific API provided by this controller to manage Multiview is the following.
 
 ##### Init(NexPlayerBehaviour nexPlayerBehaviour)
-Initialization for MultistreamController. It uses the NexPlayerBehaviour to play the videos.
+Initialization for MultistreamController. It uses the **NexPlayerBehaviour** to play the videos.
 
 ##### SetMultiStreamRender()
 This method will automatically set the render mode for Multiview. It will check first for RawImages and after for RenderTextures. You should only initialize the List for render mode that you are going to use.
@@ -75,7 +75,7 @@ This method allow setting the bitrate of all streams. Bitrate value should be in
 
 This sample will only use code to setup the environment and will use RawImages to render. You can also use the Unity editor to speed up some steps.
 
-Like all custom players, inherit from **NexPlayerBehaviour**, use field **NexPlayerMultistreamController** provided by NexPlayerBehaviour to allow for multiple streams and **NexPlayerRenderController** to display the videos on Unity objects.
+Like all custom players, inherit from **NexPlayerBehaviour**, use the field **NexPlayerMultistreamController** provided by **NexPlayerBehaviour** to allow for multiple streams and **NexPlayerRenderController** to display the videos on Unity objects.
 
 ```csharp
 public class NexPlayerMultistream : NexPlayerBehaviour {
@@ -192,7 +192,7 @@ public void Swap()
 }
 ```
 
-The method ForceBitRate changes the streams’ resolutions, regarding the Multiview instance player and the target bitrate.
+The method ForceBitRate changes the streams' resolutions, regarding the Multiview instance player and the target bitrate.
 
 ```csharp
 private void ForceBitRate(intindex, int bitrate)  
@@ -217,4 +217,4 @@ public void setPitchAllPlayers(int value) {
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerMultiview.cs**.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerMultiview.cs**.

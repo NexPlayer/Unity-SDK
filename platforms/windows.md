@@ -78,7 +78,7 @@ Build settings on Unity 2021.2
 Build settings on Unity 2021.1 and below  
 ![](../assets/platforms/win1.png)
 
-It is also necessary to disable “Auto Graphics API for Windows” and to set the graphics APIs to Direct3D11 only.
+It is also necessary to disable "Auto Graphics API for Windows" and to set the graphics APIs to Direct3D11 only.
 
 Recommended Graphics API  
 ![](../assets/platforms/win2.png)

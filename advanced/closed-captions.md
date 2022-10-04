@@ -14,7 +14,7 @@ Struct to store all the information related to one subtitle element (one string 
 - **public int endTime:** End time in milliseconds when the caption stops being shown.
 - **public string encodingType:** Caption encoding type (utf-8, utf-16, utf-16BE, euc-kr, etc..).
 - **public NexPlayer_Caption_Type captionType:** The caption type, a helper enum for utilities.
-- **public struct NexPlayerCaptionStream:** Struct to store one audio track’s information. It contains:
+- **public struct NexPlayerCaptionStream:** Struct to store one audio track's information. It contains:
 - **public int id:** ID of the closed caption track (ID Tag in The Manifest).
 - **public string name:** Name of the closed caption track if available (NAME Tag in The Manifest).
 - **public string language:** Language of the closed caption track if available  (LANGUAGE Tag in The Manifest).
@@ -94,4 +94,4 @@ protected override void EventTextRender()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerMultipleLanguage.cs**.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerMultipleLanguage.cs**.

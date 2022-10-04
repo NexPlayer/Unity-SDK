@@ -22,7 +22,7 @@ NexPlayer™ Simple is a slimmed-down version of our full-featured sample player
 
 ### Using Material Override
 
-1. Set the “Starting Render Mode” to Material Override:  
+1. Set the "Starting Render Mode" to Material Override:  
 ![](../assets/basic/quick4.png)
 2. Create a cube in your scene (**GameObject → 3D Object → Cube**) and drag and drop it onto the Material Override field of the NexPlayerRenderController component:  
 ![](../assets/basic/quick5.png)
@@ -41,23 +41,23 @@ The NexPlayer™ Plugin for Unity can be quickly integrated into a Unity project
 After importing the Unity package into your Unity project, you should perform the following steps:
 
 1. Create the NexPlayer™ GameObjects by either using the NexPlayer™ Context Menu at the top or right clicking in the Hierarchy (Object Context Menu):  
-	- “NexPlayer_Manager”
-	- “NexPlayer_UI”
-	- “NexPlayerSamplesController”
-2. Set “NexPlayer_Manager” references to the UI elements automatically by clicking on the button “Set UI References”.
-3. Select any of the different samples provided by NexPlayer™ on the “NexPlayerSamplesController”.
+	- "NexPlayer_Manager"
+	- "NexPlayer_UI"
+	- "NexPlayerSamplesController"
+2. Set "NexPlayer_Manager" references to the UI elements automatically by clicking on the button "Set UI References".
+3. Select any of the different samples provided by NexPlayer™ on the "NexPlayerSamplesController".
 4. Change the NexPlayer™ component inside NexPlayer_Manager with the required stream settings.
 	- Set Media Source Values (PlayMode, Url, isLiveStream, HTTP Headers and DRM).
 	- Set Media Output Section Values (RenderMode and Rendering 
 	- Set the Playback Properties (Autoplay, Loop…).
 
-To display a video in your own RenderTexture object, remember to add a material to the object that contains the same texture as you referenced in the player. Standard materials can be found in Packages → NexPlayer™ SDK → NexPlayer™ → Materials.
+To display a video in your own RenderTexture object, remember to add a material to the object that contains the same texture as you referenced in the player. Standard materials can be found in **Packages > NexPlayer SDK > NexPlayer > Materials**.
 
 It's recommended to refer to section [Build Configuration](/platforms/platforms.md), of the desired platform, before building the project.
 
 ### Sample Scene
 
-The NexPlayer™ Plugin for Unity provides different samples that can be created on a blank scene through Unity’s Context Menus. Once created, it offers 10 different use cases that can be easily chosen in the NexPlayerSamplesController Inspector.  
+The NexPlayer™ Plugin for Unity provides different samples that can be created on a blank scene through Unity's Context Menus. Once created, it offers 10 different use cases that can be easily chosen in the NexPlayerSamplesController Inspector.  
 
 *Context Menu 1*  
 ![](../assets/basic/quick7.png)  

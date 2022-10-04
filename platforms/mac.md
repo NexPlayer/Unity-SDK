@@ -73,12 +73,12 @@ The NexPlayer™ Plugin for Unity supports Standalone Builds for macOS.
 It's required to set the **Target Platform** as **macOS** in the Unity Build Settings configuration.
 
 For Unity versions 2020 and above, it's possible to build for architectures: **Intel64, Apple Silicon**, or **Intel 64 + Apple Silicon**.   
-In order to do this, the Package → NexPlayer™ SDK → NexPlayer™ → Plugins → MacOSX → **NexPlayerMacOSX.bundle** (in Finder: *Packages/com.nexplayer.nxplayersdk/NexPlayer/Plugins/MacOSX/NexPlayerMacOSX.bundle*), must be configured in the inspector as **Any CPU** for Standalone builds, as shown in below image:
+In order to do this, the **Packages → NexPlayer SDK (com.nexplayer.nxplayersdk) → NexPlayer → Plugins → MacOSX → NexPlayerMacOSX.bundle** must be configured in the inspector as **Any CPU** for Standalone builds, as shown in the image below:
 
 ![](../assets/platforms/mac0.png)
 
-Don’t forget to apply the changes. Then, proceed with the build process as usual by clicking on File → Build Settings → Build And Run.
+Don't forget to apply the changes. Then, proceed with the build process as usual by clicking on **File → Build Settings → Build And Run**.
 
-For lower Unity versions, set the **Architecture** as **Intel 64-bit**, as shown in below image:
+For lower Unity versions, set the **Architecture** as **Intel 64-bit**, as shown in the image below:
 
 ![](../assets/platforms/mac1.png)

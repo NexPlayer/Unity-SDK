@@ -4,33 +4,39 @@ NexPlayer™ plays non-DRM (HLS, DASH or MP4) content by simply providing a vali
 
 ## NexPlayer™ API for basic playback
 
-Basic variables inherited from NexPlayerBehavior:
+Basic variables inherited from **NexPlayerBehaviour**:
 
 - **public string URL**
-URL to get the media from.
+
+    URL to get the media from.
 
 - **public bool isLiveStream**
-Enable when the video to be opened is a live stream. Takes effect when Open() is called.This setting will make the **GetTotalTime()** function to retrieve the maximum seekable range of the current content. This setting only works on Android and Windows platforms.
+
+    Enable when the video to be opened is a live stream. Takes effect when Open() is called.This setting will make the **GetTotalTime()** function to retrieve the maximum seekable range of the current content. This setting only works on Android and Windows platforms.
 
 - **public bool autoPlay**
-When enabled the video will auto start playing. Otherwise the video will be initialized, but the playback will not start automatically, remaining paused.
+    
+    When enabled the video will auto start playing. Otherwise the video will be initialized, but the playback will not start automatically, remaining paused.
 
 - **public bool loopPlay**
-When enabled the player will restart the playback from the beginning when it reaches the end of the video content.
+    
+    When enabled the player will restart the playback from the beginning when it reaches the end of the video content.
 
 - **public bool mutePlay**
-When enabled the player will be muted. When disabled, the player will use volume.
+    
+    When enabled the player will be muted. When disabled, the player will use volume.
 
 - **public float volume**
-Sets the volume of the player (0 - 1).
+    
+    Sets the volume of the player, ranging from 0 to 1.
 
-Basic methods inherited from NexPlayerBehaviour:
+- **protected virtual void InitControllers()**  
 
-**protected virtual void InitControllers()**  
-Method called prior to the player creation. Use it to initialize all the controllers needed for the custom player.
+    Method called prior to the player creation. Use it to initialize all the controllers needed for the custom player.
 
-**protected virtual void SetPreInitConfiguration()**  
-Method called prior to the player creation. Use it to initialize all the variables needed for the basic playback settings such as URL, isLiveStream, autoplay, volume, etc...
+- **protected virtual void SetPreInitConfiguration()**  
+
+    Method called prior to the player creation. Use it to initialize all the variables needed for the basic playback settings such as URL, isLiveStream, autoplay, volume, etc.
 
 ```csharp
 protected override void SetPreInitConfiguration() {
@@ -50,9 +56,9 @@ protected override void SetPreInitConfiguration() {
 }
 ```
 
-## Sample code for basic playback (without DRM):
+## Sample code for basic playback (without DRM)
 
-The code needs to inherit from **NexPlayerBehaviour** and requires the **NexPlayerRendererController**: The render controller must be set according to the scene’s needs. Configure the **startingRenderMode** and the target render object accordingly:
+The code needs to inherit from **NexPlayerBehaviour** and requires the **NexPlayerRendererController**: The render controller must be set according to the scene's needs. Configure the **startingRenderMode** and the target render object accordingly:
 
 ```csharp
 [RequireComponent(typeof(NexPlayerRenderController))]
@@ -102,4 +108,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
   }
 ```
 
-You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the **Render Mode** region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the **Render Mode** region.

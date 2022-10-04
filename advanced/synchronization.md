@@ -8,13 +8,13 @@ NexPlayer™ synchronization technology allows you to sync the video arrival and
 
 ## NexPlayer™ API for synchronization
 
-### Synchronization variables inherited from NexPlayerBehavior
+### Synchronization variables inherited from NexPlayerBehaviour
 
 **public bool SynchronizationEnable**
 Enables or disables the use of synchronization to UTC time (SPD).
 
 **public uint DelayTime**
-Presentation delay to synchronize end users, it sets a latency between the original stream and the player’s arrival.
+Presentation delay to synchronize end users, it sets a latency between the original stream and the player's arrival.
 
 **public uint SpeedUpSyncTime**
 Maximum time that the playback is allowed to be out of synchronization before it changes playback speed to get synchronized again with the latency set in the Delay Time.
@@ -34,9 +34,9 @@ Clear all the widevine headers and keys.
 Changes the value assigned to the given key to the given value. Returns true if the key is found and successfully set.
 
 
-## Sample code for playing Widevine content:
+## Sample code for playing Widevine content
 
-Synchronization technology (SPD) is meant to be used with live streaming content only. After setting a live content URL just set the synchronization variables inherited from NexPlayerBehaviour, and synchronization technology will automatically be triggered. The variables must be set prior to the player initialization, so use the method SetPreInitConfiguration to do so:
+Synchronization technology (SPD) is meant to be used with live streaming content only. After setting a live content URL just set the synchronization variables inherited from **NexPlayerBehaviour**, and synchronization technology will automatically be triggered. The variables must be set prior to the player initialization, so use the method **SetPreInitConfiguration()** to do so:
 
 
 ```csharp
@@ -59,4 +59,4 @@ protected override void SetPreInitConfiguration()
     JumpSyncTime = 1000;
 }
 ```
-You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Synchronization” region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the "Synchronization" region.
