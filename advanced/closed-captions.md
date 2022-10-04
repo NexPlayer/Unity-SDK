@@ -14,7 +14,7 @@ Struct to store all the information related to one subtitle element (one string 
 - **public int endTime:** End time in milliseconds when the caption stops being shown.
 - **public string encodingType:** Caption encoding type (utf-8, utf-16, utf-16BE, euc-kr, etc..).
 - **public NexPlayer_Caption_Type captionType:** The caption type, a helper enum for utilities.
-- **public struct NexPlayerCaptionStream:** Struct to store one audio track’s information. It contains:
+- **public struct NexPlayerCaptionStream:** Struct to store one audio track's information. It contains:
 - **public int id:** ID of the closed caption track (ID Tag in The Manifest).
 - **public string name:** Name of the closed caption track if available (NAME Tag in The Manifest).
 - **public string language:** Language of the closed caption track if available  (LANGUAGE Tag in The Manifest).
@@ -36,7 +36,7 @@ Sets a closed caption track to be used during the video playback. The possible c
 Optionally, NexPlayer™ allows sending headers within the license server request, in case they are needed to get the license key(s). It takes two string arrays, the first one contains the keys and the second the values. Both arrays must have the same size and key in position (i) must pair with the value in the same (i) position.
 
 **public void ClearWidevineHeaders()**
-Clear all the widevine headers and keys.
+Clear all the Widevine headers and keys.
 
 **public bool UpdateWidevineHeaderValue(string key, string value)**
 Changes the value assigned to the given key to the given value. Returns true if the key is found and successfully set.
@@ -44,7 +44,7 @@ Changes the value assigned to the given key to the given value. Returns true if 
 
 ## Sample code for playing Widevine content:
 
-Similar to the audio tracks, in order to control which closed caption track will be outputted by the player, it is necessary to declare a variable of type NexPlayerCaptionStream to store the information extracted from the manifest. This information is retrieved after the event EventPlaybackStarted. Also, create a public method for setting the desired closed caption track:
+Similar to the audio tracks, in order to control which closed caption track will be outputted by the player, it's necessary to declare a variable of type NexPlayerCaptionStream to store the information extracted from the manifest. This information is retrieved after the event EventPlaybackStarted. Also, create a public method for setting the desired closed caption track:
 
 ```csharp
 // variable for storing the information about the closed captions tracks present inside the manifest
@@ -94,4 +94,4 @@ protected override void EventTextRender()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerMultipleLanguage.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerMultipleLanguages.cs).
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerMultipleLanguage.cs**.

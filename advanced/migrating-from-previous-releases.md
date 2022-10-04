@@ -1,115 +1,141 @@
 # Migrating from previous releases
 
-The namespaces of the following APIs have been changed. Please, make sure to call them correctly.
+The namespaces of the numerous APIs have been changed over time. Please, make sure to call them correctly.
 
-- Scripts/SampleCode/NexPlayer360/Scripts/NexPlayer360.cs (*)
-	NexPlayerAPI -> NexPlayerSample
+The following scripts were moved from **NexPlayer > NexPlayer360** to **NexPlayer > Scripts > SampleCode > NexPlayer360**:
 
-- Scripts/SampleCode/NexPlayer360/Scripts/NexPlayer360KeyControls.cs (*)
-	NexPlayerAPI -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/Scripts/NexPlayer360KeyControls.cs**
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/Scripts/NexVRInteractable.cs (*)
-	NexPlayerAPI -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/Scripts/NexVRInteractable.cs**
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/Scripts/NexVRInteractableSeekBar.cs (*)
-	NexPlayerAPI -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/Scripts/NexVRInteractableSeekBar.cs**
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/Scripts/NexVRUIController.cs (*)
-	NexPlayerAPI -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/Scripts/NexVRUIController.cs**
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuAnimator.cs (*)	
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuAnimator.cs**	
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuItemPopout.cs (*)
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuItemPopout.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuSelectorMover.cs (*)	
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuSelectorMover.cs**	
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuButton.cs (*)	
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/MenuButton.cs**	
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/Reticle.cs (*)
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/Reticle.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelectionRadial.cs (*)	
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelectionRadial.cs**	
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelecionSlider.cs (*)
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/SelecionSlider.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraFade.cs (*)
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraFade.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VREyeRaycaster.cs (*)
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VREyeRaycaster.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraUI.cs (*)	
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRCameraUI.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInput.cs (*)	
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInput.cs**	
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInteractiveItem.cs (*)
-	VRStandardAssets.Menu -> NexPlayerSample
+- **Scripts/SampleCode/NexPlayer360/VRMenu/Scripts/VRInteractiveItem.cs**
+	- **Old namespace:** VRStandardAssets.Menu
+	- **New namespace:** NexPlayerSample
 
-- Scripts/SampleCode/Utility/GameObjectUtil.cs		
-	None -> NexUtility
+The following scripts were moved from **NexPlayer > Scripts > Editor** to **NexPlayer > Scripts > SampleCode > Editor**:
+
+- **Scripts/SampleCode/Editor/NexPlayerEditor.cs**	
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:**  NexPlayerSample
+
+- **Scripts/SampleCode/Editor/NexPlayerSamplesEditor.cs**	
+	- **Namespace:**  NexPlayerSample
+
+- **Scripts/SampleCode/Editor/NexUIEditor.cs**	
+	- **Namespace:**  NexPlayerSample
+
+- **Scripts/SampleCode/Editor/NxPMenuItems.cs**		
+	- **Namespace:**  NexPlayerSample
+
+The following scripts were not moved:
+
+- **Scripts/SampleCode/NexPlayer360/Scripts/NexPlayer360.cs**
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexPlayerSample
+
+- **Scripts/SampleCode/Utility/GameObjectUtil.cs**
+	- **Namespace:** NexUtility
 	
-- Scripts/SampleCode/Utility/NexHolder.cs	
-	NexPlayerSample -> NexUtility
+- **Scripts/SampleCode/Utility/NexHolder.cs**	
+	- **Old namespace:** NexPlayerSample
+	- **New namespace:** NexUtility
 
-- Scripts/SampleCode/FullFeat/UI/PlaybackSettings.cs		
-	NexPlayerAPI -> NexUtility
+- **Scripts/SampleCode/FullFeat/UI/PlaybackSettings.cs**		
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexUtility
 
-- Scripts/SampleCode/FullFeat/UI/OfflineStreamingDownload/OfflineStreaming.cs	
-	None -> NexUtility		
+- **Scripts/SampleCode/FullFeat/UI/OfflineStreamingDownload/OfflineStreaming.cs**
+	- **Namespace:** NexUtility		
 
-- Scripts/SampleCode/Editor/NexPlayerEditor.cs (**)	
-	NexPlayerAPI ->  NexPlayerSample
+- **Scripts/SDK/Core/Utility/ID3MetadataHelper.cs**
+	- **Namespace:**  NexUtility
 
-- Scripts/SampleCode/Editor/NexPlayerSamplesEditor.cs (**)	
-	None->  NexPlayerSample
+- **Scripts/Editor/AutoVersion.cs**			
+	- **Namespace:**  NexUtility
 
-- Scripts/SampleCode/Editor/NexUIEditor.cs (**)	
-	None ->  NexPlayerSample
-
-- Scripts/SampleCode/Editor/NxPMenuItems.cs (**)		
-	None ->  NexPlayerSample
-
-- Scripts/SDK/Core/Utility/ID3MetadataHelper.cs
-	None ->  NexUtility
-
-- Scripts/Editor/AutoVersion.cs			
-	None ->  NexUtility
-
-- Scripts/Editor/ImportManager.cs		
-	None -> NexUtility
+- **Scripts/Editor/ImportManager.cs**		
+	- **Namespace:** NexUtility
 	
-- Scripts/Editor/NexBuildConfigurationHelper.cs
-	NexPlayerSample -> NexUtility
+- **Scripts/Editor/NexBuildConfigurationHelper.cs**
+	- **Old namespace:** NexPlayerSample
+	- **New namespace:** NexUtility
 
-- Scripts/Editor/NexBuildConfigurationWindow.cs	
-	NexPlayerAPI -> NexUtility
+- **Scripts/Editor/NexBuildConfigurationWindow.cs**	
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexUtility
 
-- Scripts/Editor/NexMaterialsEditor.cs		
-	None -> NexUtility	
+- **Scripts/Editor/NexMaterialsEditor.cs**
+	- **Namespace:** NexUtility	
 
-- Scripts/Editor/NexVersionHelper.cs	
-	None -> NexUtility
+- **Scripts/Editor/NexVersionHelper.cs**
+	- **Namespace:** NexUtility
 	
-- Scripts/Editor/NexVersionHelperEditor.cs	
-	NexPlayerSample -> NexUtility
+- **Scripts/Editor/NexVersionHelperEditor.cs**	
+	- **Old namespace:** NexPlayerSample
+	- **New namespace:** NexUtility
 
-- Scripts/Editor/BuildPostProcessor.cs		
-	NexPlayerAPI -> NexPlayerAPI
+- **Scripts/Editor/BuildPostProcessor.cs**		
+	- **Old namespace:** NexPlayerAPI
+	- **New namespace:** NexPlayerAPI
 
-- Scripts/Editor/PostAndroidManifest.cs	
-	None -> NexPlayerAPI	
+- **Scripts/Editor/PostAndroidManifest.cs**
+	- **Namespace:** NexPlayerAPI	
 
-- Scripts/Editor/PostBuildUtil.cs
-	None -> NexPlayerAPI
-
-(*) Moved scripts from NexPlayer/NexPlayer360/ to NexPlayer/Scripts/SampleCode/NexPlayer360/
-
-(**) Moved scripts from NexPlayer/Scripts/Editor/ to NexPlayer/Scripts/SampleCode/Editor/
+- **Scripts/Editor/PostBuildUtil.cs**
+	- **Namespace:** NexPlayerAPI

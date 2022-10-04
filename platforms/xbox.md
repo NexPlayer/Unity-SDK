@@ -56,7 +56,7 @@
 ## Build Configuration
 The NexPlayer™ Plugin for Unity supports UWP Builds for Xbox Series X/S.
 
-It is required to set the **Target Platform** as **Universal Windows Platform** in the Unity Build Settings configuration as shown in the image below:
+It's required to set the **Target Platform** as **Universal Windows Platform** in the Unity Build Settings configuration as shown in the image below:
 
 ![](../assets/platforms/xbox1.png)
 
@@ -67,7 +67,7 @@ These configurations can be set in the following Unity section:
 
 ![](../assets/platforms/xbox2.png)
 
-Then, proceed with the build normally by clicking on File → Build Settings → Build 
+Then, proceed with the build normally by clicking on **File → Build Settings → Build** 
 This will launch a File Explorer window asking for a destination folder. Create a folder next to the Assets directory of the project, and choose this folder as the destination folder of the build. Unity has now created a new Visual Studio solution that will be used to deploy the UWP program.
 
 ![](../assets/platforms/xbox3.png)

@@ -1,10 +1,10 @@
-# Audio Properties
+# Audio properties
 
 - **Public virtual void SetSpeedControl (float)**
-Set the speed control of the playback, the speed value can go between 0.1 to 4.
+Sets the speed control of the playback. The value ranges between 0.1 and 4.
 
 - **Public virtual void SetPitch (int)**
-Set the pitch control on NexPlayer. Value goes between -12 to 12.
+Sets the pitch control on NexPlayer. The value ranges between -12 and 12.
 
 - **Public virtual void SetAudioChannel (NexAudioChanne)**
-Sets the AudioChannel value. From 0(default) to 4.
+Sets the **AudioChannel** value. The value ranges between 0 (default) and 4.

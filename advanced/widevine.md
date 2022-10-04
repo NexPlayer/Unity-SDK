@@ -1,10 +1,10 @@
-# WideVine
+# Widevine
 
 This is a premium feature. To get more information about it, please contact the NexPlayer's Unity Team at unity.support@nexplayer.com
 
-WideVine is only supported on iOS and Android.
+Widevine is only supported on iOS and Android.
 
-NexPlayer™ provides the integration for Widevine encrypted content right out of the box, by inheriting from NexPlayerBehaviour.
+NexPlayer™ provides the integration for Widevine encrypted content right out of the box, by inheriting from **NexPlayerBehaviour**.
 
 ## NexPlayer™ API for Widevine
 
@@ -28,9 +28,9 @@ Clear all the widevine headers and keys.
 Changes the value assigned to the given key to the given value. Returns true if the key is found and successfully set.
 
 
-## Sample code for playing Widevine content:
+## Sample code for playing Widevine content
 
-All widevine settings must be set before opening the player, NexPlayer™ provides the virtual method SetPreInitConfiguration() to do so:
+All Widevine settings must be set before opening the player, NexPlayer™ provides the virtual method SetPreInitConfiguration() to do so:
 
 
 ```csharp
@@ -43,7 +43,7 @@ protected override void SetPreInitConfiguration()
     keyServerURI = "your key server url";
     licenseRequestTimeout = 0;            // optional
 
-    // Only when using additional widevine headers
+    // Only when using additional Widevine headers
     string[] wvHeaderKeys = new string[] { "key1",  "key2"};
     string[] wvheaderValues = new string[] { "value1",  "value2"};
     SetWidevineHeaders(wvHeaderKeys, wvheaderValues);
@@ -51,4 +51,4 @@ protected override void SetPreInitConfiguration()
     ...
 }
 ```
-You will find the usage of this API in the code of our sample project located at Packages → NexPlayer™ Simple Sample → NexPlayer™ → SampleCode → Players → NexPlayerSimple.cs (in Finder: Packages/com.nexplayer.nxplayersimplesample/NexPlayer/SampleCode/Players/NexPlayerSimple.cs) by unfolding the “Widevine” region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the "Widevine" region.

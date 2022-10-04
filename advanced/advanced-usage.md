@@ -1,11 +1,10 @@
-# Advanced Usage
+# Advanced features
+NexPlayer™ SDK for Unity helps you play any content you have, including advanced APIs and features. 
 
-NexPlayer™ SDK for Unity helps you the play any content you have with the advanced APIs and features. 
-
-- [MultiView](/advanced/multiview.md)
+- [Audio tracks](/advanced/audio-track.md)
+- [Close captions](/advanced/closed-captions.md)
+- [Migrating from previous releases](/advanced/migrating-from-previous-releases.md)
+- [Reducing the build file size](/advanced/reduce-the-build-file-size.md)
 - [Synchronization](/advanced/synchronization.md)
 - [Widevine](/advanced/widevine.md)
-- [Close Captions](/advanced/closed-captions.md)
-- [Audio Track Selection](/advanced/audio-track.md)
-- [Reduce Build File](/advanced/reduce-the-build-file-size.md)
-- [Migrating From Previous Release](/advanced/migrating-from-previous-releases.md)
+- [Multiview](/advanced/multiview.md)

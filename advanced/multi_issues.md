@@ -7,7 +7,7 @@ This is only using Raw Image -> need to add RenderTexture
 
 ##### public bool IsMultiStream()
 If using MultistreamController of course we are going to be on multistream.  
-Move this method to NexPlayerBehaviour and check whether MultistreamController is initialized and with urls / raw images / render textures.
+Move this method to **NexPlayerBehaviour** and check whether MultistreamController is initialized and with urls / raw images / render textures.
 
 ##### MultiEditHttp()
 What is this method doing? Increasing a counter? Wa du heck polisha

@@ -1,4 +1,4 @@
-# Legal Notes
+# Legal notes
 
 ## Disclaimer for Intellectual Property
 

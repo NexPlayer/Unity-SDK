@@ -1,30 +1,30 @@
-# Quick Start Guide
+# Quick start guide
 
 ## NexPlayer™ Simple
 
-NexPlayerSimple is a slimmed down version of our full-featured example player, NexPlayer.
+NexPlayer™ Simple is a slimmed-down version of our full-featured sample player, NexPlayer.
 
 1. To add video playback to your scene, you will need to add a NexPlayerSimple component to your scene:
-	- Navigate to the NexPlayer™ menu and click “Create NexPlayer™ Simple Object”  
+	- Navigate to the **NexPlayer** menu and click **Create NexPlayer Simple Object**
 	![](../assets/basic/quick0.png)
-	- This will add a new GameObject (NexPlayerSimple) to your scene, which will contain the NexPlayerSimple component along with the NexPlayerRenderController component.
+	- This will add a new game object named **NexPlayerSimple** to your scene, which will contain the **Nex Player Simple** component along with the **Nex Player Render Controller** component.
 
-2. NexPlayersimple supports any of the three supported RenderModes (RawImage, RenderTexture and Material Override). Using the inspector in the NexPlayerRenderController component, select the desired Render Mode and set the reference to that Render Object:  
+2. NexPlayer™ Simple supports any of the three supported RenderModes (RawImage, RenderTexture and Material Override). Using the inspector in the NexPlayerRenderController component, select the desired Render Mode and set the reference to that Render Object:  
 ![](../assets/basic/quick1.png)
 
 ### Using Raw Image
 
 1. Set the "Starting Render Mode" to Raw Image:  
 ![](../assets/basic/quick2.png)
-2. Create a Raw Image in your scene (GameObject → UI → Raw Image) and drag and drop it onto the Raw Image field of the NexPlayerRenderController component:  
+2. Create a Raw Image in your scene (**GameObject → UI → Raw Image**) and drag and drop it onto the Raw Image field of the NexPlayerRenderController component:  
 ![](../assets/basic/quick3.png)
 3. Start the scene and the video will play on the Raw Image.
 
 ### Using Material Override
 
-1. Set the “Starting Render Mode” to Material Override:  
+1. Set the "Starting Render Mode" to Material Override:  
 ![](../assets/basic/quick4.png)
-2. Create a cube in your scene (GameObject → 3D Object → Cube) and drag and drop it onto the Material Override field of the NexPlayerRenderController component:  
+2. Create a cube in your scene (**GameObject → 3D Object → Cube**) and drag and drop it onto the Material Override field of the NexPlayerRenderController component:  
 ![](../assets/basic/quick5.png)
 3. Set NexPlayerDefaultMaterial into the cube as material.  
 ![](../assets/basic/quick6.png)
@@ -59,23 +59,23 @@ The NexPlayer™ Plugin for Unity can be quickly integrated into a Unity project
 After importing the Unity package into your Unity project, you should perform the following steps:
 
 1. Create the NexPlayer™ GameObjects by either using the NexPlayer™ Context Menu at the top or right clicking in the Hierarchy (Object Context Menu):  
-	- “NexPlayer_Manager”
-	- “NexPlayer_UI”
-	- “NexPlayerSamplesController”
-2. Set “NexPlayer_Manager” references to the UI elements automatically by clicking on the button “Set UI References”.
-3. Select any of the different samples provided by NexPlayer™ on the “NexPlayerSamplesController”.
+	- "NexPlayer_Manager"
+	- "NexPlayer_UI"
+	- "NexPlayerSamplesController"
+2. Set "NexPlayer_Manager" references to the UI elements automatically by clicking on the button "Set UI References".
+3. Select any of the different samples provided by NexPlayer™ on the "NexPlayerSamplesController".
 4. Change the NexPlayer™ component inside NexPlayer_Manager with the required stream settings.
 	- Set Media Source Values (PlayMode, Url, isLiveStream, HTTP Headers and DRM).
 	- Set Media Output Section Values (RenderMode and Rendering 
 	- Set the Playback Properties (Autoplay, Loop…).
 
-To display a video in your own RenderTexture object, remember to add a material to the object that contains the same texture as you referenced in the player. Standard materials can be found in Packages → NexPlayer™ SDK → NexPlayer™ → Materials.
+To display a video in your own RenderTexture object, remember to add a material to the object that contains the same texture as you referenced in the player. Standard materials can be found in **Packages > NexPlayer SDK > NexPlayer > Materials**.
 
-It is recommended to refer to section [Build Configuration](/platforms/platforms.md), of the desired platform, before building the project.
+It's recommended to refer to section [Build Configuration](/platforms/platforms.md), of the desired platform, before building the project.
 
 ### Sample Scene
 
-The NexPlayer™ Plugin for Unity provides different samples that can be created on a blank scene through Unity’s Context Menus. Once created, it offers 10 different use cases that can be easily chosen in the NexPlayerSamplesController Inspector.  
+The NexPlayer™ Plugin for Unity provides different samples that can be created on a blank scene through Unity's Context Menus. Once created, it offers 10 different use cases that can be easily chosen in the NexPlayerSamplesController Inspector.  
 
 *Context Menu 1*  
 ![](../assets/basic/quick7.png)  
@@ -102,6 +102,6 @@ The NexPlayer™ Plugin for Unity provides different samples that can be created
 
 ## NexPlayer™ flow
 
-In order to start using the NexPlayer™ Plugin for Unity SDK, it is good to have an understanding of the basic flow that the player needs to follow in order to work properly.
+In order to start using the NexPlayer™ Plugin for Unity SDK, it's good to have an understanding of the basic flow that the player needs to follow in order to work properly.
 
 ![Use Case selection](../assets/basic/quick11.png)
