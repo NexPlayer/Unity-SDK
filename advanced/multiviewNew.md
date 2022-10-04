@@ -31,6 +31,21 @@ Open the content for selected player instance using the *multiURLPaths* list fie
 ##### StartVideo(string url)
 Starts the selected player instance with an specific content.
 
+##### ResumeAllPlayers()
+Resumes the playback of all multiview instances.
+
+##### PauseAllPlayers()
+Pauses the playback of all multiview instances.
+
+##### StopAllPlayers()
+Pauses the playback of all multiview instances and sets them on stop state. Stop will pause the playback and set the playback time to 0ms.
+
+##### CloseAllPlayers()
+Closes the playback of all multiview instances.
+
+##### ReleaseAllPlayers()
+Release the playback of all multiview instances. It also release and destroy *MultistreamController* instance.
+
 ##### RestartMultiStreamsPlayback()
 Restart the playback of all multiview instances to the beggining of the content.
 
@@ -51,6 +66,9 @@ Mute or unmute all multiview players.
 
 ##### MultiStreamHTTPHeaders(int playerIndex, string key, string value)
 Adds a HTTP header to the *playerIndex* player with *key* and *value*.
+
+##### SetMultiStreamsBitrate(int bitrate)
+This method allow setting the bitrate of all streams. Bitrate value should be in bits.
 
 ---
 ## Sample code for Multiview
@@ -190,7 +208,8 @@ private void ForceBitRate(intindex, int bitrate)
 Whenever you want to apply a specific method property to all players, simplest way to do it is the following:
 
 ```csharp
-public void Resume() {
+// Pitch feature is only available for iOS and Android devices.
+public void setPitchAllPlayers(int value) {
 	for (int i = 0; i < MultistreamController.GetMultiStreamNumber(); i++) {
 		MultistreamController.ChooseControlIndex(i);
 		SetPitch(value);
