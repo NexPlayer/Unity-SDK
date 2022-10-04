@@ -45,11 +45,13 @@ Playback control methods inherited from **NexPlayerBehaviour**:
 ### Handling the Player States
 NexPlayer handles state-changing API functions asynchronously. The player’s state will not be changed immediately even if the API is called. Therefore, UI applications should check the player’s state using **getState** before calling the API. After calling any state-changing API function, UI applications must wait for the onAsyncCmdComplete message from the player before calling any further state-changing API functions.
 NexPlayer has five possible states:
+
 - `NEXPLAYER_STATE_NONE`
 - `NEXPLAYER_STATE_CLOSED`
 - `NEXPLAYER_STATE_STOP`
 - `NEXPLAYER_STATE_PLAY`
 - `NEXPLAYER_STATE_PAUSE`
+
 Requests for NexPlayer to open, seek, pause, stop and resume are placed in a queue and handled in the order they are received.
 When a queued operation completes, NexPlayer will notify the application by calling the **onAsyncCmdComplete** method in the listener.
 Some of the requests can take significant time to complete (depending on various factors, for example, network conditions). Therefore, the recommended practice is for the application to issue only one request at a time and wait for that request to complete.
