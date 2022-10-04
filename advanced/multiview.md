@@ -131,31 +131,6 @@ protected override void SetPreInitConfiguration() {
 }
 ```
 
-There are lots of functions for events you can override to do the custom actions you desire whenever one stream trigguers an event. You don't need to call the base."overridenEvent" for this functions.  
-Keep in mind there are 2 kinds of functions for events, the ones with a parameter wich indicates the player instance that triggered the event and another one for only 1 stream (without playerInstance parameter).
-
-Here are a couple of examples of Multiview event functions:
-
-```csharp
-protected override void EventStopped(int playerInstance) {
-	Debug.Log("Stopped for instance - " + playerInstance);
-}
-
-protected override void EventEndOfContent(int playerInstance)
-{
-	Debug.Log("EndOfContent for instance - " + playerInstance);
-}
-
-protected override void EventPlaybackStarted(int playerInstance)  
-{
-	Debug.Log("PlaybackStarted for instance - " + playerInstance);
-}
-
-protected override void EventPlaybackStarted() {
-	Debug.Log("This event will never be trigguered when using Multiview");
-}
-```
-
 About the track change, there is a function to alternate which Multiview instance plays at the highest bitrate and which one(s) at the lowest.
 
 ```csharp
@@ -193,7 +168,7 @@ Whenever you want to apply a specific method property to all players, the simple
 public void Resume() {
 	for (int i = 0; i < MultistreamController.GetMultiStreamNumber(); i++) {
 		MultistreamController.ChooseControlIndex(i);
-		SetPitch(value);
+		Resume();
 	}
 }
 ```
