@@ -16,7 +16,7 @@ Error triggered methods inherited from **NexPlayerBehaviour**:
 
     Method triggered by the **NexErrorCode** *PLAYER_ERROR_NOT_ACTIVATED_APP_ID*.
     
-    The current app ID is not activated for the NexPlayer™ SD. If you encounter this error, please contact NexPlayer™ to license your app ID (see the section Technical Support Information).
+    The current app ID is not activated for the NexPlayer™ SDK. If you encounter this error, please contact NexPlayer™ to license your app ID (see the section Technical Support Information).
 
 - **protected virtual void ErrorNetwork()**
 

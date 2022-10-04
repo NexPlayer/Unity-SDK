@@ -30,6 +30,24 @@ NexPlayer™ Simple is a slimmed-down version of our full-featured sample player
 ![](../assets/basic/quick6.png)
 4. Start the scene and the video will play on the cube.
 
+### Using Render Texture
+
+1. Set the “Starting Render Mode” to Render Texture:  
+![](../assets/basic/quick12.png)
+2. Create a cube in your scene (GameObject → 3D Object → Cube).
+3. Create or use RenderTexture in NexPlayer Proyect (Packages → NexPlayer SDK → NexPlayer → Materials).
+![](../assets/basic/quick13.png)
+
+4. Drag Render Texture to the created cube
+
+![](../assets/basic/quick14.png)
+
+5. Drag and drop it onto the same Render Texture to field of the NexPlayerRenderController component:
+
+![](../assets/basic/quick15.png)
+
+6. Start the scene and the video will play on the cube.
+
 ## NexPlayer
 
 NexPlayer™ is our full-featured example player.

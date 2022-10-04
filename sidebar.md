@@ -31,6 +31,7 @@
 - [FAQ](/FAQ/FAQ.md)  
 - [Legal notes](/legal-notes.md)
 - [Technical support information](/technical-support-information.md)
+- [Releases](/sidebar.md)
 
 **Links**
 - [<img src="https://nexplayer.github.io/iOS-SDK/asset/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
