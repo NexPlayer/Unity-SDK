@@ -1,6 +1,10 @@
 # NexPlayer™ SDK for Unity
 
-NexPlayer™ plugin for Unity is a cross-platform video streaming player for Unity games and apps that supports both standard and 360º video playback on Android, iOS, Windows, macOS, WebGL, Xbox, Hololens, and Nintendo Switch™ platforms. NexPlayer™ for Unity is the only video player plugin that supports Widevine DRM-protected HLS & DASH streaming on Android & iOS devices. The NexPlayer™ plugin for Unity was developed in collaboration with the native NexPlayer™ SDK. Therefore, it has access to all of its features, e.g. Adaptive Bitrate, HLS, DASH, progressive download, local playback, 360º video, and more. The plugin was built to be fast and reliable without sacrificing performance, and it has proven compatibility with international standards.
+**NexPlayer™ plugin for Unity** is a cross-platform video streaming player for Unity games and apps that supports both standard and 360º video playback on Android, iOS, Windows, macOS, WebGL, Xbox, Hololens, and Nintendo Switch™ platforms. NexPlayer™ for Unity is the only video player plugin that supports Widevine DRM-protected HLS and DASH streaming on Android and iOS devices.
+
+The NexPlayer™ plugin for Unity was developed in collaboration with the native NexPlayer™ SDK. Therefore, it has access to all of its features, such as Adaptive Bitrate, HLS, DASH, progressive download, local playback, 360º video, and more.
+
+The plugin was built to be fast and reliable without sacrificing performance, and it has proven compatibility with international standards.
 
 ## Capabilities
 
@@ -11,7 +15,7 @@ NexPlayer™ plugin for Unity is a cross-platform video streaming player for Uni
 - Android
  	- Oculus
 - iOS
-- MacOS
+- macOS
 - Windows
 - WebGL
 - Nintendo Switch
