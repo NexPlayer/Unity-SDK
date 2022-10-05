@@ -152,6 +152,6 @@ Finally, delete the NexPlayer™ Frameworks from the Embed Frameworks section of
 
 #### Build iOS with Unity 2022 Xcode configuration
 
-Under Unity-iPhone  → “Frameworks, Libraries and Embedded Content”, you need to set all the frameworks in this section except "StoreKit.framework" to “Embed & Sign”:
+Under **Unity-iPhone → Frameworks, Libraries and Embedded Content**, you need to set all the frameworks to **Embed & Sign** except for **StoreKit.framework**:
 
 ![](../assets/platforms/ios8.png)
