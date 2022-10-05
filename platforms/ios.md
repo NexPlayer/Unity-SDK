@@ -140,12 +140,18 @@ Firstly, inside Xcode, select **UnityFramework** in the **Targets** area and sel
 Verify that the section Frameworks, Libraries, and Embedded Content are set as shown in the image below:
 
 *Section Frameworks, Libraries and Embedded Content*  
-![](../assets/platforms/ios4.png)
+![](../assets/platforms/ios5.png)
 
 Remove **armv7** Architecture from **Unity-iPhone**, **Unity-iPhone Tests** and **UnityFramework**:
 
-![](../assets/platforms/ios5.png)
+![](../assets/platforms/ios6.png)
 
 Finally, delete the NexPlayer™ Frameworks from the Embed Frameworks section of the **UnityFramework's target located in the Build Phases tab**:
 
-![](../assets/platforms/ios6.png)
+![](../assets/platforms/ios7.png)
+
+#### Build iOS with Unity 2022 Xcode configuration
+
+Under Unity-iPhone  → “Frameworks, Libraries and Embedded Content”, you need to set all the frameworks in this section except "StoreKit.framework" to “Embed & Sign”:
+
+![](../assets/platforms/ios8.png)
