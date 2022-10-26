@@ -12,7 +12,7 @@ Feel free to contact us to request a demo
 
 * https://www.nexplayersdk.com/contact/
 
-* support@nexplayer.com
+* unity.support@nexplayer.com
 
 ## NexPlayer SDK for Unity Release Notes
 
