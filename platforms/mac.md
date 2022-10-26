@@ -3,7 +3,6 @@
 Supported Graphics APIs: Metal.  
 Supported CPU: Intel 64-bit and Apple Silicon M1 (only Unity ver. 2020 and above).  
 
----
 ## Detailed feature list
 
 #### Media Source
@@ -24,11 +23,11 @@ Supported CPU: Intel 64-bit and Apple Silicon M1 (only Unity ver. 2020 and above
 #### Rendering Mode  
 - RawImage (*Unity UI*)	
 - RenderTexture (*Unity Asset*)
-- Material Override (*material's MainTexture*)
+- Material Override (*Material's MainTexture*)
 
 #### Sound Playback Control
 - Volume Control
-- Mute volume
+- Mute Volume
 
 #### Video Playback Control
 - Start Player
@@ -66,9 +65,8 @@ Supported CPU: Intel 64-bit and Apple Silicon M1 (only Unity ver. 2020 and above
 - H.264
 - MPEG-4
 
----
 ## Build Configuration
-The NexPlayer™ Plugin for Unity supports Standalone Builds for macOS.
+The NexPlayer  Plugin for Unity supports Standalone Builds for macOS.
 
 It's required to set the **Target Platform** as **macOS** in the Unity Build Settings configuration.
 

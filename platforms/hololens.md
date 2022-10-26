@@ -1,6 +1,6 @@
 # Hololens
-## Detailed feature list
 
+## Detailed feature list
 #### Media Source
 - Streams (*External URL*)
 	- HLS (.m3u8)
@@ -18,11 +18,11 @@
 #### Rendering Mode  
 - RawImage (*Unity UI*)	
 - RenderTexture (*Unity Asset*)
-- Material Override (*material's MainTexture*)
+- Material Override (*Material's MainTexture*)
 
 #### Sound Playback Control
 - Volume Control
-- Mute volume
+- Mute Volume
 
 #### Video Playback Control
 - Start Player
@@ -51,33 +51,32 @@
 
 ## Build Configuration
 
-- Build Settings → Switch Platform to Universal Windows Platform, and follow below configuration
+**Build Settings → Switch Platform** to Universal Windows Platform, and follow below configuration:
 
 ![](../assets/platforms/holo8.png)
 
-- Player Settings → Player → Other Settings → Capabilities → Script Compilation → Add UWP macro
+**Player Settings → Player → Other Settings → Capabilities → Script Compilation → Add UWP macro**:
 
 ![](../assets/platforms/holo9.png)
 
-- Player Settings → Player → Publishing Settings → Capabilities → Check InternetClient checkbox. This is to enable our SDK to access the internet.
+Go to **Player Settings → Player → Publishing Settings → Capabilities** and check the **InternetClient** checkbox in order to allow our SDK to access the internet:
 
 ![](../assets/platforms/holo10.png)
 
-- Change the plugin inspector setting to target UWP and CPU to ARM64
+Change the Plugin setting to target **UWP** and set **CPU** to **ARM64** in the Inspector:
 
 ![](../assets/platforms/holo11.png)
 
-- Create build folder in the project directory
-- Build Settings → Build → Select the build folder
+Create a folder in the project directory where builds will be saved, then navigate to **Build Settings → Build** and select the build folder:
 
 ![](../assets/platforms/holo12.png)
 
-- It will generate new Visual Studio solution inside the Build folder. Open the .sln file
+This will generate new Visual Studio solution inside the build folder. Open the .sln file:
 
 ![](../assets/platforms/holo13.png)
 
 ### UWP Hololens 2 Deployment
 
-- Open the the startup project Properties
-- Change Platform to ARM64
-- Deploy using your preferred method (Remote Machine, Emulator)
+- Open the the startup project's **Properties**
+- Change Platform to **ARM64**
+- Deploy using your preferred method (**Remote Machine**, **Emulator**)

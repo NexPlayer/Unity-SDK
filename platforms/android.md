@@ -4,8 +4,7 @@
 Minimum API level for VR features: 21 (Android 5 Lollipop).  
 Supported Graphics APIs: OpenGL ES  3.0 and OpenGL ES 2.0.  
 
----
-## Detailed Feature list
+## Detailed feature list
 #### Media Source
 - Streams (*External URL*)
 	- HLS (.m3u8)
@@ -24,11 +23,11 @@ Supported Graphics APIs: OpenGL ES  3.0 and OpenGL ES 2.0.
 #### Rendering Mode  
 - RawImage (*Unity UI*)	
 - RenderTexture (*Unity Asset*)
-- Material Override (*material's MainTexture*)
+- Material Override (*Material's MainTexture*)
 
 #### Sound Playback Control
 - Volume Control
-- Mute volume
+- Mute Volume
 - Change Audio Language
 
 #### Video Playback Control
@@ -88,31 +87,30 @@ Supported Graphics APIs: OpenGL ES  3.0 and OpenGL ES 2.0.
 - Video Spread (*World Space Shader*)
 - Play Video on multiple objects
 
----
 ## Build Configuration
 
-The NexPlayer™ Plugin for Unity supports builds for Android applications.
+The NexPlayer Plugin for Unity supports builds for Android applications.
 
-To create a new APK file that includes the NexPlayer™ Plugin for Unity, the default configurations must be changed.                                                        
+To create a new APK file that includes the NexPlayer Plugin for Unity, the default configurations must be changed.                                                        
 
-In order to allow remote videos on Android, the option **Internet Access** needs to be set to ‘**Require**' in the Unity player settings and the option **Write Permission** should be set to ‘**External (SD Card)**'. This configuration is needed to save DRM certification data in the Android SDCard.
+In order to allow remote videos on Android, the option **Internet Access** needs to be set to **Require** in the Unity player settings and the option **Write Permission** should be set to **External (SD Card)**. This configuration is needed to save DRM certification data in the Android SDCard.
 
 These configurations can be set in the following Unity section:
 
 **File → Build Settings → Player Settings (Android) → Other Settings**
 
-*Required player settings*  
+Required player settings:  
 ![](../assets/platforms/and0.png)
 
 In order to build for the Android platform, it's also necessary to set the graphics APIs to use **OpenGLES3** as the main graphics API.
 
-*Recommended Graphics API*  
+Recommended Graphics API:  
 ![](../assets/platforms/and1.png)
 
-You can either drag Vulkan below OpenGLES3 or delete it like shown in the picture above.
+You can either drag Vulkan below **OpenGLES3** or delete it as shown in the picture above.
 
-To enable MultiStreaming for more than 2 streams, Multithreaded Rendering must be enabled.
+To enable MultiStreaming for more than 2 streams, **Multithreaded Rendering** must be enabled.
 
 ![](../assets/platforms/and2.png)
 
-Then, proceed with the build normally by clicking on File → Build Settings → Build And Run. 
+Then, proceed with the build as usual by clicking on **File → Build Settings → Build And Run**. 

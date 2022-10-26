@@ -1,8 +1,8 @@
 # Basic playback
 
-NexPlayer™ plays non-DRM (HLS, DASH or MP4) content by simply providing a valid URL and configuring the rendering.
+NexPlayer  plays non-DRM (HLS, DASH or MP4) content by simply providing a valid URL and configuring the rendering.
 
-## NexPlayer™ API for basic playback
+## NexPlayer  API for basic playback
 
 Basic variables inherited from **NexPlayerBehaviour**:
 
@@ -12,11 +12,11 @@ Basic variables inherited from **NexPlayerBehaviour**:
 
 - **public bool isLiveStream**
 
-    Enable when the video to be opened is a live stream. Takes effect when Open() is called.This setting will make the **GetTotalTime()** function to retrieve the maximum seekable range of the current content. This setting only works on Android and Windows platforms.
+    Enable when the video to be opened is a live stream. Takes effect when **Open()** is called. This setting will make the **GetTotalTime()** function to retrieve the maximum seekable range of the current content. This setting only works on Android and Windows platforms.
 
 - **public bool autoPlay**
     
-    When enabled the video will auto start playing. Otherwise the video will be initialized, but the playback will not start automatically, remaining paused.
+    When enabled the video will auto start playing. Otherwise the video will be initialized, but the playback will not start automatically, it will remain paused.
 
 - **public bool loopPlay**
     
@@ -108,4 +108,4 @@ public class NexPlayerSimple : NexPlayerBehaviour
   }
 ```
 
-You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the **Render Mode** region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer  Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the **Render Mode** region.

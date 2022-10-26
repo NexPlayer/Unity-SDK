@@ -1,6 +1,6 @@
 # Migrating from previous releases
 
-The namespaces of the numerous APIs have been changed over time. Please, make sure to call them correctly.
+The namespaces of the numerous APIs have been changed over time. Please, make sure to address them correctly.
 
 The following scripts were moved from **NexPlayer > NexPlayer360** to **NexPlayer > Scripts > SampleCode > NexPlayer360**:
 

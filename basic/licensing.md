@@ -1,5 +1,5 @@
 # Licensing
-This feature is currently only operational on **Android & iOS Platforms**.
+>This feature is currently only operational on **Android** and **iOS** platforms.
 
 A remote licensing system provides streaming service for users that are under a license registered by NexPlayer. In order to authorize playback, please enter the license key which was provided to you in the License Key field shown below:
 
@@ -9,7 +9,7 @@ If the entered key is valid and the license that corresponds to it's currently a
 
 ## Licensing errors
 
-Any errors related to licensing are registered in full detail as Console Logs starting with the header *"Licensing Error:"* and additionally accompanied by a red error message in the player's UI, like so:
+Any errors related to licensing are registered in full detail as Console Logs starting with the header *"Licensing Error:"* and additionally accompanied by a red error message in the player's UI, as follows:
 
 ![](../assets/basic/license1.jpg)
 
@@ -18,7 +18,7 @@ Below are the most common errors that can be shown:
 #### 1. ENTER A LICENSE KEY
 > *"No license key found. Please enter a valid license key, see how to do it at doc section 'Licensing'."* 
 
-The License Key field is empty, so please enter in it the license key provided to you by NexPlayer. It should be under the User License Key section in the inspector. If you don't have a key, you can contact us to request it.
+The License Key field is empty, so please enter in it the license key provided to you by NexPlayer. It should be under the User License Key section in the Inspector. If you don't have a key, you can contact us to request it.
 
 #### 2. INVALID LICENSE KEY
 > *"Invalid user key. Your key is not assigned to any license. Please make sure that you entered the right key or request a valid one to NexPlayer."*  

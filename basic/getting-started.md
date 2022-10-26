@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 You can refer to the sections below to set up your project and start playing your content.
 

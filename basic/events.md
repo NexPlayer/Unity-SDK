@@ -1,6 +1,6 @@
 # Events
 
-The NexPlayer™ SDK provides a list of virtual methods which begin with "Event". These allow you to provide custom behavior to answer any **NexPlayerEvent**.
+The NexPlayer  SDK provides a list of virtual methods which begin with "Event". These allow you to provide custom behavior to answer any **NexPlayerEvent**.
 
 ## NexPlayerAPI for events
 
@@ -64,7 +64,7 @@ Event triggered methods inherited from **NexPlayerBehaviour**:
 
     Method triggered by the **NexPlayerEvent** *NEXPLAYER_EVENT_BUFFERING_ENDED*.
     
-    This event occurs whenever the player has finished buffering
+    This event occurs whenever the player has finished buffering.
 
 - **protected virtual void EventStopped()**
 
@@ -112,7 +112,7 @@ Event triggered methods inherited from **NexPlayerBehaviour**:
 
     Method triggered by the **NexPlayerEvent** *NEXPLAYER_EVENT_TIMED_METADATA_RENDER*.
     
-    This event is called when new timed metadata is ready for display in HLS. Timed metadata includes additional information about the playing content that may be displayed to the user, and this information may change at different times throughout the content. Each time new metadata is available for display, this event is triggered.
+    This event occurs when new timed metadata is ready for display in HLS. Timed metadata includes additional information about the playing content that may be displayed to the user, and this information may change at different times throughout the content. Each time new metadata is available for display, this event is triggered.
 
 - **protected virtual void EventTotalTimeChanged()**
 
@@ -141,7 +141,7 @@ Event triggered methods inherited from **NexPlayerBehaviour**:
 
 ## Sample code for events
 
-The following sample code shows how to override inherited virtual methods to respond to any NexPlayer™ event:
+The following sample code shows how to override inherited virtual methods to respond to any NexPlayer  event:
 
 ```csharp
 public class NexPlayerSimple : NexPlayerBehaviour

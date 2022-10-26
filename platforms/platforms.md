@@ -1,6 +1,6 @@
 # Supported Platforms
 
-Below are the minimum specifications required for running the NexPlayer™ SDK:
+The minimum specifications required for running the NexPlayer SDK are indicated below:
 
 - [Windows](/platforms/windows.md)  
 	**Minimum OS**: Windows 10 using update Version 2004 and definition update KB4052623 26/08.  

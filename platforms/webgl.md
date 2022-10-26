@@ -2,9 +2,7 @@
 
 > Minimum browsers version, Google Chrome 75, Mozilla Firefox 67, Opera 12, Microsoft Edge 18 and Apple Safari 12.1.
 
----
 ## Detailed feature list
-
 #### Media Source
 - Streams (*External URL*)
 	- HLS (.m3u8)
@@ -14,11 +12,11 @@
 #### Rendering Mode  
 - RawImage (*Unity UI*)	
 - RenderTexture (*Unity Asset*)
-- Material Override (*material's MainTexture*)
+- Material Override (*Material's MainTexture*)
 
 #### Sound Playback Control
 - Volume Control
-- Mute volume
+- Mute Volume
 
 #### Video Playback Control
 - Start Player
@@ -51,13 +49,12 @@
 - Opera
 - Edge
 
----
 ## Build Configuration
-The NexPlayer™ Plugin for Unity supports Builds for WebGL applications.
+The NexPlayer  Plugin for Unity supports builds for WebGL applications.
 
 To build the application with Nexplayer's Template it's required to select the template inside Unity.
 
-In the top bar go to **NexPlayer → Build Configuration WebGL** and import the WebGL templates and select the NexPlayer™ template as shown in the image below:
+In the top bar go to **NexPlayer → Build Configuration WebGL** and import the WebGL templates and select the NexPlayer  template as shown in the image below:
 
 ![](../assets/platforms/web1.png)
 

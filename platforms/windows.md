@@ -6,7 +6,6 @@ Minimum Memory: 8GB RAM.
 Minimum GPU: NVIDIA GeForce 840M 2GB.  
 Supported Graphics APIs: DirectX 11.
 
----
 ## Detailed feature list
 
 #### Media Source
@@ -27,11 +26,11 @@ Supported Graphics APIs: DirectX 11.
 #### Rendering Mode  
 - RawImage (*Unity UI*)	
 - RenderTexture (*Unity Asset*)
-- Material Override (*material's MainTexture*)
+- Material Override (*Material's MainTexture*)
 
 #### Sound Playback Control
 - Volume Control
-- Mute volume
+- Mute Volume
 
 #### Video Playback Control
 - Start Player
@@ -66,11 +65,10 @@ Supported Graphics APIs: DirectX 11.
 - H.264
 - MPEG-4
 
----
 ## Build Configuration
-The NexPlayer™ Plugin for Unity supports Standalone Builds for Windows.
+The NexPlayer Plugin for Unity supports Standalone Builds for Windows.
 
-To create a Windows Standalone program it's required to set the Target Platform as Windows and the Architecture as Intel 64-bit (Unity 2021.2) or x86_64 (Unity 2021.1 and below) in the Unity Build Settings configuration as shown in the image below:
+To create a Windows Standalone program it's required to set the Target Platform as Windows and the Architecture as Intel 64-bit (Unity 2021.2) or x86_64 (Unity 2021.1 and below) in the Unity Build Settings configuration as shown in the images below:
 
 Build settings on Unity 2021.2  
 ![](../assets/platforms/win0.png)
@@ -78,9 +76,9 @@ Build settings on Unity 2021.2
 Build settings on Unity 2021.1 and below  
 ![](../assets/platforms/win1.png)
 
-It is also necessary to disable "Auto Graphics API for Windows" and to set the graphics APIs to Direct3D11 only.
+It is also necessary to disable **"Auto Graphics API for Windows"** and to set the graphics APIs to Direct3D11 only.
 
-Recommended Graphics API  
+Recommended Graphics API:  
 ![](../assets/platforms/win2.png)
 
-Then, proceed with the build normally by clicking on **File → Build Settings → Build And Run**.
+Afterwards, proceed with the build normally by clicking on **File → Build Settings → Build And Run**.

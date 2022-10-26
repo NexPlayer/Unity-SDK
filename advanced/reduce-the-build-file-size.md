@@ -1,14 +1,14 @@
 # Reducing the build file size
 
-Application Stores for Android and iOS have a limited file size to distribute the app.
-The NexPlayer™ Unity SDK can be reduced to occupy the minimum size possible.
+Application stores for Android and iOS have a limited file size to distribute the app.
+The NexPlayer  Unity SDK can be reduced to occupy the minimum size possible.
 
 It's recommended to follow the next steps to optimize the Unity SDK:
 
 ## Android
 
 - **Check the Unity option for Build App Bundle whenever possible.**
-This option will make a selective apk creation, depending on the different mobile device platforms and will not include unnecessary plugin files in the apk. Also set the compression method to **LZ4HC**.
+This option will make a selective apk creation, depending on the different mobile device platforms and will not include unnecessary Plugin files in the apk. Additionally, set the compression method to **LZ4HC**.
 
 ![](../assets/advance/red1.png)
 
@@ -22,7 +22,7 @@ This option will make a selective apk creation, depending on the different mobil
 
 ![](../assets/advance/red2.png)
 
-- Set **Player settings → Other settings → Optimization → Managed Stripping** level to **High**. You may need to adjust this if you have runtime issues.**
+- Set **Player settings → Other settings → Optimization → Managed Stripping** level to **High**. You may need to adjust this if you have runtime issues.
 
 ![](../assets/advance/red3.png)
 

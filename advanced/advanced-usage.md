@@ -1,5 +1,5 @@
-# Advanced features
-NexPlayer™ SDK for Unity helps you play any content you have, including advanced APIs and features. 
+# Advanced Features
+NexPlayer SDK for Unity helps you play any content you have, including advanced APIs and features. 
 
 - [Audio tracks](/advanced/audio-track.md)
 - [Close captions](/advanced/closed-captions.md)

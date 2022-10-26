@@ -1,6 +1,6 @@
 # Player information retrieval
 
-## NexPlayer™ API for player information retrieval
+## NexPlayer  API for player information retrieval
 
 Player information methods inherited from **NexPlayerBehaviour**:
 
@@ -12,7 +12,7 @@ Player information methods inherited from **NexPlayerBehaviour**:
       
  For VOD streams, it retrieves the current playback time. 
       
- For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track while, on Windows and Xbox Series X/S, it's the server time value and this value only updates once per second.
+ For live streams, Android, iOS, macOS, and WebGL, the current time is the current PTS value of the audio track. However, on Windows and Xbox Series X/S, it's the server time value and this value is only updated once per second.
 
 - **public int GetTotalTime()**
       
@@ -44,4 +44,4 @@ protected override void EventOnTime()
 }
 ```
 
-You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer™ Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the "Player information" region.
+You will find the usage of this API in the code of our sample project located at **Packages > NexPlayer  Simple Sample (com.nexplayer.nxplayersimplesample) > NexPlayer > SampleCode > Players > NexPlayerSimple.cs** by unfolding the "Player information" region.
