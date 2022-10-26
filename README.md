@@ -10,7 +10,7 @@ https://nexplayer.github.io/Unity-SDK/
 
 Feel free to contact us to request a demo 
 
-* https://www.nexplayersdk.com/contact/
+* [Request demo](https://nexplayersdk.com/unity-player-sdk-demo/?utm_source=github&utm_medium=referral&utm_campaign=unitygithub&utm_content=20200211--unitydemocontact)
 
 * unity.support@nexplayer.com
 
