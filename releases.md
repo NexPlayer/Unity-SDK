@@ -1,5 +1,12 @@
 ## NexPlayer SDK for Unity Release Notes
 
+### Version 2.3.3
+- [Android]
+	- [Added] Added #EXT-X-PROGRAM-DATE-TIME tag information retrieval from HLS content.
+	- [Added] Multistream players events now indicate which player triggered the event.
+	- [Added] New API in multistreamController for start, pause, stop, close, restart, seek all players at the same time.
+	- [Added] New API in multistreamController for changing content of a player.
+
 ### Version 2.3.2
 - [Unity]
     - [Fixed] Removed some NexUtility methods that shouldn't be exposed on create asset menus.

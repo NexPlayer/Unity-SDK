@@ -11,58 +11,69 @@ When using Multiview on your project you should use the **MultistreamController*
 The specific API provided by this controller to manage Multiview is the following:
 
 - **Init(NexPlayerBehaviour nexPlayerBehaviour)**
-
     - Initialization for **MultistreamController**. It uses the **NexPlayerBehaviour** to play the videos.
 
 - **SetMultiStreamRender()**
-
     - This method will automatically set the render mode for Multiview. It will check for RawImages first and then for RenderTextures. You should only initialize the List for the render mode that you're going to use.
 
 - **ChooseControlIndex(int index)**
-
     - Selects a player instance to control.
 
 ### Playback Control
 
 - **StartAllPlayers()**
-
     - Opens the content for all Multiview instances and sets them ready to play.
 
 - **StartChosenPlayer()**
-
     - Opens the content for selected player instance using the **multiURLPaths** list field as content. Use method **ChooseControlIndex(int index)** to decide which instance is selected.
 
 - **StartVideo(string url)**
-
     - Starts the selected player instance with a specific content.
 
-- **RestartMultiStreamsPlayback()**
+- **ResumeAllPlayers()**
+    - Resume the playback of all contents.
 
+- **PauseAllPlayers()**
+    - Pauses the playback of all contents.
+
+- **StopAllPlayers()**
+    - Stop the playback of all videos and sets the time for them at the beggining of the content.
+
+- **CloseAllPlayers()**
+    - Stop playback & closes all players handled by multistreamController.
+
+- **ReleaseAllPlayers()**
+    - Release & close all info for all players handled by multistreamController.
+
+- **RestartMultiStreamsPlayback()**
     - Restart the playback of all Multiview instances to the beginning of the content.
 
-### Other functions
-
-- **ChangeVideoContent(string url)**
-
-    - Change the content of the selected player instance. The content can be changed during runtime. Internally, this method closes the chosen player, sets the new stream URL and starts the new content from the beginning.
-
-- **GetMultiStreamNumber()**
-
-    - Returns the number of streams applied to the **MultistreamController**.
+### Properties
 
 - **MultiStreamSetProperties()**
-
-    - Sets the specific properties such as ABR and SPD to Multiview streams. You should set the value for these properties before calling this method, such as:  
+	- Sets the specific properties such as ABR and SPD to Multiview streams. You should set the value for these properties before calling this method, such as:  
     
     > NexPlayerBehaviour.SynchronizationEnable = true;
 
 - **SetMuteMultiStreams(bool setMuted)**
+   - Mute or unmute all Multiview players.
 
-    - Mute or unmute all Multiview players.
+- **SetMultiStreamsBitrate(int bitrate)**
+	- Sets the bitrate targeted for all players. Bitrate value should be in bits.
 
-- **MultiStreamHTTPHeaders(int playerIndex, string key, string value)**
+- **SetHTTPHeader(int playerIndex, string key, string value)**
+	- Adds a new HTTP header to the **playerIndex** player with **key** and **value**.
 
-    - Adds a HTTP header to the **playerIndex** player with **key** and **value**.
+### Other functions
+
+- **ChangeVideoContent(string url)**
+    - Change the content of the selected player instance. The content can be changed during runtime. Internally, this method closes the chosen player, sets the new stream URL and starts the new content from the beginning.
+
+- **GetMultiStreamNumber()**
+    - Returns the number of streams applied to the **MultistreamController**.
+
+- **AllPlayersAreReady()**
+	 - Returns a boolean value that indicates whether all players are ready to start playing.
 
 ## Sample code for Multiview
 

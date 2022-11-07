@@ -125,6 +125,12 @@ Event triggered methods inherited from **NexPlayerBehaviour**:
     Method triggered by the **NexPlayerEvent** *NEXPLAYER_EVENT_ON_HANDLE_EXTERNAL_PCM*.
     
     This event occurs whenever there is new audio PCM data during the playback. The audio buffers are floats ranging from -1.0f to 1.0f. Supported on Android, Windows, and Xbox Series X/S.
+    
+- **protected virtual void EventProgramDateTime()**
+
+	 Method triggered by the **NexPlayerEvent** *NEXPLAYER_EVENT_PROGRAM_DATE_TIME*.
+
+    This event is called when the date and time information (#EXT-X-PROGRAM-DATE-TIME tag) in HLS content is available. This event occurs approximately once per second.
 
 - **protected virtual void EventUnhandled()**
 
@@ -137,20 +143,38 @@ Event triggered methods inherited from **NexPlayerBehaviour**:
     Method triggered by the **NexPlayerEvent** *NEXPLAYER_EVENT_ERROR*.
     
     This event is triggered when an internal error occurs. The base implementation of this method logs the error information and calls the error specific virtual function. On Windows and Xbox Series X/S it only supports the **NexErrorCodes** *PLAYER_ERROR_TIME_LOCKED*, *HAS_NO_EFFECT* and *ERROR_MEDIA_NOT_FOUND*.
+    
+    
+### Multistream Events
+All the single stream events have their pair for multistream. This pair for Multistream provide, on the method parameter, info about which player triggered the event.
 
+To implement them you just need to duplicate single stream events and add in the events parameters  the **int playerInstance**
+
+##### Single player
+	protected virtual void EventProgramDateTime()
+	protected virtual void EventPlaybackStarted()
+##### Multistream
+	protected virtual void EventProgramDateTime(int playerInstance)
+	protected virtual void EventPlaybackStarted(int playerInstance)
+	
 
 ## Sample code for events
 
-The following sample code shows how to override inherited virtual methods to respond to any NexPlayer  event:
+The following sample code shows how to override inherited virtual methods to respond to any NexPlayer event:
 
 ```csharp
 public class NexPlayerSimple : NexPlayerBehaviour
 {
-    protected override void SetPreInitConfiguration()
+    protected override void EventInitComplete()
     {
-        base.SetPreInitConfiguration();
-
-        // run any custom code
+        // run any custom code for single stream
+        // this event wont be triggered on multistream
+    }
+    
+    protected override void EventInitComplete(int playerInstance)
+    {
+        // run any custom code for multistream
+        // this event wont be triggered on single stream
     }
 }
 
